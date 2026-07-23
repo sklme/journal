@@ -1,7 +1,19 @@
 import { execFileSync } from 'node:child_process'
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
-import { extname, join, relative, resolve } from 'node:path'
+import { basename, extname, join, relative, resolve } from 'node:path'
 import process from 'node:process'
+
+interface Rule {
+  name: string
+  pattern: RegExp
+  excludeFiles?: ReadonlySet<string>
+}
+
+interface Finding {
+  file: string
+  line: number
+  rule: string
+}
 
 const root = resolve(import.meta.dirname, '..')
 const mode = process.argv.includes('--staged') ? 'staged' : 'all'
@@ -33,7 +45,7 @@ const ignoredFiles = new Set([
   'pnpm-lock.yaml'
 ])
 
-const rules = [
+const rules: Rule[] = [
   {
     name: '私钥',
     pattern: /-----BEGIN (?:RSA |EC |DSA |OPENSSH |PGP )?PRIVATE KEY-----/g
@@ -69,7 +81,7 @@ const rules = [
   {
     name: '常见内网域名',
     pattern: /\b(?:localhost|[A-Za-z0-9.-]+\.(?:internal|intranet|corp|local|oa\.com|woa\.com))\b/gi,
-    excludeFiles: new Set(['scripts/check-sensitive.mjs'])
+    excludeFiles: new Set(['scripts/check-sensitive.ts'])
   },
   {
     name: '疑似中国大陆手机号',
@@ -81,8 +93,8 @@ const rules = [
   }
 ]
 
-function walk(directory) {
-  const paths = []
+function walk(directory: string): string[] {
+  const paths: string[] = []
 
   for (const entry of readdirSync(directory)) {
     if (ignoredDirectories.has(entry) || ignoredFiles.has(entry)) continue
@@ -100,7 +112,7 @@ function walk(directory) {
   return paths
 }
 
-function stagedFiles() {
+function stagedFiles(): string[] {
   try {
     return execFileSync(
       'git',
@@ -120,13 +132,17 @@ function stagedFiles() {
   }
 }
 
-function allFiles() {
+function allFiles(): string[] {
   try {
-    const tracked = execFileSync('git', ['ls-files', '-z'], {
-      cwd: root,
-      encoding: 'utf8',
-      stdio: ['ignore', 'pipe', 'ignore']
-    })
+    const tracked = execFileSync(
+      'git',
+      ['ls-files', '--cached', '--others', '--exclude-standard', '-z'],
+      {
+        cwd: root,
+        encoding: 'utf8',
+        stdio: ['ignore', 'pipe', 'ignore']
+      }
+    )
       .split('\0')
       .filter(Boolean)
       .map((file) => resolve(root, file))
@@ -140,8 +156,8 @@ function allFiles() {
   return walk(root)
 }
 
-function customTerms() {
-  const terms = []
+function customTerms(): string[] {
+  const terms: string[] = []
   const localTermsPath = join(root, '.sensitive-terms.local')
 
   if (existsSync(localTermsPath)) {
@@ -155,19 +171,19 @@ function customTerms() {
   return terms.map((term) => term.trim()).filter(Boolean)
 }
 
-function lineNumber(content, index) {
+function lineNumber(content: string, index: number): number {
   return content.slice(0, index).split('\n').length
 }
 
 const files = (mode === 'staged' ? stagedFiles() : allFiles()).filter((file) => {
-  const fileName = file.split('/').at(-1)
+  const fileName = basename(file)
   return (
     !ignoredFiles.has(fileName) &&
     scannedExtensions.has(extname(file).toLowerCase())
   )
 })
 
-const findings = []
+const findings: Finding[] = []
 const terms = customTerms()
 
 for (const file of files) {
@@ -181,7 +197,7 @@ for (const file of files) {
     for (const match of content.matchAll(rule.pattern)) {
       findings.push({
         file: relativeFile,
-        line: lineNumber(content, match.index),
+        line: lineNumber(content, match.index ?? 0),
         rule: rule.name
       })
     }

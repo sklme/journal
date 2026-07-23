@@ -2,7 +2,7 @@ import { execFileSync } from 'node:child_process'
 import { existsSync } from 'node:fs'
 import { resolve } from 'node:path'
 
-const root = resolve(import.meta.dirname, '..')
+const root: string = resolve(import.meta.dirname, '..')
 
 if (!existsSync(resolve(root, '.git'))) {
   console.log('尚未初始化 Git，跳过 Git hooks 配置。')

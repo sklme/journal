@@ -2,6 +2,7 @@
 title: 搭建个人开发札记
 date: 2026-07-23
 tags:
+  - TypeScript
   - VitePress
   - GitHub Pages
   - GitHub Actions
@@ -21,11 +22,12 @@ description: 使用 VitePress 和 GitHub Pages 建立个人开发记录站点
 
 ## 方案
 
-站点使用 VitePress，把 Markdown 编译为静态页面。所有分支在推送后都会执行敏感信息检查和构建验证，只有 `main` 分支会部署到 GitHub Pages。
+站点使用 TypeScript 配置 VitePress，把 Markdown 编译为静态页面。工程脚本同样使用 TypeScript，并在持续集成中执行严格类型检查。所有分支在推送后都会执行敏感信息检查和构建验证，只有 `main` 分支会部署到 GitHub Pages。
 
 ```text
 Markdown
   → 敏感信息检查
+  → TypeScript 类型检查
   → VitePress 构建
   → GitHub Pages
 ```

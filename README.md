@@ -1,22 +1,27 @@
 # Journal
 
-个人开发记录与知识笔记，使用 VitePress 构建并发布到 GitHub Pages。
+个人开发记录与知识笔记，使用 TypeScript 和 VitePress 构建并发布到 GitHub Pages。
 
 - 站点：<https://sklme.github.io/journal/>
+- 仓库可见性：Private
 - 内容目录：[`docs/`](./docs/)
 - 写作模板：[`templates/`](./templates/)
 - 发布原则：仓库中只保存已经脱敏、可以公开到互联网的内容
 
+> [!WARNING]
+>
+> 仓库为 Private 不代表 GitHub Pages 站点也为私有。当前 Pages 仍作为公开网站发布，因此所有 `docs/` 内容继续按照互联网公开标准管理。
+
 ## 本地使用
 
-需要 Node.js 22 或更高版本，以及 pnpm 10。
+需要 Node.js 22 或更高版本，以及 pnpm 10。VitePress 配置、主题和工程脚本均使用 TypeScript，并开启严格类型检查；工具脚本直接使用 Node.js 的 TypeScript 类型擦除能力运行。
 
 ```bash
 pnpm install
 pnpm docs:dev
 ```
 
-提交前执行完整检查：
+提交前执行完整检查，包括敏感信息扫描、TypeScript 类型检查和 VitePress 生产构建：
 
 ```bash
 pnpm check

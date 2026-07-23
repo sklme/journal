@@ -8,16 +8,19 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "check:sensitive": "node scripts/check-sensitive.mjs --all",
-    "check:sensitive:staged": "node scripts/check-sensitive.mjs --staged",
-    "check": "pnpm check:sensitive && pnpm docs:build",
-    "prepare": "node scripts/setup-hooks.mjs"
+    "check:sensitive": "node scripts/check-sensitive.ts --all",
+    "check:sensitive:staged": "node scripts/check-sensitive.ts --staged",
+    "typecheck": "tsc --noEmit",
+    "check": "pnpm check:sensitive && pnpm typecheck && pnpm docs:build",
+    "prepare": "node scripts/setup-hooks.ts"
   },
   "engines": {
     "node": ">=22"
   },
   "packageManager": "pnpm@10.28.0",
   "devDependencies": {
+    "@types/node": "26.1.1",
+    "typescript": "7.0.2",
     "vitepress": "1.6.4"
   }
 }

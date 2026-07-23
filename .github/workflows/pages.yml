@@ -47,6 +47,9 @@ jobs:
           SENSITIVE_TERMS: ${{ secrets.SENSITIVE_TERMS }}
         run: pnpm check:sensitive
 
+      - name: Type-check TypeScript
+        run: pnpm typecheck
+
       - name: Build VitePress
         run: pnpm docs:build
 
