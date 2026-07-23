@@ -1,0 +1,7 @@
+node_modules/
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+.DS_Store
+
+# 只保存在本机的敏感词清单，一行一个
+.sensitive-terms.local
