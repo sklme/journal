@@ -22,5 +22,11 @@
     "@types/node": "26.1.1",
     "typescript": "7.0.2",
     "vitepress": "1.6.4"
+  },
+  "pnpm": {
+    "overrides": {
+      "esbuild": "0.25.12",
+      "vite": "6.4.3"
+    }
   }
 }
