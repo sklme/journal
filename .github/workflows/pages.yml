@@ -18,6 +18,9 @@ concurrency:
 jobs:
   build:
     name: Build site
+    # Private 仓库需要支持 Pages 的套餐。确认可用后，在仓库变量中将
+    # ENABLE_GITHUB_PAGES 设置为 true，即可恢复自动发布。
+    if: vars.ENABLE_GITHUB_PAGES == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
 

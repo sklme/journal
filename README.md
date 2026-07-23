@@ -2,7 +2,7 @@
 
 个人开发记录与知识笔记，使用 TypeScript 和 VitePress 构建并发布到 GitHub Pages。
 
-- 站点：<https://sklme.github.io/journal/>
+- 计划站点：<https://sklme.github.io/journal/>（当前暂停）
 - 仓库可见性：Private
 - 内容目录：[`docs/`](./docs/)
 - 写作模板：[`templates/`](./templates/)
@@ -10,7 +10,7 @@
 
 > [!WARNING]
 >
-> 仓库为 Private 不代表 GitHub Pages 站点也为私有。当前 Pages 仍作为公开网站发布，因此所有 `docs/` 内容继续按照互联网公开标准管理。
+> 仓库为 Private 不代表 GitHub Pages 站点也会自动成为私有。当前账号套餐不支持从 Private 仓库发布 Pages，自动发布已通过 `ENABLE_GITHUB_PAGES` 仓库变量暂停。无论后续采用何种发布方式，所有 `docs/` 内容仍按照互联网公开标准管理。
 
 ## 本地使用
 

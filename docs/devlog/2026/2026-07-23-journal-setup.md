@@ -22,7 +22,7 @@ description: 使用 VitePress 和 GitHub Pages 建立个人开发记录站点
 
 ## 方案
 
-站点使用 TypeScript 配置 VitePress，把 Markdown 编译为静态页面。工程脚本同样使用 TypeScript，并在持续集成中执行严格类型检查。所有分支在推送后都会执行敏感信息检查和构建验证，只有 `main` 分支会部署到 GitHub Pages。
+站点使用 TypeScript 配置 VitePress，把 Markdown 编译为静态页面。工程脚本同样使用 TypeScript，并在持续集成中执行严格类型检查。所有分支在推送后都会执行敏感信息检查和构建验证；GitHub Pages 自动发布由 `ENABLE_GITHUB_PAGES` 仓库变量控制。
 
 ```text
 Markdown
