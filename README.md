@@ -2,6 +2,8 @@
 
 个人开发记录与知识笔记，使用 TypeScript 和 VitePress 构建。
 
+配套 Skill（Private）：[sklme/journal-skills](https://github.com/sklme/journal-skills)
+
 ## 本地预览
 
 ```bash
