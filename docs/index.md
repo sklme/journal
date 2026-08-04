@@ -13,8 +13,8 @@ hero:
       text: 浏览知识库
       link: /knowledge/
     - theme: alt
-      text: 写作与脱敏
-      link: /guide/writing-and-sanitizing
+      text: 内容日志
+      link: /log/
 
 features:
   - title: 主题知识
