@@ -18,7 +18,7 @@ hero:
 
 features:
   - title: 主题知识
-    details: 按前端、后端、工程化和工具组织文章，而不是按时间保存过程流水。
+    details: 按实际内容形成主题目录，并在侧边栏中直接展示每个主题下的文章。
   - title: 实践提炼
     details: 从实现与排障中提取问题、原理、解决方案、适用边界和常见错误。
   - title: 公开安全
@@ -27,8 +27,8 @@ features:
 
 ## 最近更新
 
-- [Agent Skills 分发与生命周期管理](/knowledge/tools/agent-skills-distribution-and-lifecycle-management)
-- [Multica：Agent 管理层、控制面与适用边界](/knowledge/tools/multica-agent-control-plane)
+- [Agent Skills 分发与生命周期管理](/knowledge/ai-engineering/agent-skills-distribution-and-lifecycle-management)
+- [Multica：Agent 管理层、控制面与适用边界](/knowledge/ai-engineering/multica-agent-control-plane)
 - [使用 VitePress 搭建个人知识站](/knowledge/engineering/building-a-vitepress-knowledge-site)
 
 ::: tip 写作原则

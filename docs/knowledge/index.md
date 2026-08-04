@@ -9,10 +9,8 @@ description: 从具体实践中提炼的可复用技术知识
 
 ## 分类
 
-- [前端](./frontend/)
-- [后端](./backend/)
-- [工程化](./engineering/)
-- [工具](./tools/)
+- [AI 工程](./ai-engineering/)：Agent、Skills、控制面与自动化协作。
+- [工程实践](./engineering/)：文档工程、构建、持续集成与项目维护。
 
 新增文章时，可以从仓库根目录的 `templates/knowledge.md` 开始。
 

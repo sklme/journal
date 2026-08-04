@@ -37,10 +37,32 @@ export default defineConfig({
           text: '知识库',
           items: [
             { text: '知识库首页', link: '/knowledge/' },
-            { text: '前端', link: '/knowledge/frontend/' },
-            { text: '后端', link: '/knowledge/backend/' },
-            { text: '工程化', link: '/knowledge/engineering/' },
-            { text: '工具', link: '/knowledge/tools/' }
+            {
+              text: 'AI 工程',
+              link: '/knowledge/ai-engineering/',
+              collapsed: false,
+              items: [
+                {
+                  text: 'Agent Skills 分发与生命周期管理',
+                  link: '/knowledge/ai-engineering/agent-skills-distribution-and-lifecycle-management'
+                },
+                {
+                  text: 'Multica：Agent 管理层与控制面',
+                  link: '/knowledge/ai-engineering/multica-agent-control-plane'
+                }
+              ]
+            },
+            {
+              text: '工程实践',
+              link: '/knowledge/engineering/',
+              collapsed: false,
+              items: [
+                {
+                  text: '使用 VitePress 搭建个人知识站',
+                  link: '/knowledge/engineering/building-a-vitepress-knowledge-site'
+                }
+              ]
+            }
           ]
         }
       ],

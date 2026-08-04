@@ -22,7 +22,7 @@ description: 使用 TypeScript、VitePress 和自动检查构建可维护的个�
 
 ## 核心设计
 
-使用 TypeScript 配置 VitePress，把 Markdown 编译为静态页面。知识文章按前端、后端、工程化和工具等主题分类，不为每次开发活动创建按日期排列的过程日志。
+使用 TypeScript 配置 VitePress，把 Markdown 编译为静态页面。知识文章按实际内容形成主题目录，分类下直接展示文章；不预先创建空分类，也不为每次开发活动创建按日期排列的过程日志。
 
 ```text
 实践素材
@@ -40,17 +40,15 @@ Git 提交记录内容的修改历史，文章本身只保留理解主题所需�
 ```text
 docs/
 ├── knowledge/
-│   ├── frontend/
-│   ├── backend/
+│   ├── ai-engineering/
 │   ├── engineering/
-│   └── tools/
-├── guide/
+│   └── index.md
 └── .vitepress/
 templates/
 └── knowledge.md
 ```
 
-分类首页负责列出文章，VitePress 配置负责站点导航。新文章优先进入已有分类，只有现有分类无法表达主题时才增加新分类。
+分类首页负责列出文章，VitePress 侧边栏以二级目录展示分类及其文章。新文章优先进入已有分类，只有现有分类无法表达主题时才增加新分类。
 
 ## 内容安全
 
