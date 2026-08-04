@@ -7,4 +7,4 @@ description: 构建、测试、持续集成与项目维护
 
 这里记录构建、测试、持续集成和项目维护。
 
-暂时还没有文章。
+- [使用 VitePress 搭建个人知识站](./building-a-vitepress-knowledge-site.md)

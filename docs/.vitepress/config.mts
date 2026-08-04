@@ -4,7 +4,7 @@ const repositoryUrl = 'https://github.com/sklme/journal'
 
 export default defineConfig({
   title: '开发札记',
-  description: '个人开发记录、问题复盘与可复用知识',
+  description: '个人技术实践、问题复盘与可复用知识',
   lang: 'zh-CN',
   base: '/journal/',
   cleanUrls: true,
@@ -26,31 +26,12 @@ export default defineConfig({
     siteTitle: '开发札记',
 
     nav: [
-      { text: '开发记录', link: '/devlog/' },
       { text: '知识库', link: '/knowledge/' },
       { text: '写作与脱敏', link: '/guide/writing-and-sanitizing' },
       { text: '关于', link: '/about' }
     ],
 
     sidebar: {
-      '/devlog/': [
-        {
-          text: '开发记录',
-          items: [
-            { text: '全部记录', link: '/devlog/' },
-            {
-              text: '2026',
-              collapsed: false,
-              items: [
-                {
-                  text: '搭建个人开发札记',
-                  link: '/devlog/2026/2026-07-23-journal-setup'
-                }
-              ]
-            }
-          ]
-        }
-      ],
       '/knowledge/': [
         {
           text: '知识库',

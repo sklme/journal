@@ -3,24 +3,24 @@ layout: home
 
 hero:
   name: 开发札记
-  text: 记录问题，也记录如何想清楚
-  tagline: 个人开发记录、问题复盘与经过脱敏的可复用知识。
+  text: 把实践整理成可复用知识
+  tagline: 按主题沉淀经过脱敏的技术知识、原理与适用边界。
   image:
     src: /logo.svg
     alt: 开发札记
   actions:
     - theme: brand
-      text: 查看开发记录
-      link: /devlog/
-    - theme: alt
       text: 浏览知识库
       link: /knowledge/
+    - theme: alt
+      text: 写作与脱敏
+      link: /guide/writing-and-sanitizing
 
 features:
-  - title: 开发记录
-    details: 保留问题背景、排查路径、根因、验证方式和后续改进。
-  - title: 可复用知识
-    details: 把一次性的解决方案整理成带边界条件的通用知识。
+  - title: 主题知识
+    details: 按前端、后端、工程化和工具组织文章，而不是按时间保存过程流水。
+  - title: 实践提炼
+    details: 从实现与排障中提取问题、原理、解决方案、适用边界和常见错误。
   - title: 公开安全
     details: 提交前和持续集成都执行敏感信息检查，内容仍需人工复核。
 ---
@@ -29,7 +29,7 @@ features:
 
 - [Agent Skills 分发与生命周期管理](/knowledge/tools/agent-skills-distribution-and-lifecycle-management)
 - [Multica：Agent 管理层、控制面与适用边界](/knowledge/tools/multica-agent-control-plane)
-- [搭建个人开发札记](/devlog/2026/2026-07-23-journal-setup)
+- [使用 VitePress 搭建个人知识站](/knowledge/engineering/building-a-vitepress-knowledge-site)
 
 ::: tip 写作原则
 如果无法确认一段内容是否可以公开，就不要把它提交到这个仓库。

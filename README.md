@@ -1,6 +1,6 @@
 # Journal
 
-个人开发记录与知识笔记，使用 TypeScript 和 VitePress 构建。
+个人技术知识笔记，使用 TypeScript 和 VitePress 构建。
 
 配套 Skill（Private）：[sklme/journal-skills](https://github.com/sklme/journal-skills)
 
