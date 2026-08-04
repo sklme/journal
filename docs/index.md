@@ -27,6 +27,7 @@ features:
 
 ## 最近更新
 
+- [Agent Skills 分发与生命周期管理](/knowledge/tools/agent-skills-distribution-and-lifecycle-management)
 - [Multica：Agent 管理层、控制面与适用边界](/knowledge/tools/multica-agent-control-plane)
 - [搭建个人开发札记](/devlog/2026/2026-07-23-journal-setup)
 
