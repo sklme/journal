@@ -1,4 +1,4 @@
-import { readFileSync, readdirSync, statSync } from 'node:fs'
+import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
 import { basename, extname, join, relative, resolve, sep } from 'node:path'
 
 const root = resolve(import.meta.dirname, '..')
@@ -36,6 +36,7 @@ function sitePath(file: string): string {
 }
 
 const expectedPaths = contentRoots
+  .filter((directory) => existsSync(directory))
   .flatMap((directory) => walk(directory))
   .map((file) => sitePath(file))
   .sort()
