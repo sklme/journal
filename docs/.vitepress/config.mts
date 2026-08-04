@@ -28,7 +28,6 @@ export default defineConfig({
     nav: [
       { text: '知识库', link: '/knowledge/' },
       { text: '内容日志', link: '/log/' },
-      { text: '写作与脱敏', link: '/guide/writing-and-sanitizing' },
       { text: '关于', link: '/about' }
     ],
 
@@ -49,17 +48,6 @@ export default defineConfig({
         {
           text: '内容日志',
           items: [{ text: '全部内容', link: '/log/' }]
-        }
-      ],
-      '/guide/': [
-        {
-          text: '使用指南',
-          items: [
-            {
-              text: '写作与脱敏',
-              link: '/guide/writing-and-sanitizing'
-            }
-          ]
         }
       ]
     },

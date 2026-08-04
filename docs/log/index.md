@@ -15,4 +15,3 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 ## 2026-07
 
 - `2026-07-23` · 工程化 · [使用 VitePress 搭建个人知识站](/knowledge/engineering/building-a-vitepress-knowledge-site) — 使用 TypeScript、VitePress 和自动检查构建可维护的个人技术知识站。
-- `2026-07-23` · 指南 · [写作与脱敏](/guide/writing-and-sanitizing) — 如何把技术实践整理成可以公开分享的知识文章。
