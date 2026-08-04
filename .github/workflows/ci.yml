@@ -43,6 +43,9 @@ jobs:
           SENSITIVE_TERMS: ${{ secrets.SENSITIVE_TERMS }}
         run: pnpm check:sensitive
 
+      - name: Check content log
+        run: pnpm check:log
+
       - name: Type-check TypeScript
         run: pnpm typecheck
 
