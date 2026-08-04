@@ -3,8 +3,8 @@ import { defineConfig } from 'vitepress'
 const repositoryUrl = 'https://github.com/sklme/journal'
 
 export default defineConfig({
-  title: '开发札记',
-  description: '个人技术实践、问题复盘与可复用知识',
+  title: '技术知识库',
+  description: '聚焦 AI 工程与工程实践的个人技术知识库',
   lang: 'zh-CN',
   base: '/journal/',
   cleanUrls: true,
@@ -23,7 +23,7 @@ export default defineConfig({
 
   themeConfig: {
     logo: '/logo.svg',
-    siteTitle: '开发札记',
+    siteTitle: '技术知识库',
 
     nav: [
       { text: '知识库', link: '/knowledge/' },

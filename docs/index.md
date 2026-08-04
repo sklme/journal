@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-  name: 开发札记
-  text: 把实践整理成可复用知识
-  tagline: 按主题沉淀经过脱敏的技术知识、原理与适用边界。
+  name: 技术知识库
+  text: 让技术经验可复用
+  tagline: 聚焦 AI 工程与工程实践，沉淀经过脱敏、可验证、可持续维护的技术知识。
   image:
     src: /logo.svg
-    alt: 开发札记
+    alt: 技术知识库
   actions:
     - theme: brand
       text: 浏览知识库
