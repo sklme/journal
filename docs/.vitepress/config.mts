@@ -43,6 +43,18 @@ export default defineConfig({
               collapsed: false,
               items: [
                 {
+                  text: 'MCP 工具网关：基础架构',
+                  link: '/knowledge/ai-engineering/mcp-gateway-foundation'
+                },
+                {
+                  text: 'Agent 型 MCP 网关',
+                  link: '/knowledge/ai-engineering/mcp-gateway-agent-proxy'
+                },
+                {
+                  text: 'Broker 型 MCP 网关',
+                  link: '/knowledge/ai-engineering/mcp-gateway-tool-broker'
+                },
+                {
                   text: 'Agent Skills 分发与生命周期管理',
                   link: '/knowledge/ai-engineering/agent-skills-distribution-and-lifecycle-management'
                 },
