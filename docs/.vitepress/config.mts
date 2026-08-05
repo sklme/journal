@@ -43,24 +43,31 @@ export default defineConfig({
               collapsed: false,
               items: [
                 {
-                  text: 'MCP 配置管理与同步',
-                  link: '/knowledge/ai-engineering/mcp-configuration-management-and-sync'
-                },
-                {
-                  text: 'MCP 工具网关：基础架构',
-                  link: '/knowledge/ai-engineering/mcp-gateway-foundation'
-                },
-                {
-                  text: 'Agent 型 MCP 网关',
-                  link: '/knowledge/ai-engineering/mcp-gateway-agent-proxy'
-                },
-                {
-                  text: 'Broker 型 MCP 网关',
-                  link: '/knowledge/ai-engineering/mcp-gateway-tool-broker'
-                },
-                {
-                  text: 'MCP 方案业界实践',
-                  link: '/knowledge/ai-engineering/mcp-management-broker-and-agent-industry-practices'
+                  text: 'MCP 工程化',
+                  link: '/knowledge/ai-engineering/#mcp-工程化',
+                  collapsed: false,
+                  items: [
+                    {
+                      text: '配置管理与同步',
+                      link: '/knowledge/ai-engineering/mcp-configuration-management-and-sync'
+                    },
+                    {
+                      text: '工具网关：基础架构',
+                      link: '/knowledge/ai-engineering/mcp-gateway-foundation'
+                    },
+                    {
+                      text: 'Broker 型网关',
+                      link: '/knowledge/ai-engineering/mcp-gateway-tool-broker'
+                    },
+                    {
+                      text: 'Agent 型网关',
+                      link: '/knowledge/ai-engineering/mcp-gateway-agent-proxy'
+                    },
+                    {
+                      text: '业界实践',
+                      link: '/knowledge/ai-engineering/mcp-management-broker-and-agent-industry-practices'
+                    }
+                  ]
                 },
                 {
                   text: 'Agent Skills 分发与生命周期管理',
