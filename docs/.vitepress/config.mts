@@ -43,6 +43,10 @@ export default defineConfig({
               collapsed: false,
               items: [
                 {
+                  text: 'MCP 配置管理与同步',
+                  link: '/knowledge/ai-engineering/mcp-configuration-management-and-sync'
+                },
+                {
                   text: 'MCP 工具网关：基础架构',
                   link: '/knowledge/ai-engineering/mcp-gateway-foundation'
                 },
