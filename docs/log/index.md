@@ -9,6 +9,7 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-08
 
+- `2026-08-05` · AI 工程 · [MCP 管理、Tool Broker 与领域 Agent 的业界实践](/knowledge/ai-engineering/mcp-management-broker-and-agent-industry-practices) — 对照主流 Gateway、延迟加载 Tool Search 和 Agent-as-Tool，提炼配置管理、运行时 Broker 与领域 Agent 的边界。
 - `2026-08-05` · AI 工程 · [MCP 配置管理与同步：不引入运行时网关的控制面方案](/knowledge/ai-engineering/mcp-configuration-management-and-sync) — 在保持 Agent 直连 MCP 的前提下，用统一清单、Profile、Agent Adapter 和 SecretRef 管理并同步配置。
 - `2026-08-05` · AI 工程 · [MCP 工具网关：基础架构与核心契约](/knowledge/ai-engineering/mcp-gateway-foundation) — 用一个路由 Skill 和一个 MCP 工具网关实现工具按需发现、Schema 延迟加载与统一执行。
 - `2026-08-05` · AI 工程 · [Agent 型 MCP 网关：作为第二 Agent 代理规划与执行](/knowledge/ai-engineering/mcp-gateway-agent-proxy) — 分析第二 Agent 自主规划与多工具执行的收益、代价和安全边界。

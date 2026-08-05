@@ -59,6 +59,10 @@ export default defineConfig({
                   link: '/knowledge/ai-engineering/mcp-gateway-tool-broker'
                 },
                 {
+                  text: 'MCP 方案业界实践',
+                  link: '/knowledge/ai-engineering/mcp-management-broker-and-agent-industry-practices'
+                },
+                {
                   text: 'Agent Skills 分发与生命周期管理',
                   link: '/knowledge/ai-engineering/agent-skills-distribution-and-lifecycle-management'
                 },
