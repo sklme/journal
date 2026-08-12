@@ -425,6 +425,7 @@ MCP Manager 解决的是配置生命周期，不解决：
 
 ## 相关方案
 
+- [个人开发者如何管理 Codex MCP：何时需要 ToolHive](./codex-mcp-management-for-individual-developers.md)
 - [MCP 工具网关：基础架构与核心契约](./mcp-gateway-foundation.md)
 - [Agent 型 MCP 网关：作为第二 Agent 代理规划与执行](./mcp-gateway-agent-proxy.md)
 - [Broker 型 MCP 网关：只做检索、校验与转发](./mcp-gateway-tool-broker.md)

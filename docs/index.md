@@ -25,6 +25,6 @@ features:
 
 ## 最近更新
 
+- [个人开发者如何管理 Codex MCP：何时需要 ToolHive](/knowledge/ai-engineering/codex-mcp-management-for-individual-developers)
+- [LLM 缓存机制：原理、流派与工程实践](/knowledge/ai-engineering/llm-caching-mechanisms-and-practices)
 - [MCP 管理、Tool Broker 与领域 Agent 的业界实践](/knowledge/ai-engineering/mcp-management-broker-and-agent-industry-practices)
-- [Agent Skills 分发与生命周期管理](/knowledge/ai-engineering/agent-skills-distribution-and-lifecycle-management)
-- [Multica：Agent 管理层、控制面与适用边界](/knowledge/ai-engineering/multica-agent-control-plane)

@@ -368,6 +368,7 @@ health: available
 
 ## 相关文章
 
+- [个人开发者如何管理 Codex MCP：何时需要 ToolHive](./codex-mcp-management-for-individual-developers.md)
 - [MCP 配置管理与同步](./mcp-configuration-management-and-sync.md)
 - [MCP 工具网关：基础架构与核心契约](./mcp-gateway-foundation.md)
 - [Broker 型 MCP 网关](./mcp-gateway-tool-broker.md)

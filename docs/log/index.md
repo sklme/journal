@@ -9,6 +9,7 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-08
 
+- `2026-08-12` · AI 工程 · [个人开发者如何管理 Codex MCP：何时需要 ToolHive](/knowledge/ai-engineering/codex-mcp-management-for-individual-developers) — 从配置分组、会话隔离和运行安全三个维度判断是否需要 ToolHive，并给出 Codex Desktop 的轻量配置方案。
 - `2026-08-12` · AI 工程 · [LLM 缓存机制：原理、流派与工程实践](/knowledge/ai-engineering/llm-caching-mechanisms-and-practices) — 从注意力中的 Q、K、V 出发，梳理单次生成、跨请求、推理服务和应用层缓存的原理、边界与实践。
 - `2026-08-12` · AI 工程 · [主流 LLM 的 Prompt Cache 方案与机制对比](/knowledge/ai-engineering/llm-provider-prompt-caching-comparison) — 对比 DeepSeek、OpenAI、Claude、Gemini 与自托管框架的前缀缓存规则、控制方式和生命周期。
 - `2026-08-12` · AI 工程 · [DeepSeek Agent Harness 与前缀缓存优化](/knowledge/ai-engineering/deepseek-agent-harness-prefix-cache-optimization) — 解释 Agent Harness 如何影响 DeepSeek 前缀缓存，并拆解 Pi、Reasonix、DeepPi 与 pi-deepseek-cache 的方案。

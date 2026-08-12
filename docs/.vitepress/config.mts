@@ -71,6 +71,10 @@ export default defineConfig({
                       link: '/knowledge/ai-engineering/mcp-configuration-management-and-sync'
                     },
                     {
+                      text: 'Codex MCP 与 ToolHive',
+                      link: '/knowledge/ai-engineering/codex-mcp-management-for-individual-developers'
+                    },
+                    {
                       text: '工具网关：基础架构',
                       link: '/knowledge/ai-engineering/mcp-gateway-foundation'
                     },
