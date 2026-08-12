@@ -43,6 +43,25 @@ export default defineConfig({
               collapsed: false,
               items: [
                 {
+                  text: 'LLM 缓存与 Agent 推理',
+                  link: '/knowledge/ai-engineering/#llm-缓存与-agent-推理',
+                  collapsed: false,
+                  items: [
+                    {
+                      text: 'LLM 缓存机制',
+                      link: '/knowledge/ai-engineering/llm-caching-mechanisms-and-practices'
+                    },
+                    {
+                      text: '主流模型方案对比',
+                      link: '/knowledge/ai-engineering/llm-provider-prompt-caching-comparison'
+                    },
+                    {
+                      text: 'DeepSeek Harness 优化',
+                      link: '/knowledge/ai-engineering/deepseek-agent-harness-prefix-cache-optimization'
+                    }
+                  ]
+                },
+                {
                   text: 'MCP 工程化',
                   link: '/knowledge/ai-engineering/#mcp-工程化',
                   collapsed: false,

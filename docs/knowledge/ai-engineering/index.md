@@ -7,6 +7,14 @@ description: Agent、Skills、控制面与自动化协作
 
 这里记录 Agent 系统、Skills、控制面和自动化协作中的概念、架构与实践。
 
+## LLM 缓存与 Agent 推理
+
+从 Transformer 内部 KV Cache 出发，理解跨请求前缀缓存、不同模型提供商的产品方案，以及 Agent Harness 如何影响实际命中率：
+
+- [LLM 缓存机制：原理、流派与工程实践](./llm-caching-mechanisms-and-practices.md)
+- [主流 LLM 的 Prompt Cache 方案与机制对比](./llm-provider-prompt-caching-comparison.md)
+- [DeepSeek Agent Harness 与前缀缓存优化](./deepseek-agent-harness-prefix-cache-optimization.md)
+
 ## MCP 工程化
 
 围绕 MCP 的配置生命周期、运行时工具发现、代理执行和领域 Agent 封装，建议按以下顺序阅读：
