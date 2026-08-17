@@ -110,6 +110,10 @@ export default defineConfig({
                 {
                   text: '使用 VitePress 搭建个人知识站',
                   link: '/knowledge/engineering/building-a-vitepress-knowledge-site'
+                },
+                {
+                  text: 'Docker CLI 连接 Podman',
+                  link: '/knowledge/engineering/docker-cli-with-podman-on-macos'
                 }
               ]
             }
