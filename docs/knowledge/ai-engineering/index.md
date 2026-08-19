@@ -26,6 +26,10 @@ description: Agent、Skills、控制面与自动化协作
 - [Agent 型 MCP 网关：作为第二 Agent 代理规划与执行](./mcp-gateway-agent-proxy.md)
 - [MCP 管理、Tool Broker 与领域 Agent 的业界实践](./mcp-management-broker-and-agent-industry-practices.md)
 
+## 多 Agent 工程协作
+
+- [多 Agent 工程协作：角色之外的认知独立性](./multi-agent-cognitive-independence.md)
+
 ## Agent 平台与控制面
 
 - [Agent Skills 分发与生命周期管理](./agent-skills-distribution-and-lifecycle-management.md)

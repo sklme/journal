@@ -93,6 +93,17 @@ export default defineConfig({
                   ]
                 },
                 {
+                  text: '多 Agent 工程协作',
+                  link: '/knowledge/ai-engineering/#多-agent-工程协作',
+                  collapsed: false,
+                  items: [
+                    {
+                      text: '角色与认知独立性',
+                      link: '/knowledge/ai-engineering/multi-agent-cognitive-independence'
+                    }
+                  ]
+                },
+                {
                   text: 'Agent Skills 分发与生命周期管理',
                   link: '/knowledge/ai-engineering/agent-skills-distribution-and-lifecycle-management'
                 },
