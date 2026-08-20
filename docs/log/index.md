@@ -9,6 +9,7 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-08
 
+- `2026-08-20` · AI 工程 · [MoneyPrinterTurbo 架构拆解：从自动视频拼装到智能剪辑 Agent](/knowledge/ai-engineering/moneyprinterturbo-architecture-and-intelligent-video-editing) — 拆解自动视频流水线、LLM 成本与局限，并给出多模态智能剪辑的渐进式改造方案。
 - `2026-08-19` · AI 工程 · [多 Agent 工程协作：角色之外的认知独立性](/knowledge/ai-engineering/multi-agent-cognitive-independence) — 从目标、上下文、工具与权限的差异出发，设计能相互制约并稳定收敛的多 Agent 工程流程。
 - `2026-08-17` · 工程实践 · [macOS 上使用 Docker CLI 连接 Podman](/knowledge/engineering/docker-cli-with-podman-on-macos) — 理解 Docker CLI、context、Unix socket 与 Podman 兼容 API 的关系，并在 macOS 上安全切换容器后端。
 - `2026-08-12` · AI 工程 · [个人开发者如何管理 Codex MCP：何时需要 ToolHive](/knowledge/ai-engineering/codex-mcp-management-for-individual-developers) — 从配置分组、会话隔离和运行安全三个维度判断是否需要 ToolHive，并给出 Codex Desktop 的轻量配置方案。

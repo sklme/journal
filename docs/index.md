@@ -25,6 +25,6 @@ features:
 
 ## 最近更新
 
+- [MoneyPrinterTurbo 架构拆解：从自动视频拼装到智能剪辑 Agent](/knowledge/ai-engineering/moneyprinterturbo-architecture-and-intelligent-video-editing)
 - [个人开发者如何管理 Codex MCP：何时需要 ToolHive](/knowledge/ai-engineering/codex-mcp-management-for-individual-developers)
 - [LLM 缓存机制：原理、流派与工程实践](/knowledge/ai-engineering/llm-caching-mechanisms-and-practices)
-- [MCP 管理、Tool Broker 与领域 Agent 的业界实践](/knowledge/ai-engineering/mcp-management-broker-and-agent-industry-practices)

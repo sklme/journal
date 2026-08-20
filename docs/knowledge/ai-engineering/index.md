@@ -34,3 +34,7 @@ description: Agent、Skills、控制面与自动化协作
 
 - [Agent Skills 分发与生命周期管理](./agent-skills-distribution-and-lifecycle-management.md)
 - [Multica：Agent 管理层、控制面与适用边界](./multica-agent-control-plane.md)
+
+## AI 视频与多模态工作流
+
+- [MoneyPrinterTurbo 架构拆解：从自动视频拼装到智能剪辑 Agent](./moneyprinterturbo-architecture-and-intelligent-video-editing.md)

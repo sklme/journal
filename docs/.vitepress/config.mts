@@ -104,6 +104,17 @@ export default defineConfig({
                   ]
                 },
                 {
+                  text: 'AI 视频与多模态工作流',
+                  link: '/knowledge/ai-engineering/#ai-视频与多模态工作流',
+                  collapsed: false,
+                  items: [
+                    {
+                      text: 'MoneyPrinterTurbo 架构与智能剪辑',
+                      link: '/knowledge/ai-engineering/moneyprinterturbo-architecture-and-intelligent-video-editing'
+                    }
+                  ]
+                },
+                {
                   text: 'Agent Skills 分发与生命周期管理',
                   link: '/knowledge/ai-engineering/agent-skills-distribution-and-lifecycle-management'
                 },
