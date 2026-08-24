@@ -104,6 +104,29 @@ export default defineConfig({
                   ]
                 },
                 {
+                  text: 'AI 辅助代码理解',
+                  link: '/knowledge/ai-engineering/#ai-辅助代码理解',
+                  collapsed: false,
+                  items: [
+                    {
+                      text: '代码知识图谱与人类代码地图',
+                      link: '/knowledge/ai-engineering/ai-code-knowledge-graph-and-human-first-code-map'
+                    },
+                    {
+                      text: 'Agent 代码审查与渐进式保证',
+                      link: '/knowledge/ai-engineering/agent-code-review-progressive-assurance'
+                    },
+                    {
+                      text: 'Spec、ChangeGraph 与 EvidenceGraph',
+                      link: '/knowledge/ai-engineering/spec-changegraph-evidence-reconciliation'
+                    },
+                    {
+                      text: 'ChangeGraph 社区实践与竞品分析',
+                      link: '/knowledge/ai-engineering/changegraph-community-practices-and-competitive-landscape'
+                    }
+                  ]
+                },
+                {
                   text: 'AI 视频与多模态工作流',
                   link: '/knowledge/ai-engineering/#ai-视频与多模态工作流',
                   collapsed: false,

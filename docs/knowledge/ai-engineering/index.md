@@ -30,6 +30,13 @@ description: Agent、Skills、控制面与自动化协作
 
 - [多 Agent 工程协作：角色之外的认知独立性](./multi-agent-cognitive-independence.md)
 
+## AI 辅助代码理解
+
+- [AI 代码知识图谱的价值边界：从 Agent 加速层到人类代码地图](./ai-code-knowledge-graph-and-human-first-code-map.md)
+- [Agent 代码审查的哲学：从黑盒验证到渐进式保证](./agent-code-review-progressive-assurance.md)
+- [Spec、ChangeGraph 与 EvidenceGraph：Agent 开发的意图—实现—证据闭环](./spec-changegraph-evidence-reconciliation.md)
+- [ChangeGraph 的社区实践与竞品分析：从代码地图到变更保证系统](./changegraph-community-practices-and-competitive-landscape.md)
+
 ## Agent 平台与控制面
 
 - [Agent Skills 分发与生命周期管理](./agent-skills-distribution-and-lifecycle-management.md)
