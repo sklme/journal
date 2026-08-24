@@ -9,6 +9,7 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-08
 
+- `2026-08-24` · AI 工程 · [ChangeGraph 设计哲学：面向人类的 Agent 变更审查系统](/knowledge/ai-engineering/changegraph-human-centered-review-design-philosophy) — 定义 ChangeGraph 的服务对象、审查单位、事实边界、分层原则、非目标与产品决策准则。
 - `2026-08-24` · AI 工程 · [ChangeGraph 的社区实践与竞品分析：从代码地图到变更保证系统](/knowledge/ai-engineering/changegraph-community-practices-and-competitive-landscape) — 对比 AI 代码审查、可视化代码地图与代码分析基础设施，提炼面向人的变更保证系统可以复用的能力与差异化方向。
 - `2026-08-24` · AI 工程 · [Spec、ChangeGraph 与 EvidenceGraph：Agent 开发的意图—实现—证据闭环](/knowledge/ai-engineering/spec-changegraph-evidence-reconciliation) — 将 Spec 抽象为可演化的意图层，并以三图结构持续发现实现漂移、证据缺口和范围越界。
 - `2026-08-24` · AI 工程 · [Agent 代码审查的哲学：从黑盒验证到渐进式保证](/knowledge/ai-engineering/agent-code-review-progressive-assurance) — 将黑盒验证、ChangeGraph 语义审查和源码审查统一为声明—证据驱动的风险自适应保证体系。

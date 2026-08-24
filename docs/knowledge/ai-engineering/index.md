@@ -36,6 +36,7 @@ description: Agent、Skills、控制面与自动化协作
 - [Agent 代码审查的哲学：从黑盒验证到渐进式保证](./agent-code-review-progressive-assurance.md)
 - [Spec、ChangeGraph 与 EvidenceGraph：Agent 开发的意图—实现—证据闭环](./spec-changegraph-evidence-reconciliation.md)
 - [ChangeGraph 的社区实践与竞品分析：从代码地图到变更保证系统](./changegraph-community-practices-and-competitive-landscape.md)
+- [ChangeGraph 设计哲学：面向人类的 Agent 变更审查系统](./changegraph-human-centered-review-design-philosophy.md)
 
 ## Agent 平台与控制面
 

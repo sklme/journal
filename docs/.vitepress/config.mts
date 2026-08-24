@@ -123,6 +123,10 @@ export default defineConfig({
                     {
                       text: 'ChangeGraph 社区实践与竞品分析',
                       link: '/knowledge/ai-engineering/changegraph-community-practices-and-competitive-landscape'
+                    },
+                    {
+                      text: 'ChangeGraph 设计哲学',
+                      link: '/knowledge/ai-engineering/changegraph-human-centered-review-design-philosophy'
                     }
                   ]
                 },
