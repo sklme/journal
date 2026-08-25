@@ -38,9 +38,13 @@ description: Agent、Skills、控制面与自动化协作
 - [ChangeGraph 的社区实践与竞品分析：从代码地图到变更保证系统](./changegraph-community-practices-and-competitive-landscape.md)
 - [ChangeGraph 设计哲学：面向人类的 Agent 变更审查系统](./changegraph-human-centered-review-design-philosophy.md)
 
+## Agent Skills 管理
+
+- [npx skills 的安装与更新原理：远端解析、目录替换与软链接](./npx-skills-installation-and-update-model.md)
+- [Agent Skills 分发与生命周期管理](./agent-skills-distribution-and-lifecycle-management.md)
+
 ## Agent 平台与控制面
 
-- [Agent Skills 分发与生命周期管理](./agent-skills-distribution-and-lifecycle-management.md)
 - [Multica：Agent 管理层、控制面与适用边界](./multica-agent-control-plane.md)
 
 ## AI 视频与多模态工作流

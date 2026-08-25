@@ -142,8 +142,19 @@ export default defineConfig({
                   ]
                 },
                 {
-                  text: 'Agent Skills 分发与生命周期管理',
-                  link: '/knowledge/ai-engineering/agent-skills-distribution-and-lifecycle-management'
+                  text: 'Agent Skills 管理',
+                  link: '/knowledge/ai-engineering/#agent-skills-管理',
+                  collapsed: false,
+                  items: [
+                    {
+                      text: 'npx skills 安装与更新原理',
+                      link: '/knowledge/ai-engineering/npx-skills-installation-and-update-model'
+                    },
+                    {
+                      text: '分发与生命周期管理',
+                      link: '/knowledge/ai-engineering/agent-skills-distribution-and-lifecycle-management'
+                    }
+                  ]
                 },
                 {
                   text: 'Multica：Agent 管理层与控制面',

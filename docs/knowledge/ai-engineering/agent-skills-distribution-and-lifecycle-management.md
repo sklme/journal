@@ -78,6 +78,8 @@ Agent Skills 已经形成了相对统一的内容格式：一个包含 `SKILL.md
 
 它很适合作为本地执行层，因为它了解不同 Agent 的目录约定。但它的更新更接近“发现上游内容发生变化并重新安装”，无法单独提供完整的发布版本、结构化 Changelog、权限 Diff、审批和回滚。
 
+关于重新安装为何会覆盖本地目录、copy 与 symlink 如何选择，以及 `update` 为什么仍然复用安装流程，见 [npx skills 的安装与更新原理](./npx-skills-installation-and-update-model.md)。
+
 [Skills.sh Packs](https://www.skills.sh/docs/packs) 可以把多个 Skill 组合成一个安装链接，但 Pack 是 unlisted collection，不是带严格访问控制、版本策略和审核流的企业 Registry。
 
 ### Claude Code Plugin Marketplace
