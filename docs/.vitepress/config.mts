@@ -93,6 +93,33 @@ export default defineConfig({
                   ]
                 },
                 {
+                  text: 'Agent 原生 API 管理',
+                  link: '/knowledge/ai-engineering/#agent-原生-api-管理',
+                  collapsed: false,
+                  items: [
+                    {
+                      text: '从请求编辑器到能力基础设施',
+                      link: '/knowledge/ai-engineering/agent-native-api-management-from-client-to-infrastructure'
+                    },
+                    {
+                      text: '从临时探索到稳定回归',
+                      link: '/knowledge/ai-engineering/agent-native-api-testing-exploration-to-regression'
+                    },
+                    {
+                      text: '事实来源、Runner 与多入口',
+                      link: '/knowledge/ai-engineering/agent-native-api-source-of-truth-and-execution-architecture'
+                    },
+                    {
+                      text: 'API Tool 与安全插件',
+                      link: '/knowledge/ai-engineering/agent-native-api-tools-and-plugin-design'
+                    },
+                    {
+                      text: 'Human UI 审查控制面',
+                      link: '/knowledge/ai-engineering/agent-native-api-human-control-surface'
+                    }
+                  ]
+                },
+                {
                   text: '多 Agent 工程协作',
                   link: '/knowledge/ai-engineering/#多-agent-工程协作',
                   collapsed: false,

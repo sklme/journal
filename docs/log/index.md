@@ -9,6 +9,11 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-08
 
+- `2026-08-26` · AI 工程 · [Agent 时代的 API 管理工具：从请求编辑器到能力基础设施](/knowledge/ai-engineering/agent-native-api-management-from-client-to-infrastructure) — 分析 Agent 如何拆解传统 API 客户端的价值，并给出从请求编辑器演进为执行与治理基础设施的产品方向。
+- `2026-08-26` · AI 工程 · [Agent 原生 API 测试：从临时探索到稳定回归](/knowledge/ai-engineering/agent-native-api-testing-exploration-to-regression) — 建立临时探索、可复用命令与自动化回归之间的晋升路径，让 Agent 生成的请求转化为稳定测试资产。
+- `2026-08-26` · AI 工程 · [Agent 原生 API 测试架构：事实来源、Runner 与多入口](/knowledge/ai-engineering/agent-native-api-source-of-truth-and-execution-architecture) — 划分接口契约、测试场景、环境和执行结果的权威来源，并用共享 Runner 支撑 Agent、CLI、UI 与 CI。
+- `2026-08-26` · AI 工程 · [Agent 原生 API Tool 设计：从任意 HTTP 到安全插件](/knowledge/ai-engineering/agent-native-api-tools-and-plugin-design) — 设计适合 Agent 的 API 插件、工具发现与执行契约，在灵活性、上下文成本和写操作安全之间取得平衡。
+- `2026-08-26` · AI 工程 · [Agent 原生 API 工具的 Human UI：从操作台到审查控制面](/knowledge/ai-engineering/agent-native-api-human-control-surface) — 重新定义 API 工具中的人工界面，使其服务于发现、预览、审批、证据与历史，而不是成为第二份请求事实来源。
 - `2026-08-25` · AI 工程 · [npx skills 的安装与更新原理：远端解析、目录替换与软链接](/knowledge/ai-engineering/npx-skills-installation-and-update-model) — 解释 Skills CLI 如何发现、复制和链接 Skill，以及为什么 update 本质上仍是目录替换式重新安装。
 - `2026-08-24` · AI 工程 · [ChangeGraph 设计哲学：面向人类的 Agent 变更审查系统](/knowledge/ai-engineering/changegraph-human-centered-review-design-philosophy) — 定义 ChangeGraph 的服务对象、审查单位、事实边界、分层原则、非目标与产品决策准则。
 - `2026-08-24` · AI 工程 · [ChangeGraph 的社区实践与竞品分析：从代码地图到变更保证系统](/knowledge/ai-engineering/changegraph-community-practices-and-competitive-landscape) — 对比 AI 代码审查、可视化代码地图与代码分析基础设施，提炼面向人的变更保证系统可以复用的能力与差异化方向。

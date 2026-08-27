@@ -25,6 +25,7 @@ features:
 
 ## 最近更新
 
+- [Agent 时代的 API 管理工具：从请求编辑器到能力基础设施](/knowledge/ai-engineering/agent-native-api-management-from-client-to-infrastructure)
 - [MoneyPrinterTurbo 架构拆解：从自动视频拼装到智能剪辑 Agent](/knowledge/ai-engineering/moneyprinterturbo-architecture-and-intelligent-video-editing)
 - [个人开发者如何管理 Codex MCP：何时需要 ToolHive](/knowledge/ai-engineering/codex-mcp-management-for-individual-developers)
 - [LLM 缓存机制：原理、流派与工程实践](/knowledge/ai-engineering/llm-caching-mechanisms-and-practices)

@@ -26,6 +26,16 @@ description: Agent、Skills、控制面与自动化协作
 - [Agent 型 MCP 网关：作为第二 Agent 代理规划与执行](./mcp-gateway-agent-proxy.md)
 - [MCP 管理、Tool Broker 与领域 Agent 的业界实践](./mcp-management-broker-and-agent-industry-practices.md)
 
+## Agent 原生 API 管理
+
+从传统请求编辑器的价值重构出发，依次建立探索到回归的工作流、事实与执行架构、安全 Tool 契约，以及面向人的审查控制面：
+
+- [Agent 时代的 API 管理工具：从请求编辑器到能力基础设施](./agent-native-api-management-from-client-to-infrastructure.md)
+- [Agent 原生 API 测试：从临时探索到稳定回归](./agent-native-api-testing-exploration-to-regression.md)
+- [Agent 原生 API 测试架构：事实来源、Runner 与多入口](./agent-native-api-source-of-truth-and-execution-architecture.md)
+- [Agent 原生 API Tool 设计：从任意 HTTP 到安全插件](./agent-native-api-tools-and-plugin-design.md)
+- [Agent 原生 API 工具的 Human UI：从操作台到审查控制面](./agent-native-api-human-control-surface.md)
+
 ## 多 Agent 工程协作
 
 - [多 Agent 工程协作：角色之外的认知独立性](./multi-agent-cognitive-independence.md)
