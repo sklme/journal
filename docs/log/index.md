@@ -9,6 +9,7 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-08
 
+- `2026-08-31` · AI 工程 · [从多角色协作到 Agent Runtime：工程化设计指南](/knowledge/ai-engineering/agent-runtime-engineering-guide) — 用控制面、执行面、能力面、证据面和治理横切层设计可调度、可验证、可渐进演进的多 Agent 系统。
 - `2026-08-26` · AI 工程 · [Agent 时代的 API 管理工具：从请求编辑器到能力基础设施](/knowledge/ai-engineering/agent-native-api-management-from-client-to-infrastructure) — 分析 Agent 如何拆解传统 API 客户端的价值，并给出从请求编辑器演进为执行与治理基础设施的产品方向。
 - `2026-08-26` · AI 工程 · [Agent 原生 API 测试：从临时探索到稳定回归](/knowledge/ai-engineering/agent-native-api-testing-exploration-to-regression) — 建立临时探索、可复用命令与自动化回归之间的晋升路径，让 Agent 生成的请求转化为稳定测试资产。
 - `2026-08-26` · AI 工程 · [Agent 原生 API 测试架构：事实来源、Runner 与多入口](/knowledge/ai-engineering/agent-native-api-source-of-truth-and-execution-architecture) — 划分接口契约、测试场景、环境和执行结果的权威来源，并用共享 Runner 支撑 Agent、CLI、UI 与 CI。

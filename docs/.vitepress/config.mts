@@ -127,6 +127,10 @@ export default defineConfig({
                     {
                       text: '角色与认知独立性',
                       link: '/knowledge/ai-engineering/multi-agent-cognitive-independence'
+                    },
+                    {
+                      text: 'Agent Runtime 工程指南',
+                      link: '/knowledge/ai-engineering/agent-runtime-engineering-guide'
                     }
                   ]
                 },

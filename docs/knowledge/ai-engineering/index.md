@@ -39,6 +39,7 @@ description: Agent、Skills、控制面与自动化协作
 ## 多 Agent 工程协作
 
 - [多 Agent 工程协作：角色之外的认知独立性](./multi-agent-cognitive-independence.md)
+- [从多角色协作到 Agent Runtime：工程化设计指南](./agent-runtime-engineering-guide.md)
 
 ## AI 辅助代码理解
 
