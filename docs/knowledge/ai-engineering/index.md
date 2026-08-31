@@ -15,6 +15,15 @@ description: Agent、Skills、控制面与自动化协作
 - [主流 LLM 的 Prompt Cache 方案与机制对比](./llm-provider-prompt-caching-comparison.md)
 - [DeepSeek Agent Harness 与前缀缓存优化](./deepseek-agent-harness-prefix-cache-optimization.md)
 
+## Agent 评测工程
+
+围绕质量定义、Trace、任务集、Grader、受控实验和生产反馈，建立从“感觉变好”到可验证优化的完整知识路线：
+
+- [Agent 评测工程知识体系：从可观测性到质量基础设施](./agent-evaluation-engineering-knowledge-roadmap.md)
+- [为什么 Agent 评测比搭建 Agent 更难](./why-agent-evaluation-is-hard.md)
+- [Agent 评测对象的四层边界：模型、Harness、系统与产品](./agent-evaluation-target-boundaries.md)
+- [没有标准答案，如何用 Evaluation Contract 定义 Agent 成功](./agent-evaluation-contract.md)
+
 ## MCP 工程化
 
 围绕 MCP 的配置生命周期、运行时工具发现、代理执行和领域 Agent 封装，建议按以下顺序阅读：

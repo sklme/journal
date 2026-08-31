@@ -10,6 +10,10 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 ## 2026-08
 
 - `2026-08-31` · AI 工程 · [从多角色协作到 Agent Runtime：工程化设计指南](/knowledge/ai-engineering/agent-runtime-engineering-guide) — 用控制面、执行面、能力面、证据面和治理横切层设计可调度、可验证、可渐进演进的多 Agent 系统。
+- `2026-08-31` · AI 工程 · [Agent 评测工程知识体系：从可观测性到质量基础设施](/knowledge/ai-engineering/agent-evaluation-engineering-knowledge-roadmap) — 以质量定义、Trace、任务集、Grader、受控实验和生产反馈为主线，规划可渐进落地的 Agent 评测工程知识体系。
+- `2026-08-31` · AI 工程 · [为什么 Agent 评测比搭建 Agent 更难](/knowledge/ai-engineering/why-agent-evaluation-is-hard) — 从非确定性、多步决策、环境状态和多种正确路径出发，解释 Agent 评测为何需要实验工程。
+- `2026-08-31` · AI 工程 · [Agent 评测对象的四层边界：模型、Harness、系统与产品](/knowledge/ai-engineering/agent-evaluation-target-boundaries) — 区分四层评测对象，建立能够解释分数变化的 Evaluation Map、控制变量和运行清单。
+- `2026-08-31` · AI 工程 · [没有标准答案，如何用 Evaluation Contract 定义 Agent 成功](/knowledge/ai-engineering/agent-evaluation-contract) — 用结果、约束、质量、预算、可靠性和风险定义允许多种正确路径的可执行成功契约。
 - `2026-08-26` · AI 工程 · [Agent 时代的 API 管理工具：从请求编辑器到能力基础设施](/knowledge/ai-engineering/agent-native-api-management-from-client-to-infrastructure) — 分析 Agent 如何拆解传统 API 客户端的价值，并给出从请求编辑器演进为执行与治理基础设施的产品方向。
 - `2026-08-26` · AI 工程 · [Agent 原生 API 测试：从临时探索到稳定回归](/knowledge/ai-engineering/agent-native-api-testing-exploration-to-regression) — 建立临时探索、可复用命令与自动化回归之间的晋升路径，让 Agent 生成的请求转化为稳定测试资产。
 - `2026-08-26` · AI 工程 · [Agent 原生 API 测试架构：事实来源、Runner 与多入口](/knowledge/ai-engineering/agent-native-api-source-of-truth-and-execution-architecture) — 划分接口契约、测试场景、环境和执行结果的权威来源，并用共享 Runner 支撑 Agent、CLI、UI 与 CI。

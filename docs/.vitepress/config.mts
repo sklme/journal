@@ -62,6 +62,29 @@ export default defineConfig({
                   ]
                 },
                 {
+                  text: 'Agent 评测工程',
+                  link: '/knowledge/ai-engineering/#agent-评测工程',
+                  collapsed: false,
+                  items: [
+                    {
+                      text: 'Agent 评测工程知识体系',
+                      link: '/knowledge/ai-engineering/agent-evaluation-engineering-knowledge-roadmap'
+                    },
+                    {
+                      text: '为什么 Agent 评测更难',
+                      link: '/knowledge/ai-engineering/why-agent-evaluation-is-hard'
+                    },
+                    {
+                      text: '评测对象的四层边界',
+                      link: '/knowledge/ai-engineering/agent-evaluation-target-boundaries'
+                    },
+                    {
+                      text: 'Evaluation Contract',
+                      link: '/knowledge/ai-engineering/agent-evaluation-contract'
+                    }
+                  ]
+                },
+                {
                   text: 'MCP 工程化',
                   link: '/knowledge/ai-engineering/#mcp-工程化',
                   collapsed: false,
