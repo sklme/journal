@@ -67,32 +67,44 @@ export default defineConfig({
                   collapsed: false,
                   items: [
                     {
-                      text: 'Agent 评测工程知识体系',
+                      text: '知识体系总览',
                       link: '/knowledge/ai-engineering/agent-evaluation-engineering-knowledge-roadmap'
                     },
                     {
-                      text: '为什么 Agent 评测更难',
-                      link: '/knowledge/ai-engineering/why-agent-evaluation-is-hard'
+                      text: '第一部分 · 理解评测对象',
+                      collapsed: false,
+                      items: [
+                        {
+                          text: '为什么 Agent 评测更难',
+                          link: '/knowledge/ai-engineering/why-agent-evaluation-is-hard'
+                        },
+                        {
+                          text: '评测对象的四层边界',
+                          link: '/knowledge/ai-engineering/agent-evaluation-target-boundaries'
+                        },
+                        {
+                          text: 'Evaluation Contract',
+                          link: '/knowledge/ai-engineering/agent-evaluation-contract'
+                        }
+                      ]
                     },
                     {
-                      text: '评测对象的四层边界',
-                      link: '/knowledge/ai-engineering/agent-evaluation-target-boundaries'
-                    },
-                    {
-                      text: 'Evaluation Contract',
-                      link: '/knowledge/ai-engineering/agent-evaluation-contract'
-                    },
-                    {
-                      text: 'Trace、Eval 与 Experiment',
-                      link: '/knowledge/ai-engineering/agent-trace-eval-experiment-monitoring-boundaries'
-                    },
-                    {
-                      text: 'Agent Trace Tree',
-                      link: '/knowledge/ai-engineering/agent-trace-tree-design'
-                    },
-                    {
-                      text: '可复现 Agent 评测实验',
-                      link: '/knowledge/ai-engineering/reproducible-agent-evaluation-experiments'
+                      text: '第二部分 · 建立可观测性',
+                      collapsed: false,
+                      items: [
+                        {
+                          text: 'Trace、Eval 与 Experiment',
+                          link: '/knowledge/ai-engineering/agent-trace-eval-experiment-monitoring-boundaries'
+                        },
+                        {
+                          text: 'Agent Trace Tree',
+                          link: '/knowledge/ai-engineering/agent-trace-tree-design'
+                        },
+                        {
+                          text: '可复现 Agent 评测实验',
+                          link: '/knowledge/ai-engineering/reproducible-agent-evaluation-experiments'
+                        }
+                      ]
                     }
                   ]
                 },
