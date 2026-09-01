@@ -152,7 +152,7 @@ budget:
 
 ## 第二部分：先看见 Agent 做了什么
 
-### 4. Trace、Eval、Experiment 与 Monitoring 的边界
+### 4. [Trace、Eval、Experiment 与 Monitoring 的边界](./agent-trace-eval-experiment-monitoring-boundaries.md)
 
 用同一次 Agent Run 说明：
 
@@ -163,7 +163,7 @@ budget:
 
 避免把“记录了工具调用次数”误认为“已经建立评测”。
 
-### 5. 如何设计 Agent Trace Tree
+### 5. [如何设计 Agent Trace Tree](./agent-trace-tree-design.md)
 
 Trace 应覆盖完整执行树，而不仅在工具接口外包一层计数器：
 
@@ -180,7 +180,7 @@ Agent Run
 
 除延迟、Token 和错误外，还应记录 Agent、Prompt、工具集、权限和 Harness 的版本，以便以后还原实验。
 
-### 6. 如何让 Agent 实验可复现
+### 6. [如何让 Agent 实验可复现](./reproducible-agent-evaluation-experiments.md)
 
 Agent Eval 是端到端系统实验。运行资源、工具版本、网络、缓存、遗留文件和并发都可能改变结果。
 

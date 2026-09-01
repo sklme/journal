@@ -7,6 +7,12 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 这里是面向人和 AI 的内容总索引。每篇知识文章或指南只保留一条记录，按首次收录月份倒序排列；普通内容修改不会重复增加记录。
 
+## 2026-09
+
+- `2026-09-01` · AI 工程 · [Trace、Eval、Experiment 与 Monitoring：Agent 质量系统的四个层次](/knowledge/ai-engineering/agent-trace-eval-experiment-monitoring-boundaries) — 区分事实记录、质量判断、受控比较和生产反馈，建立 Agent 质量系统的证据链与数据边界。
+- `2026-09-01` · AI 工程 · [如何设计 Agent Trace Tree：从模型调用到最终状态](/knowledge/ai-engineering/agent-trace-tree-design) — 设计覆盖模型、工具、Handoff、Guardrail、状态变化和产物证据的版本化 Trace Schema。
+- `2026-09-01` · AI 工程 · [如何让 Agent 评测实验可复现](/knowledge/ai-engineering/reproducible-agent-evaluation-experiments) — 用 Run Manifest、环境快照、Trial 隔离和失败分类实现可重跑、可解释的 Agent 评测实验。
+
 ## 2026-08
 
 - `2026-08-31` · AI 工程 · [从多角色协作到 Agent Runtime：工程化设计指南](/knowledge/ai-engineering/agent-runtime-engineering-guide) — 用控制面、执行面、能力面、证据面和治理横切层设计可调度、可验证、可渐进演进的多 Agent 系统。

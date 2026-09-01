@@ -81,6 +81,18 @@ export default defineConfig({
                     {
                       text: 'Evaluation Contract',
                       link: '/knowledge/ai-engineering/agent-evaluation-contract'
+                    },
+                    {
+                      text: 'Trace、Eval 与 Experiment',
+                      link: '/knowledge/ai-engineering/agent-trace-eval-experiment-monitoring-boundaries'
+                    },
+                    {
+                      text: 'Agent Trace Tree',
+                      link: '/knowledge/ai-engineering/agent-trace-tree-design'
+                    },
+                    {
+                      text: '可复现 Agent 评测实验',
+                      link: '/knowledge/ai-engineering/reproducible-agent-evaluation-experiments'
                     }
                   ]
                 },

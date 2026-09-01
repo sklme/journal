@@ -23,6 +23,9 @@ description: Agent、Skills、控制面与自动化协作
 - [为什么 Agent 评测比搭建 Agent 更难](./why-agent-evaluation-is-hard.md)
 - [Agent 评测对象的四层边界：模型、Harness、系统与产品](./agent-evaluation-target-boundaries.md)
 - [没有标准答案，如何用 Evaluation Contract 定义 Agent 成功](./agent-evaluation-contract.md)
+- [Trace、Eval、Experiment 与 Monitoring：Agent 质量系统的四个层次](./agent-trace-eval-experiment-monitoring-boundaries.md)
+- [如何设计 Agent Trace Tree：从模型调用到最终状态](./agent-trace-tree-design.md)
+- [如何让 Agent 评测实验可复现](./reproducible-agent-evaluation-experiments.md)
 
 ## MCP 工程化
 
