@@ -105,6 +105,24 @@ export default defineConfig({
                           link: '/knowledge/ai-engineering/reproducible-agent-evaluation-experiments'
                         }
                       ]
+                    },
+                    {
+                      text: '第三部分 · 构建任务集',
+                      collapsed: false,
+                      items: [
+                        {
+                          text: '为什么需要自有 Dataset',
+                          link: '/knowledge/ai-engineering/why-build-your-own-agent-eval-dataset'
+                        },
+                        {
+                          text: '从真实工作到 Eval Case',
+                          link: '/knowledge/ai-engineering/turn-real-work-into-agent-eval-cases'
+                        },
+                        {
+                          text: '健康评测集分层',
+                          link: '/knowledge/ai-engineering/healthy-agent-eval-dataset-layers'
+                        }
+                      ]
                     }
                   ]
                 },

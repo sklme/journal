@@ -26,6 +26,9 @@ description: Agent、Skills、控制面与自动化协作
 - [Trace、Eval、Experiment 与 Monitoring：Agent 质量系统的四个层次](./agent-trace-eval-experiment-monitoring-boundaries.md)
 - [如何设计 Agent Trace Tree：从模型调用到最终状态](./agent-trace-tree-design.md)
 - [如何让 Agent 评测实验可复现](./reproducible-agent-evaluation-experiments.md)
+- [为什么个人和团队需要自己的 Agent Eval Dataset](./why-build-your-own-agent-eval-dataset.md)
+- [如何把真实工作转化成 Agent Eval Case](./turn-real-work-into-agent-eval-cases.md)
+- [一个健康的 Agent 评测集如何分层](./healthy-agent-eval-dataset-layers.md)
 
 ## MCP 工程化
 

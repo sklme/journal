@@ -195,13 +195,13 @@ model + prompt + tools + permissions + harness
 
 ## 第三部分：构建真正有价值的评测集
 
-### 7. 个人为什么需要自己的 Eval Dataset
+### 7. [为什么个人和团队需要自己的 Agent Eval Dataset](./why-build-your-own-agent-eval-dataset.md)
 
 通用 Benchmark 回答的是模型在某个公开任务分布上的能力；个人或团队 Eval 回答的是模型在自身真实工作分布上的价值。
 
 第一版可以从少量真实任务开始，但应明确它只能用于发现明显问题，不能用来证明几个百分点的模型排名差异。
 
-### 8. 如何把真实工作转化成 Eval Case
+### 8. [如何把真实工作转化成 Agent Eval Case](./turn-real-work-into-agent-eval-cases.md)
 
 每个 Case 至少描述：
 
@@ -217,7 +217,7 @@ budget:
 
 好的 Case 应让两位领域专家能够独立得出接近的通过或失败结论；如果任务本身含糊，评分只会测量解释差异。
 
-### 9. 一个健康的评测集如何分层
+### 9. [一个健康的 Agent 评测集如何分层](./healthy-agent-eval-dataset-layers.md)
 
 推荐长期维护以下集合：
 

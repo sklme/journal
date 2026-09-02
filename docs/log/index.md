@@ -9,6 +9,9 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-09
 
+- `2026-09-02` · AI 工程 · [为什么个人和团队需要自己的 Agent Eval Dataset](/knowledge/ai-engineering/why-build-your-own-agent-eval-dataset) — 用目标工作分布、Dataset Charter、覆盖矩阵和小样本边界，把通用 Benchmark 补充为面向真实价值的自有评测资产。
+- `2026-09-02` · AI 工程 · [如何把真实工作转化成 Agent Eval Case](/knowledge/ai-engineering/turn-real-work-into-agent-eval-cases) — 将真实任务转换为版本化 Eval Case，明确可见输入、初始环境、成功契约、隐藏评分证据和可解性验证。
+- `2026-09-02` · AI 工程 · [一个健康的 Agent 评测集如何分层](/knowledge/ai-engineering/healthy-agent-eval-dataset-layers) — 用测试目的、数据切分和数据来源三条正交轴组织评测集，并建立案例生命周期、版本与健康度治理。
 - `2026-09-01` · AI 工程 · [Trace、Eval、Experiment 与 Monitoring：Agent 质量系统的四个层次](/knowledge/ai-engineering/agent-trace-eval-experiment-monitoring-boundaries) — 区分事实记录、质量判断、受控比较和生产反馈，建立 Agent 质量系统的证据链与数据边界。
 - `2026-09-01` · AI 工程 · [如何设计 Agent Trace Tree：从模型调用到最终状态](/knowledge/ai-engineering/agent-trace-tree-design) — 设计覆盖模型、工具、Handoff、Guardrail、状态变化和产物证据的版本化 Trace Schema。
 - `2026-09-01` · AI 工程 · [如何让 Agent 评测实验可复现](/knowledge/ai-engineering/reproducible-agent-evaluation-experiments) — 用 Run Manifest、环境快照、Trial 隔离和失败分类实现可重跑、可解释的 Agent 评测实验。
