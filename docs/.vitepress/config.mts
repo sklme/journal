@@ -123,6 +123,24 @@ export default defineConfig({
                           link: '/knowledge/ai-engineering/healthy-agent-eval-dataset-layers'
                         }
                       ]
+                    },
+                    {
+                      text: '第四部分 · 设计可信评测器',
+                      collapsed: false,
+                      items: [
+                        {
+                          text: '确定性 Grader',
+                          link: '/knowledge/ai-engineering/deterministic-graders-for-agent-evaluation'
+                        },
+                        {
+                          text: '可信 LLM-as-Judge',
+                          link: '/knowledge/ai-engineering/reliable-llm-as-judge-for-agent-evaluation'
+                        },
+                        {
+                          text: 'Trajectory 评测',
+                          link: '/knowledge/ai-engineering/what-to-evaluate-in-agent-trajectories'
+                        }
+                      ]
                     }
                   ]
                 },

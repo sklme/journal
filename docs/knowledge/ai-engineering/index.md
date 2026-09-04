@@ -29,6 +29,9 @@ description: Agent、Skills、控制面与自动化协作
 - [为什么个人和团队需要自己的 Agent Eval Dataset](./why-build-your-own-agent-eval-dataset.md)
 - [如何把真实工作转化成 Agent Eval Case](./turn-real-work-into-agent-eval-cases.md)
 - [一个健康的 Agent 评测集如何分层](./healthy-agent-eval-dataset-layers.md)
+- [能用代码判断的，就不要交给 LLM](./deterministic-graders-for-agent-evaluation.md)
+- [LLM-as-Judge 如何避免成为另一种玄学](./reliable-llm-as-judge-for-agent-evaluation.md)
+- [Agent Trajectory 应该评什么](./what-to-evaluate-in-agent-trajectories.md)
 
 ## MCP 工程化
 

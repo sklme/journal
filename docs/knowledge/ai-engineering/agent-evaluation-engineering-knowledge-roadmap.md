@@ -233,7 +233,7 @@ budget:
 
 ## 第四部分：设计可信的评测器
 
-### 10. 能用代码判断的，就不要交给 LLM
+### 10. [能用代码判断的，就不要交给 LLM](./deterministic-graders-for-agent-evaluation.md)
 
 优先使用确定性证据：
 
@@ -245,7 +245,7 @@ budget:
 
 LLM 不应重新判断一个已经可以由真实环境直接验证的事实。
 
-### 11. LLM-as-Judge 如何避免成为另一种玄学
+### 11. [LLM-as-Judge 如何避免成为另一种玄学](./reliable-llm-as-judge-for-agent-evaluation.md)
 
 模型评测器适合判断自然度、覆盖度、解释质量和开放性方案，但必须配套：
 
@@ -256,7 +256,7 @@ LLM 不应重新判断一个已经可以由真实环境直接验证的事实。
 - 与领域专家标签的周期性校准；
 - 对 Judge 分歧的记录和升级流程。
 
-### 12. Trajectory 应该评什么
+### 12. [Agent Trajectory 应该评什么](./what-to-evaluate-in-agent-trajectories.md)
 
 Trajectory 主要用于发现：
 
