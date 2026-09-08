@@ -208,6 +208,10 @@ export default defineConfig({
                   collapsed: false,
                   items: [
                     {
+                      text: '跨机器上下文交接与记忆',
+                      link: '/knowledge/ai-engineering/cross-machine-agent-context-handoff'
+                    },
+                    {
                       text: '角色与认知独立性',
                       link: '/knowledge/ai-engineering/multi-agent-cognitive-independence'
                     },

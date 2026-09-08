@@ -56,6 +56,7 @@ description: Agent、Skills、控制面与自动化协作
 
 ## 多 Agent 工程协作
 
+- [跨机器 Agent 上下文交接：任务状态、长期记忆与 Multica 实践](./cross-machine-agent-context-handoff.md)
 - [多 Agent 工程协作：角色之外的认知独立性](./multi-agent-cognitive-independence.md)
 - [从多角色协作到 Agent Runtime：工程化设计指南](./agent-runtime-engineering-guide.md)
 
