@@ -31,8 +31,7 @@ export default defineConfig({
       { text: '关于', link: '/about' }
     ],
 
-    sidebar: {
-      '/knowledge/': [
+    sidebar: [
         {
           text: '知识库',
           items: [
@@ -296,15 +295,15 @@ export default defineConfig({
               ]
             }
           ]
-        }
-      ],
-      '/log/': [
-        {
-          text: '内容日志',
-          items: [{ text: '全部内容', link: '/log/' }]
-        }
-      ]
-    },
+        },
+      {
+        text: '站点',
+        items: [
+          { text: '内容日志', link: '/log/' },
+          { text: '关于', link: '/about' }
+        ]
+      }
+    ],
 
     socialLinks: [{ icon: 'github', link: repositoryUrl }],
 
