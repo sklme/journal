@@ -9,6 +9,7 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-09
 
+- `2026-09-10` · 工程实践 · [Node.js 原生交互全景：内置绑定、Node-API 与 FFI](/knowledge/engineering/nodejs-native-interop-node-api-ffi) — 理解 Node.js 调用原生代码的几条路径，以及线程、内存、性能和二进制分发的边界。
 - `2026-09-08` · AI 工程 · [跨机器 Agent 上下文交接：任务状态、长期记忆与 Multica 实践](/knowledge/ai-engineering/cross-machine-agent-context-handoff) — 区分会话历史、任务状态、长期记忆和执行调度，解释跨机器 Agent 如何保存、检索并接续工作。
 - `2026-09-04` · AI 工程 · [能用代码判断的，就不要交给 LLM](/knowledge/ai-engineering/deterministic-graders-for-agent-evaluation) — 用 Outcome、State、Invariant、Contract 和 Budget 构建隔离、可重放且能区分任务失败与评分错误的确定性 Grader。
 - `2026-09-04` · AI 工程 · [LLM-as-Judge 如何避免成为另一种玄学](/knowledge/ai-engineering/reliable-llm-as-judge-for-agent-evaluation) — 把模型裁判作为需要专家金标、偏差测试、版本治理和分歧升级的测量仪器。

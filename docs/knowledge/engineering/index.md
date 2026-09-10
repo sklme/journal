@@ -9,3 +9,4 @@ description: 文档工程、构建、测试、持续集成与项目维护
 
 - [使用 VitePress 搭建个人知识站](./building-a-vitepress-knowledge-site.md)
 - [macOS 上使用 Docker CLI 连接 Podman](./docker-cli-with-podman-on-macos.md)
+- [Node.js 原生交互全景：内置绑定、Node-API 与 FFI](./nodejs-native-interop-node-api-ffi.md)

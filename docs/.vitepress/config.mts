@@ -285,6 +285,10 @@ export default defineConfig({
               collapsed: false,
               items: [
                 {
+                  text: 'Node.js 原生交互：Node-API 与 FFI',
+                  link: '/knowledge/engineering/nodejs-native-interop-node-api-ffi'
+                },
+                {
                   text: '使用 VitePress 搭建个人知识站',
                   link: '/knowledge/engineering/building-a-vitepress-knowledge-site'
                 },
