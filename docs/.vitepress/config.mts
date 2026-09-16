@@ -285,6 +285,10 @@ export default defineConfig({
               collapsed: false,
               items: [
                 {
+                  text: 'CDN 与 COS：配置、回源与权限',
+                  link: '/knowledge/engineering/cdn-cos-cname-tls-origin-pull'
+                },
+                {
                   text: 'Node.js 异步上下文与 RPC 并发',
                   link: '/knowledge/engineering/#async-context-rpc',
                   collapsed: false,

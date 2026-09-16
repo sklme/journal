@@ -7,6 +7,7 @@ description: 文档工程、构建、测试、持续集成与项目维护
 
 这里记录文档工程、构建、测试、持续集成和项目维护中的可复用方法。
 
+- [CDN 与 COS：CNAME、TLS、回源路径和权限](./cdn-cos-cname-tls-origin-pull.md)
 - [使用 VitePress 搭建个人知识站](./building-a-vitepress-knowledge-site.md)
 - [macOS 上使用 Docker CLI 连接 Podman](./docker-cli-with-podman-on-macos.md)
 - [Node.js 原生交互全景：内置绑定、Node-API 与 FFI](./nodejs-native-interop-node-api-ffi.md)

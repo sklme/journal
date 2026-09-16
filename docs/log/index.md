@@ -9,6 +9,7 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-09
 
+- `2026-09-16` · 工程实践 · [CDN 与 COS：CNAME、TLS、回源路径和权限](/knowledge/engineering/cdn-cos-cname-tls-origin-pull) — 串起 DNS、TLS、缓存、路径映射和高级回源，区分客户端鉴权与源站授权。
 - `2026-09-16` · 工程实践 · [一：从 HTTP 到 RPC——请求上下文如何传递](/knowledge/engineering/http-rpc-context) — 区分作用域访问对象、进程内异步状态和跨进程元数据，理解请求隔离与调用路由的边界。
 - `2026-09-16` · 工程实践 · [二：AsyncLocalStorage 的原理、机制与使用场景](/knowledge/engineering/node-async-local-storage) — 通过确定性实验理解异步链传播、共享对象和子 store，并划清 run、enterWith 与 AsyncResource 的边界。
 - `2026-09-16` · 工程实践 · [三：上下文变化时的并发——锁与子上下文](/knowledge/engineering/rpc-context-lock-vs-child-scope) — 比较请求内互斥与分支状态隔离，明确锁范围、业务依赖、并发容量和失败处理的边界。

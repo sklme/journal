@@ -25,7 +25,7 @@ features:
 
 ## 最近更新
 
+- [CDN 与 COS：CNAME、TLS、回源路径和权限](/knowledge/engineering/cdn-cos-cname-tls-origin-pull)
 - [Node.js 异步上下文与 RPC 并发：五篇专题](/knowledge/engineering/#async-context-rpc)
 - [Node.js 原生交互全景：内置绑定、Node-API 与 FFI](/knowledge/engineering/nodejs-native-interop-node-api-ffi)
 - [跨机器 Agent 上下文交接：任务状态、长期记忆与 Multica 实践](/knowledge/ai-engineering/cross-machine-agent-context-handoff)
-- [Agent 时代的 API 管理工具：从请求编辑器到能力基础设施](/knowledge/ai-engineering/agent-native-api-management-from-client-to-infrastructure)
