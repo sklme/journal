@@ -285,6 +285,33 @@ export default defineConfig({
               collapsed: false,
               items: [
                 {
+                  text: 'Node.js 异步上下文与 RPC 并发',
+                  link: '/knowledge/engineering/#async-context-rpc',
+                  collapsed: false,
+                  items: [
+                    {
+                      text: '一：从 HTTP 到 RPC',
+                      link: '/knowledge/engineering/http-rpc-context'
+                    },
+                    {
+                      text: '二：AsyncLocalStorage 原理与场景',
+                      link: '/knowledge/engineering/node-async-local-storage'
+                    },
+                    {
+                      text: '三：锁与子上下文',
+                      link: '/knowledge/engineering/rpc-context-lock-vs-child-scope'
+                    },
+                    {
+                      text: '四：RPC 并发与隔离边界',
+                      link: '/knowledge/engineering/rpc-concurrency-isolation-boundaries'
+                    },
+                    {
+                      text: '五：RPC 上下文并发实验',
+                      link: '/knowledge/engineering/rpc-context-concurrency-lab'
+                    }
+                  ]
+                },
+                {
                   text: 'Node.js 原生交互：Node-API 与 FFI',
                   link: '/knowledge/engineering/nodejs-native-interop-node-api-ffi'
                 },

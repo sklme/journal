@@ -9,6 +9,11 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-09
 
+- `2026-09-16` · 工程实践 · [一：从 HTTP 到 RPC——请求上下文如何传递](/knowledge/engineering/http-rpc-context) — 区分作用域访问对象、进程内异步状态和跨进程元数据，理解请求隔离与调用路由的边界。
+- `2026-09-16` · 工程实践 · [二：AsyncLocalStorage 的原理、机制与使用场景](/knowledge/engineering/node-async-local-storage) — 通过确定性实验理解异步链传播、共享对象和子 store，并划清 run、enterWith 与 AsyncResource 的边界。
+- `2026-09-16` · 工程实践 · [三：上下文变化时的并发——锁与子上下文](/knowledge/engineering/rpc-context-lock-vs-child-scope) — 比较请求内互斥与分支状态隔离，明确锁范围、业务依赖、并发容量和失败处理的边界。
+- `2026-09-16` · 工程实践 · [四：RPC 并发改造——把路由隔离放到正确边界](/knowledge/engineering/rpc-concurrency-isolation-boundaries) — 将路由隔离提前到业务操作入口，以通用实验验证上下文边界，并设计有限并发、初始化与性能验收规则。
+- `2026-09-16` · 工程实践 · [五：动手实验——验证 RPC 上下文的并发与隔离](/knowledge/engineering/rpc-context-concurrency-lab) — 用可下载的标准库实验对照共享状态、请求内锁与子上下文，断言并发数、路由隔离、嵌套和失败恢复。
 - `2026-09-10` · 工程实践 · [Node.js 原生交互全景：内置绑定、Node-API 与 FFI](/knowledge/engineering/nodejs-native-interop-node-api-ffi) — 理解 Node.js 调用原生代码的几条路径，以及线程、内存、性能和二进制分发的边界。
 - `2026-09-08` · AI 工程 · [跨机器 Agent 上下文交接：任务状态、长期记忆与 Multica 实践](/knowledge/ai-engineering/cross-machine-agent-context-handoff) — 区分会话历史、任务状态、长期记忆和执行调度，解释跨机器 Agent 如何保存、检索并接续工作。
 - `2026-09-04` · AI 工程 · [能用代码判断的，就不要交给 LLM](/knowledge/ai-engineering/deterministic-graders-for-agent-evaluation) — 用 Outcome、State、Invariant、Contract 和 Budget 构建隔离、可重放且能区分任务失败与评分错误的确定性 Grader。
