@@ -25,7 +25,7 @@ features:
 
 ## 最近更新
 
+- [AKSK、STS 与 CAM 角色：三种临时凭证获取方式](/knowledge/engineering/aksk-sts-cam-oidc-saml)
 - [CDN 与 COS：CNAME、TLS、回源路径和权限](/knowledge/engineering/cdn-cos-cname-tls-origin-pull)
 - [Node.js 异步上下文与 RPC 并发：五篇专题](/knowledge/engineering/#async-context-rpc)
 - [Node.js 原生交互全景：内置绑定、Node-API 与 FFI](/knowledge/engineering/nodejs-native-interop-node-api-ffi)
-- [跨机器 Agent 上下文交接：任务状态、长期记忆与 Multica 实践](/knowledge/ai-engineering/cross-machine-agent-context-handoff)

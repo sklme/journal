@@ -285,6 +285,10 @@ export default defineConfig({
               collapsed: false,
               items: [
                 {
+                  text: 'AKSK、STS 与 CAM 角色',
+                  link: '/knowledge/engineering/aksk-sts-cam-oidc-saml'
+                },
+                {
                   text: 'CDN 与 COS：配置、回源与权限',
                   link: '/knowledge/engineering/cdn-cos-cname-tls-origin-pull'
                 },
