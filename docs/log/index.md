@@ -9,6 +9,7 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-09
 
+- `2026-09-22` · 工程实践 · [COS：对象存储的设计、权限与工程实践](/knowledge/engineering/cos-object-storage-design-and-practices) — 从 Bucket、Object 和地域模型出发，理解 COS 的权限体系、主要操作、成本边界与常见业务架构。
 - `2026-09-17` · 工程实践 · [AKSK、STS 与 CAM 角色：三种临时凭证获取方式](/knowledge/engineering/aksk-sts-cam-oidc-saml) — 区分云身份、角色授权与请求签名，理解 AKSK、OIDC、SAML 获取临时凭证的流程和边界。
 - `2026-09-16` · 工程实践 · [CDN 与 COS：CNAME、TLS、回源路径和权限](/knowledge/engineering/cdn-cos-cname-tls-origin-pull) — 串起 DNS、TLS、缓存、路径映射和高级回源，区分客户端鉴权与源站授权。
 - `2026-09-16` · 工程实践 · [一：从 HTTP 到 RPC——请求上下文如何传递](/knowledge/engineering/http-rpc-context) — 区分作用域访问对象、进程内异步状态和跨进程元数据，理解请求隔离与调用路由的边界。

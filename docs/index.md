@@ -25,6 +25,7 @@ features:
 
 ## 最近更新
 
+- [COS：对象存储的设计、权限与工程实践](/knowledge/engineering/cos-object-storage-design-and-practices)
 - [AKSK、STS 与 CAM 角色：三种临时凭证获取方式](/knowledge/engineering/aksk-sts-cam-oidc-saml)
 - [CDN 与 COS：CNAME、TLS、回源路径和权限](/knowledge/engineering/cdn-cos-cname-tls-origin-pull)
 - [Node.js 异步上下文与 RPC 并发：五篇专题](/knowledge/engineering/#async-context-rpc)

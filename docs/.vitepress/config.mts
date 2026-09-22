@@ -289,6 +289,10 @@ export default defineConfig({
                   link: '/knowledge/engineering/aksk-sts-cam-oidc-saml'
                 },
                 {
+                  text: 'COS：设计、权限与实践',
+                  link: '/knowledge/engineering/cos-object-storage-design-and-practices'
+                },
+                {
                   text: 'CDN 与 COS：配置、回源与权限',
                   link: '/knowledge/engineering/cdn-cos-cname-tls-origin-pull'
                 },
