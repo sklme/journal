@@ -175,6 +175,17 @@ export default defineConfig({
                   ]
                 },
                 {
+                  text: 'Codex 插件扩展',
+                  link: '/knowledge/ai-engineering/#codex-插件扩展',
+                  collapsed: false,
+                  items: [
+                    {
+                      text: '插件开发与 UI 边界',
+                      link: '/knowledge/ai-engineering/codex-plugin-development-and-ui-boundaries'
+                    }
+                  ]
+                },
+                {
                   text: 'Agent 原生 API 管理',
                   link: '/knowledge/ai-engineering/#agent-原生-api-管理',
                   collapsed: false,

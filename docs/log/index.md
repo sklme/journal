@@ -9,6 +9,7 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-09
 
+- `2026-09-22` · AI 工程 · [Codex 插件开发：从 MCP Server 到对话内 UI](/knowledge/ai-engineering/codex-plugin-development-and-ui-boundaries) — 梳理 Codex 插件、MCP Server 和 MCP Apps UI 的分工，并说明代码库检查插件与原生 Tab 的能力边界。
 - `2026-09-22` · 工程实践 · [COS：对象存储的设计、权限与工程实践](/knowledge/engineering/cos-object-storage-design-and-practices) — 从 Bucket、Object 和地域模型出发，理解 COS 的权限体系、主要操作、成本边界与常见业务架构。
 - `2026-09-17` · 工程实践 · [AKSK、STS 与 CAM 角色：三种临时凭证获取方式](/knowledge/engineering/aksk-sts-cam-oidc-saml) — 区分云身份、角色授权与请求签名，理解 AKSK、OIDC、SAML 获取临时凭证的流程和边界。
 - `2026-09-16` · 工程实践 · [CDN 与 COS：CNAME、TLS、回源路径和权限](/knowledge/engineering/cdn-cos-cname-tls-origin-pull) — 串起 DNS、TLS、缓存、路径映射和高级回源，区分客户端鉴权与源站授权。

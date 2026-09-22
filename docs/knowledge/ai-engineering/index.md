@@ -44,6 +44,10 @@ description: Agent、Skills、控制面与自动化协作
 - [Agent 型 MCP 网关：作为第二 Agent 代理规划与执行](./mcp-gateway-agent-proxy.md)
 - [MCP 管理、Tool Broker 与领域 Agent 的业界实践](./mcp-management-broker-and-agent-industry-practices.md)
 
+## Codex 插件扩展
+
+- [Codex 插件开发：从 MCP Server 到对话内 UI](./codex-plugin-development-and-ui-boundaries.md)
+
 ## Agent 原生 API 管理
 
 从传统请求编辑器的价值重构出发，依次建立探索到回归的工作流、事实与执行架构、安全 Tool 契约，以及面向人的审查控制面：
