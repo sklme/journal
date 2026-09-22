@@ -178,6 +178,37 @@ CDN → COS：CDN 是否有权读取源对象？
 
 使用私有 COS 作为 CDN 源站时，通常需要给 CDN 服务身份授予对象读取相关权限，并在 CDN 开启对应的回源鉴权。公开分发还是受限下载，再由 CDN 访问鉴权控制。[COS CDN 加速](https://intl.cloud.tencent.com/zh/document/product/436/18669)
 
+### 4.1 公开地址、预签名 URL 与临时密钥
+
+需要把“对象地址”和“访问凭证”分开理解：
+
+| 方式 | URL 形态 | 是否需要请求签名 | 适用场景 |
+| --- | --- | --- | --- |
+| 公有读对象地址 | 普通对象 URL | 否 | 真正公开的资源 |
+| 预签名 URL | 对象 URL 加签名参数 | 是 | 单个文件的临时上传或下载 |
+| 临时密钥 | 客户端持有短期密钥并自行签名 | 是 | 多个文件、浏览器直传、客户端 SDK |
+| CDN 鉴权 URL | CDN 域名加 CDN 签名参数 | 由 CDN 校验 | 通过 CDN 受限分发 |
+
+因此，**私有读 COS 没有不带鉴权、面向所有人的永久公开 COS URL**。对象的普通 URL 仍然可以拼出来，但匿名请求会被 COS 拒绝。私有对象通常通过后端代理、COS 预签名 URL、临时密钥或 CDN 服务身份访问。
+
+预签名 URL 是把访问对象、HTTP 方法和有效时间纳入签名后生成的地址。拿到 URL 的人可以在有效期内使用它，所以它更像一个“带时效的持有者凭证”，而不是用户身份本身。使用临时密钥生成预签名时，实际有效期取签名有效期和临时密钥有效期中较短的一个；使用永久密钥虽然可以生成更长时间的签名，但泄露后的影响范围也更大。[预签名 URL](https://cloud.tencent.com/document/product/436/45243)
+
+常见下载流程是：
+
+```text
+用户请求下载
+    ↓
+后端验证用户权限
+    ↓
+后端生成指定 ObjectKey 的短期预签名 URL
+    ↓
+用户直接访问 COS
+```
+
+如果客户端需要连续上传多个文件，后端可以发放限制到某个 Bucket、前缀、操作和时间范围的临时密钥，让客户端用 SDK 自行签名请求。不要把永久密钥放入网页、移动端包或日志中。[临时密钥](https://cloud.tencent.com/document/product/436/14048)
+
+COS 预签名 URL 和 CDN 鉴权 URL 是两套机制。COS 预签名通常针对 COS 源站域名，不能直接当作 CDN 域名的鉴权参数；如果通过 CDN 受限分发，应使用 CDN 自己的 URL 鉴权。对于公开 CDN 分发，可以保持 COS 私有、授权 CDN 回源，同时关闭 CDN 用户鉴权；此时“公开”的是 CDN 地址，不是 COS 源站地址。[预签名授权下载](https://cloud.tencent.com/document/product/436/14116)
+
 ## 5. 常见架构实践
 
 ### 网站静态资源
@@ -293,3 +324,5 @@ COS 的核心思想是把“文件”拆成可寻址的对象，把存储和访�
 - [COS 对象概述](https://cloud.tencent.com/document/product/436/13324)
 - [COS 存储类型概述](https://intl.cloud.tencent.com/zh/document/product/436/30925)
 - [COS CDN 加速概述](https://intl.cloud.tencent.com/zh/document/product/436/18669)
+- [COS 使用预签名 URL](https://cloud.tencent.com/document/product/436/45243)
+- [COS 临时密钥生成及使用指引](https://cloud.tencent.com/document/product/436/14048)
