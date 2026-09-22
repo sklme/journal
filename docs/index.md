@@ -25,6 +25,7 @@ features:
 
 ## 最近更新
 
+- [Jev：把 AI 判断拆成可组合的结构化决策原语](/knowledge/ai-engineering/jev-structured-ai-decision-primitives)
 - [COS：对象存储的设计、权限与工程实践](/knowledge/engineering/cos-object-storage-design-and-practices)
 - [AKSK、STS 与 CAM 角色：三种临时凭证获取方式](/knowledge/engineering/aksk-sts-cam-oidc-saml)
 - [CDN 与 COS：CNAME、TLS、回源路径和权限](/knowledge/engineering/cdn-cos-cname-tls-origin-pull)

@@ -61,6 +61,17 @@ export default defineConfig({
                   ]
                 },
                 {
+                  text: '结构化 AI 决策',
+                  link: '/knowledge/ai-engineering/#结构化-ai-决策',
+                  collapsed: false,
+                  items: [
+                    {
+                      text: 'Jev 与结构化决策原语',
+                      link: '/knowledge/ai-engineering/jev-structured-ai-decision-primitives'
+                    }
+                  ]
+                },
+                {
                   text: 'Agent 评测工程',
                   link: '/knowledge/ai-engineering/#agent-评测工程',
                   collapsed: false,

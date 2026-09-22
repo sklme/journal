@@ -15,6 +15,12 @@ description: Agent、Skills、控制面与自动化协作
 - [主流 LLM 的 Prompt Cache 方案与机制对比](./llm-provider-prompt-caching-comparison.md)
 - [DeepSeek Agent Harness 与前缀缓存优化](./deepseek-agent-harness-prefix-cache-optimization.md)
 
+## 结构化 AI 决策
+
+理解 Jev/System One 如何把自然语言判断拆成可组合的类型化决策，并建立置信度、bad case 和工作流迭代闭环：
+
+- [Jev：把 AI 判断拆成可组合的结构化决策原语](./jev-structured-ai-decision-primitives.md)
+
 ## Agent 评测工程
 
 围绕质量定义、Trace、任务集、Grader、受控实验和生产反馈，建立从“感觉变好”到可验证优化的完整知识路线：
