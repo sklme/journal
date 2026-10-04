@@ -7,6 +7,10 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 这里是面向人和 AI 的内容总索引。每篇知识文章或指南只保留一条记录，按首次收录月份倒序排列；普通内容修改不会重复增加记录。
 
+## 2026-10
+
+- `2026-10-05` · 工程实践 · [用 Ghostty、Fish 和 Starship 创建终端工作流](/knowledge/engineering/ghostty-fish-starship-terminal-workflow) — 从工具分工到安装配置，创建具有原生补全、清晰提示符和统一配色的 macOS 终端工作流。
+
 ## 2026-09
 
 - `2026-09-22` · AI 工程 · [Jev：把 AI 判断拆成可组合的结构化决策原语](/knowledge/ai-engineering/jev-structured-ai-decision-primitives) — 解释 Jev 的类型化决策接口、token 成本边界、置信度含义，以及如何通过原子问题和评测闭环迭代 bad case。

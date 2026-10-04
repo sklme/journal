@@ -307,6 +307,10 @@ export default defineConfig({
               collapsed: false,
               items: [
                 {
+                  text: 'Ghostty、Fish 与 Starship 工作流',
+                  link: '/knowledge/engineering/ghostty-fish-starship-terminal-workflow'
+                },
+                {
                   text: 'AKSK、STS 与 CAM 角色',
                   link: '/knowledge/engineering/aksk-sts-cam-oidc-saml'
                 },
