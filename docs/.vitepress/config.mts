@@ -311,7 +311,7 @@ export default defineConfig({
                   link: '/knowledge/engineering/ghostty-fish-starship-terminal-workflow'
                 },
                 {
-                  text: 'zoxide 目录导航与 Fish 实践',
+                  text: 'zoxide 与 fzf 交互实践',
                   link: '/knowledge/engineering/zoxide-directory-navigation-with-fish'
                 },
                 {
