@@ -319,6 +319,10 @@ export default defineConfig({
                   link: '/knowledge/engineering/zoxide-directory-navigation-with-fish'
                 },
                 {
+                  text: 'eza 文件浏览与目录树',
+                  link: '/knowledge/engineering/eza-file-browsing-with-fish'
+                },
+                {
                   text: 'AKSK、STS 与 CAM 角色',
                   link: '/knowledge/engineering/aksk-sts-cam-oidc-saml'
                 },

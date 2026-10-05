@@ -9,6 +9,7 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-10
 
+- `2026-10-06` · 工程实践 · [eza：Fish 文件浏览与目录树实践](/knowledge/engineering/eza-file-browsing-with-fish) — 使用 Homebrew 安装 eza，为 Fish 配置 ll 和 lt，通过详细列表、目录树、排序与 Git 状态浏览项目文件。
 - `2026-10-06` · AI 工程 · [Obsidian 原生 MCP 接入 Codex](/knowledge/ai-engineering/obsidian-native-mcp-codex) — 使用 Local REST API 内置 MCP 接入 Codex，配置笔记读取和写入工具，并区分配置登记、连接验证与实际写入验证。
 - `2026-10-05` · 工程实践 · [zoxide 与 fzf：Fish 目录导航与交互搜索实践](/knowledge/engineering/zoxide-directory-navigation-with-fish) — 安装 zoxide 与 fzf 并接入 Fish，使用 z 和 zi 切换目录，通过快捷键选择文件、搜索历史，并统一交互配色。
 - `2026-10-05` · 工程实践 · [用 Ghostty、Fish 和 Starship 创建终端工作流](/knowledge/engineering/ghostty-fish-starship-terminal-workflow) — 从工具分工到安装配置，创建具有原生补全、清晰提示符和统一配色的 macOS 终端工作流。
