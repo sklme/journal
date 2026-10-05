@@ -25,9 +25,9 @@ features:
 
 ## 最近更新
 
+- [用 zoxide 改善目录导航：安装、Fish 接入与日常实践](/knowledge/engineering/zoxide-directory-navigation-with-fish)
 - [用 Ghostty、Fish 和 Starship 创建终端工作流](/knowledge/engineering/ghostty-fish-starship-terminal-workflow)
 - [Jev：把 AI 判断拆成可组合的结构化决策原语](/knowledge/ai-engineering/jev-structured-ai-decision-primitives)
 - [COS：对象存储的设计、权限与工程实践](/knowledge/engineering/cos-object-storage-design-and-practices)
 - [AKSK、STS 与 CAM 角色：三种临时凭证获取方式](/knowledge/engineering/aksk-sts-cam-oidc-saml)
 - [CDN 与 COS：CNAME、TLS、回源路径和权限](/knowledge/engineering/cdn-cos-cname-tls-origin-pull)
-- [Node.js 异步上下文与 RPC 并发：五篇专题](/knowledge/engineering/#async-context-rpc)

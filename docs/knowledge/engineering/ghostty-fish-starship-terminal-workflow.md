@@ -447,3 +447,8 @@ source ~/.config/fish/config.fish
 ```
 
 排错时每次只调整对应层：窗口和输出调色板看 Ghostty，输入交互看 Fish，上下文提示看 Starship。本文到此完成基础工作流；后续增强应在实际使用后单独记录。
+
+
+## 下一步：目录导航
+
+基础工作流配置完成后，可以继续阅读 [zoxide 的安装、Fish 接入与日常实践](./zoxide-directory-navigation-with-fish.md)，用已访问目录的关键词减少重复路径输入。

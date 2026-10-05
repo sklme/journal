@@ -311,6 +311,10 @@ export default defineConfig({
                   link: '/knowledge/engineering/ghostty-fish-starship-terminal-workflow'
                 },
                 {
+                  text: 'zoxide 目录导航与 Fish 实践',
+                  link: '/knowledge/engineering/zoxide-directory-navigation-with-fish'
+                },
+                {
                   text: 'AKSK、STS 与 CAM 角色',
                   link: '/knowledge/engineering/aksk-sts-cam-oidc-saml'
                 },

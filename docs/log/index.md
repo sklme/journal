@@ -9,6 +9,7 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-10
 
+- `2026-10-05` · 工程实践 · [用 zoxide 改善目录导航：安装、Fish 接入与日常实践](/knowledge/engineering/zoxide-directory-navigation-with-fish) — 使用 Homebrew 安装 zoxide 并接入 Fish，通过目录记忆和关键词跳转减少路径输入，掌握常用命令与排错方法。
 - `2026-10-05` · 工程实践 · [用 Ghostty、Fish 和 Starship 创建终端工作流](/knowledge/engineering/ghostty-fish-starship-terminal-workflow) — 从工具分工到安装配置，创建具有原生补全、清晰提示符和统一配色的 macOS 终端工作流。
 
 ## 2026-09
