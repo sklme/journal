@@ -168,6 +168,10 @@ export default defineConfig({
                       link: '/knowledge/ai-engineering/codex-mcp-management-for-individual-developers'
                     },
                     {
+                      text: 'Obsidian 原生 MCP 接入 Codex',
+                      link: '/knowledge/ai-engineering/obsidian-native-mcp-codex'
+                    },
+                    {
                       text: '工具网关：基础架构',
                       link: '/knowledge/ai-engineering/mcp-gateway-foundation'
                     },
