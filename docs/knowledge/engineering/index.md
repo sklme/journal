@@ -10,6 +10,7 @@ description: 文档工程、构建、测试、持续集成与项目维护
 - [用 Ghostty、Fish 和 Starship 创建终端工作流](./ghostty-fish-starship-terminal-workflow.md)
 - [zoxide 与 fzf：Fish 目录导航与交互搜索实践](./zoxide-directory-navigation-with-fish.md)
 - [eza：Fish 文件浏览与目录树实践](./eza-file-browsing-with-fish.md)
+- [bat：终端文件阅读与 fzf 预览实践](./bat-file-reading-with-fish.md)
 - [AKSK、STS 与 CAM 角色：三种临时凭证获取方式](./aksk-sts-cam-oidc-saml.md)
 - [COS：对象存储的设计、权限与工程实践](./cos-object-storage-design-and-practices.md)
 - [CDN 与 COS：CNAME、TLS、回源路径和权限](./cdn-cos-cname-tls-origin-pull.md)

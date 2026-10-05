@@ -25,9 +25,9 @@ features:
 
 ## 最近更新
 
+- [bat：终端文件阅读与 fzf 预览实践](/knowledge/engineering/bat-file-reading-with-fish)
 - [eza：Fish 文件浏览与目录树实践](/knowledge/engineering/eza-file-browsing-with-fish)
 - [Obsidian 原生 MCP 接入 Codex](/knowledge/ai-engineering/obsidian-native-mcp-codex)
 - [zoxide 与 fzf：Fish 目录导航与交互搜索实践](/knowledge/engineering/zoxide-directory-navigation-with-fish)
 - [用 Ghostty、Fish 和 Starship 创建终端工作流](/knowledge/engineering/ghostty-fish-starship-terminal-workflow)
 - [Jev：把 AI 判断拆成可组合的结构化决策原语](/knowledge/ai-engineering/jev-structured-ai-decision-primitives)
-- [COS：对象存储的设计、权限与工程实践](/knowledge/engineering/cos-object-storage-design-and-practices)

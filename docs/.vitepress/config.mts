@@ -323,6 +323,10 @@ export default defineConfig({
                   link: '/knowledge/engineering/eza-file-browsing-with-fish'
                 },
                 {
+                  text: 'bat 文件阅读与预览',
+                  link: '/knowledge/engineering/bat-file-reading-with-fish'
+                },
+                {
                   text: 'AKSK、STS 与 CAM 角色',
                   link: '/knowledge/engineering/aksk-sts-cam-oidc-saml'
                 },
