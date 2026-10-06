@@ -9,6 +9,7 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-10
 
+- `2026-10-07` · 工程实践 · [fd 与 ripgrep：Fish 文件查找与内容搜索实践](/knowledge/engineering/fd-ripgrep-search-with-fish) — 使用 Homebrew 安装 fd 和 ripgrep，练习文件查找、内容搜索、隐藏与忽略规则，并组合 fzf 和 bat 筛选预览。
 - `2026-10-06` · 工程实践 · [bat：终端文件阅读与 fzf 预览实践](/knowledge/engineering/bat-file-reading-with-fish) — 使用 Homebrew 安装 bat，沿用终端配色，通过语法高亮、分页搜索、指定行读取和 fzf 预览阅读配置与代码。
 - `2026-10-06` · 工程实践 · [eza：Fish 文件浏览与目录树实践](/knowledge/engineering/eza-file-browsing-with-fish) — 使用 Homebrew 安装 eza，为 Fish 配置 ll 和 lt，通过详细列表、目录树、排序与 Git 状态浏览项目文件。
 - `2026-10-06` · AI 工程 · [Obsidian 原生 MCP 接入 Codex](/knowledge/ai-engineering/obsidian-native-mcp-codex) — 使用 Local REST API 内置 MCP 接入 Codex，配置笔记读取和写入工具，并区分配置登记、连接验证与实际写入验证。

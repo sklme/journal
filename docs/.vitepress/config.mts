@@ -327,6 +327,10 @@ export default defineConfig({
                   link: '/knowledge/engineering/bat-file-reading-with-fish'
                 },
                 {
+                  text: 'fd 与 rg 搜索实践',
+                  link: '/knowledge/engineering/fd-ripgrep-search-with-fish'
+                },
+                {
                   text: 'AKSK、STS 与 CAM 角色',
                   link: '/knowledge/engineering/aksk-sts-cam-oidc-saml'
                 },
