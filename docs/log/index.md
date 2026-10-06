@@ -9,6 +9,7 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-10
 
+- `2026-10-07` · 工程实践 · [终端配置同步：Git、符号链接与换机恢复](/knowledge/engineering/terminal-dotfiles-sync-and-restore) — 用私有 Git 仓库集中管理终端配置，通过符号链接、本机备份和 Brewfile 实现日常同步、换机恢复与回滚。
 - `2026-10-07` · 工程实践 · [fd 与 ripgrep：Fish 文件查找与内容搜索实践](/knowledge/engineering/fd-ripgrep-search-with-fish) — 使用 Homebrew 安装 fd 和 ripgrep，练习文件查找、内容搜索、隐藏与忽略规则，并组合 fzf 和 bat 筛选预览。
 - `2026-10-06` · 工程实践 · [bat：终端文件阅读与 fzf 预览实践](/knowledge/engineering/bat-file-reading-with-fish) — 使用 Homebrew 安装 bat，沿用终端配色，通过语法高亮、分页搜索、指定行读取和 fzf 预览阅读配置与代码。
 - `2026-10-06` · 工程实践 · [eza：Fish 文件浏览与目录树实践](/knowledge/engineering/eza-file-browsing-with-fish) — 使用 Homebrew 安装 eza，为 Fish 配置 ll 和 lt，通过详细列表、目录树、排序与 Git 状态浏览项目文件。

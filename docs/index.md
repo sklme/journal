@@ -25,9 +25,9 @@ features:
 
 ## 最近更新
 
+- [终端配置同步：Git、符号链接与换机恢复](/knowledge/engineering/terminal-dotfiles-sync-and-restore)
 - [fd 与 ripgrep：Fish 文件查找与内容搜索实践](/knowledge/engineering/fd-ripgrep-search-with-fish)
 - [bat：终端文件阅读与 fzf 预览实践](/knowledge/engineering/bat-file-reading-with-fish)
 - [eza：Fish 文件浏览与目录树实践](/knowledge/engineering/eza-file-browsing-with-fish)
 - [Obsidian 原生 MCP 接入 Codex](/knowledge/ai-engineering/obsidian-native-mcp-codex)
 - [zoxide 与 fzf：Fish 目录导航与交互搜索实践](/knowledge/engineering/zoxide-directory-navigation-with-fish)
-- [用 Ghostty、Fish 和 Starship 创建终端工作流](/knowledge/engineering/ghostty-fish-starship-terminal-workflow)

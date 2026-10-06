@@ -334,6 +334,10 @@ export default defineConfig({
                     {
                       text: '05 · 搜索定位',
                       link: '/knowledge/engineering/fd-ripgrep-search-with-fish'
+                    },
+                    {
+                      text: '06 · 配置同步与恢复',
+                      link: '/knowledge/engineering/terminal-dotfiles-sync-and-restore'
                     }
                   ]
                 },

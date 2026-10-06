@@ -12,12 +12,14 @@ description: 使用 Homebrew 安装 fd 和 ripgrep，练习文件查找、内容
 prev:
   text: "04 · 文件阅读"
   link: /knowledge/engineering/bat-file-reading-with-fish
-next: false
+next:
+  text: "06 · 配置同步与恢复"
+  link: /knowledge/engineering/terminal-dotfiles-sync-and-restore
 ---
 
 # fd 与 ripgrep：Fish 文件查找与内容搜索实践
 
-> [现代终端工作流 · 系列目录](./index.md#terminal-workflow) · 第 5 / 5 篇：搜索定位
+> [现代终端工作流 · 系列目录](./index.md#terminal-workflow) · 第 5 / 6 篇：搜索定位
 
 知道项目目录之后，常见的两个问题是「配置文件放在哪里」和「哪些代码使用了这个配置项」。fd 负责按名称查找文件或目录，ripgrep 的命令 `rg` 负责搜索文件内容。
 

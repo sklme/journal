@@ -16,7 +16,7 @@ next:
 
 # 用 Ghostty、Fish 和 Starship 创建终端工作流
 
-> [现代终端工作流 · 系列目录](./index.md#terminal-workflow) · 第 1 / 5 篇：终端基础
+> [现代终端工作流 · 系列目录](./index.md#terminal-workflow) · 第 1 / 6 篇：终端基础
 
 这套工作流由三个部分组成：**Ghostty 提供终端窗口，Fish 负责命令输入与执行，Starship 展示当前工作上下文**。完成后，打开窗口即可使用语法高亮、自动建议、补全和历史检索；提示符会显示目录、Git 状态及相关项目环境。
 
