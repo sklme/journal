@@ -8,9 +8,17 @@ tags:
   - bat
   - fzf
 description: 使用 Homebrew 安装 bat，沿用终端配色，通过语法高亮、分页搜索、指定行读取和 fzf 预览阅读配置与代码。
+prev:
+  text: "03 · 文件浏览"
+  link: /knowledge/engineering/eza-file-browsing-with-fish
+next:
+  text: "05 · 搜索定位"
+  link: /knowledge/engineering/fd-ripgrep-search-with-fish
 ---
 
 # bat：终端文件阅读与 fzf 预览实践
+
+> [现代终端工作流 · 系列目录](./index.md#terminal-workflow) · 第 4 / 5 篇：文件阅读
 
 进入项目、找到文件之后，下一步是读懂内容。bat 为终端里的文本阅读增加语法高亮、行号、Git 修改标记和自动分页，适合快速检查配置和代码。
 

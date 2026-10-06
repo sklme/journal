@@ -7,11 +7,20 @@ description: 文档工程、构建、测试、持续集成与项目维护
 
 这里记录文档工程、构建、测试、持续集成和项目维护中的可复用方法。
 
-- [用 Ghostty、Fish 和 Starship 创建终端工作流](./ghostty-fish-starship-terminal-workflow.md)
-- [zoxide 与 fzf：Fish 目录导航与交互搜索实践](./zoxide-directory-navigation-with-fish.md)
-- [eza：Fish 文件浏览与目录树实践](./eza-file-browsing-with-fish.md)
-- [bat：终端文件阅读与 fzf 预览实践](./bat-file-reading-with-fish.md)
-- [fd 与 ripgrep：Fish 文件查找与内容搜索实践](./fd-ripgrep-search-with-fish.md)
+## 现代终端工作流 {#terminal-workflow}
+
+从搭建环境到搜索定位，逐步创建一套以 Ghostty、Fish 和 Starship 为基础的 macOS 终端工作流。每篇包含工具选择、安装配置、操作示例和适用边界，可以按顺序练习，也可以按需查阅。
+
+推荐顺序是：**搭建环境 → 目录导航 → 文件浏览 → 内容阅读 → 搜索定位**。基础安装使用 Homebrew，命令示例使用 Fish；后面的组合练习会复用前面配置的 fzf、eza 和 bat。
+
+- [01 · 终端基础：Ghostty、Fish 与 Starship](./ghostty-fish-starship-terminal-workflow.md) — 建立终端、Shell 与提示符，统一基础交互和视觉。
+- [02 · 导航与选择：zoxide 与 fzf](./zoxide-directory-navigation-with-fish.md) — 快速进入常用目录，交互选择路径和历史命令。
+- [03 · 文件浏览：eza](./eza-file-browsing-with-fish.md) — 查看文件属性、项目结构和 Git 状态。
+- [04 · 文件阅读：bat](./bat-file-reading-with-fish.md) — 使用高亮、行号与分页阅读文件，并预览候选内容。
+- [05 · 搜索定位：fd 与 rg](./fd-ripgrep-search-with-fish.md) — 按名称查文件、按内容找代码，再组合筛选与预览。
+
+## 工程专题
+
 - [AKSK、STS 与 CAM 角色：三种临时凭证获取方式](./aksk-sts-cam-oidc-saml.md)
 - [COS：对象存储的设计、权限与工程实践](./cos-object-storage-design-and-practices.md)
 - [CDN 与 COS：CNAME、TLS、回源路径和权限](./cdn-cos-cname-tls-origin-pull.md)

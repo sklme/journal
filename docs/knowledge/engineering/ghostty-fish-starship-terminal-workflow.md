@@ -8,13 +8,19 @@ tags:
   - Fish
   - Starship
 description: 从工具分工到安装配置，创建具有原生补全、清晰提示符和统一配色的 macOS 终端工作流。
+prev: false
+next:
+  text: "02 · 导航与选择"
+  link: /knowledge/engineering/zoxide-directory-navigation-with-fish
 ---
 
 # 用 Ghostty、Fish 和 Starship 创建终端工作流
 
+> [现代终端工作流 · 系列目录](./index.md#terminal-workflow) · 第 1 / 5 篇：终端基础
+
 这套工作流由三个部分组成：**Ghostty 提供终端窗口，Fish 负责命令输入与执行，Starship 展示当前工作上下文**。完成后，打开窗口即可使用语法高亮、自动建议、补全和历史检索；提示符会显示目录、Git 状态及相关项目环境。
 
-本文按创建顺序记录安装、配置和使用方法。范围到基础交互与视觉统一为止，目录跳转、增强文件查看、额外搜索工具和配置仓库管理留待后续实践。
+本文按创建顺序记录安装、配置和使用方法，完成基础交互与视觉统一。目录导航、文件浏览、内容阅读和搜索定位在本系列后续篇目中展开。
 
 ## 1. 先理解工具分工
 

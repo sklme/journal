@@ -7,9 +7,17 @@ tags:
   - Fish
   - eza
 description: 使用 Homebrew 安装 eza，为 Fish 配置 ll 和 lt，通过详细列表、目录树、排序与 Git 状态浏览项目文件。
+prev:
+  text: "02 · 导航与选择"
+  link: /knowledge/engineering/zoxide-directory-navigation-with-fish
+next:
+  text: "04 · 文件阅读"
+  link: /knowledge/engineering/bat-file-reading-with-fish
 ---
 
 # eza：Fish 文件浏览与目录树实践
+
+> [现代终端工作流 · 系列目录](./index.md#terminal-workflow) · 第 3 / 5 篇：文件浏览
 
 进入一个目录之后，通常需要回答三个问题：里面有什么、项目如何组织、哪些文件值得先看。eza 把文件属性、目录树和 Git 状态放进终端，让这些信息更容易浏览。
 

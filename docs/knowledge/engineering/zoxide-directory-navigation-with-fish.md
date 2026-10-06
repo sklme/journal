@@ -8,9 +8,17 @@ tags:
   - zoxide
   - fzf
 description: 安装 zoxide 与 fzf 并接入 Fish，使用 z 和 zi 切换目录，通过快捷键选择文件、搜索历史，并统一交互配色。
+prev:
+  text: "01 · 终端基础"
+  link: /knowledge/engineering/ghostty-fish-starship-terminal-workflow
+next:
+  text: "03 · 文件浏览"
+  link: /knowledge/engineering/eza-file-browsing-with-fish
 ---
 
 # zoxide 与 fzf：Fish 目录导航与交互搜索实践
+
+> [现代终端工作流 · 系列目录](./index.md#terminal-workflow) · 第 2 / 5 篇：导航与选择
 
 终端里经常需要在几个项目之间切换。项目目录一深，重复输入完整路径就成了额外负担。zoxide 会记住访问过的目录，让之后的跳转只需要几个关键词。
 

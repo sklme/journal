@@ -311,24 +311,31 @@ export default defineConfig({
               collapsed: false,
               items: [
                 {
-                  text: 'Ghostty、Fish 与 Starship 工作流',
-                  link: '/knowledge/engineering/ghostty-fish-starship-terminal-workflow'
-                },
-                {
-                  text: 'zoxide 与 fzf 交互实践',
-                  link: '/knowledge/engineering/zoxide-directory-navigation-with-fish'
-                },
-                {
-                  text: 'eza 文件浏览与目录树',
-                  link: '/knowledge/engineering/eza-file-browsing-with-fish'
-                },
-                {
-                  text: 'bat 文件阅读与预览',
-                  link: '/knowledge/engineering/bat-file-reading-with-fish'
-                },
-                {
-                  text: 'fd 与 rg 搜索实践',
-                  link: '/knowledge/engineering/fd-ripgrep-search-with-fish'
+                  text: '现代终端工作流',
+                  link: '/knowledge/engineering/#terminal-workflow',
+                  collapsed: false,
+                  items: [
+                    {
+                      text: '01 · 终端基础',
+                      link: '/knowledge/engineering/ghostty-fish-starship-terminal-workflow'
+                    },
+                    {
+                      text: '02 · 导航与选择',
+                      link: '/knowledge/engineering/zoxide-directory-navigation-with-fish'
+                    },
+                    {
+                      text: '03 · 文件浏览',
+                      link: '/knowledge/engineering/eza-file-browsing-with-fish'
+                    },
+                    {
+                      text: '04 · 文件阅读',
+                      link: '/knowledge/engineering/bat-file-reading-with-fish'
+                    },
+                    {
+                      text: '05 · 搜索定位',
+                      link: '/knowledge/engineering/fd-ripgrep-search-with-fish'
+                    }
+                  ]
                 },
                 {
                   text: 'AKSK、STS 与 CAM 角色',
