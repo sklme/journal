@@ -7,7 +7,7 @@ tags:
   - Fish
   - zoxide
   - fzf
-description: 安装 zoxide 与 fzf 并接入 Fish，使用 z 和 zi 切换目录，通过快捷键选择文件、搜索历史，并统一交互配色。
+description: 安装 zoxide 与 fzf 并接入 Fish，使用 z 和 zi 切换目录，通过快捷键选择文件、搜索历史，并用 bat 和 eza 预览候选。
 prev:
   text: "01 · 终端基础"
   link: /knowledge/engineering/ghostty-fish-starship-terminal-workflow
@@ -288,7 +288,7 @@ end
 
 配色延续基础终端主题：匹配字符亮绿，输入提示亮紫，选中标记亮青；`bg:-1` 沿用终端背景，选中行使用深紫背景。列表默认从上往下排列，普通选择界面使用终端高度的 40%。zoxide 和 Shell 集成还会附加自己的界面参数、最小高度等，最终大小以相应入口为准。
 
-`FZF_CTRL_T_OPTS` 与 `FZF_ALT_C_OPTS` 让文件和子目录选择跳过 `.git`、`node_modules`、`target`。它们不影响 zoxide 已记录目录，也不等于按项目 `.gitignore` 过滤所有候选。本篇无需额外安装 `fd`、`ripgrep`、`bat` 或 Fish 插件管理器。
+`FZF_CTRL_T_OPTS` 与 `FZF_ALT_C_OPTS` 让文件和子目录选择跳过 `.git`、`node_modules`、`target`。它们不影响 zoxide 已记录目录，也不等于按项目 `.gitignore` 过滤所有候选。基础选择无需额外安装 `fd`、`ripgrep`、`bat` 或 Fish 插件管理器。下面的可选预览需要 bat 和 eza，可在完成系列第 3、4 篇后回来配置。
 
 保存后，在 Fish 中运行：
 
@@ -310,6 +310,103 @@ type zi
 | `Esc` 或 `Ctrl + C` | 取消选择 |
 
 进入选择界面后，关键词按 fzf 的搜索规则解释，不要将其与前面 `z` 的路径匹配规则混为一谈。比如在 `zi` 列表中输入 `blog api`，可以进一步筛选显示的路径；在 Shell 中输入的 `zi api` 则先限定目录候选。
+
+### 给 Ctrl + T 添加文件与目录预览 {#ctrl-t-preview}
+
+当多个候选文件名字相似时，可以先读内容再决定选哪一个；选到目录时，也能先看里面的结构。这个能力由几个工具配合完成：
+
+| 部分 | 职责 |
+| --- | --- |
+| Ghostty | 显示终端界面并传递按键 |
+| `fzf --fish \| source` | 在 Fish 中绑定快捷键，把选择结果填回命令行 |
+| `FZF_CTRL_T_OPTS` | 只为 Ctrl + T 设置预览命令、窗口和按键 |
+| 预览脚本 | 判断候选是文件还是目录 |
+| bat / eza | 分别显示文本内容与目录树 |
+
+**第一步：确认依赖并创建脚本目录。**
+
+```fish
+brew install bat eza
+mkdir -p ~/.config/fzf
+```
+
+将下面内容保存到 `~/.config/fzf/preview.sh`。如果已有该文件，先比较内容；如果配置入口由 dotfiles 链接管理，沿现有链接修改仓库原件。
+
+```sh
+#!/bin/sh
+# fzf Ctrl+T preview: the selected path is passed as one argument.
+preview_path=${1-}
+if [ -z "$preview_path" ]; then
+    exit 0
+fi
+# Keep relative filenames beginning with '-' from being interpreted as options.
+case "$preview_path" in -*) preview_path="./$preview_path" ;; esac
+
+if [ -d "$preview_path" ]; then
+    if [ -r "$preview_path" ] && [ -x "$preview_path" ]; then
+        eza --tree --level=2 --group-directories-first --git-ignore \
+            --color=always -- "$preview_path" 2>&1 | head -n 200
+    else
+        printf '无法读取目录\n'
+    fi
+elif [ -f "$preview_path" ]; then
+    if [ -r "$preview_path" ]; then
+        bat --color=always --decorations=always --paging=never \
+            --style=numbers --line-range=:200 -- "$preview_path" 2>&1
+    else
+        printf '无法读取文件\n'
+    fi
+elif [ -e "$preview_path" ]; then
+    printf '此类型不支持文本预览\n'
+else
+    printf '路径不存在或已不可用\n'
+fi
+```
+
+脚本把所选路径作为一个参数接收，可处理中文、空格和以 `-` 开头的文件名。文件只显示前 200 行，目录只展开两层并限制为 200 行输出；这能减少预览内容，但不是目录扫描的严格时间限制。特殊文件不读取，避免预览管道等对象时一直等待。bat 用 `--paging=never` 交给 fzf 管理窗口，eza 用 `--git-ignore` 隐藏被 Git 忽略的条目。
+
+**第二步：替换 Ctrl + T 选项。**
+
+在 `~/.config/fish/config.fish` 的 fzf 区块中，将原来的 `set -gx FZF_CTRL_T_OPTS ...` 替换为下面一段，放在 `fzf --fish | source` 前面。不要重复追加另一份初始化。
+
+```fish
+set -gx FZF_CTRL_T_OPTS (string join ' ' -- \
+    '--walker-skip=.git,node_modules,target' \
+    '--height=80%' \
+    '--preview=\'/bin/sh "$HOME/.config/fzf/preview.sh" {}\'' \
+    '--preview-window="right,55%,border-left,<90(down,50%,border-top)"' \
+    '--bind=ctrl-/:toggle-preview')
+```
+
+预览默认在右侧占 55%，窗口窄于 90 列时改到下方占 50%；选择界面使用终端高度的 80%。`Ctrl + /` 切换预览显示。这里不把预览塞进 `FZF_DEFAULT_OPTS`，因此历史命令和 `zi` 目录记录不会被当作文件读取。候选仍由 fzf 自带文件遍历提供，尚未换成 fd。
+
+脚本通过 `/bin/sh` 调用，无需 `chmod +x`。`{}` 由 fzf 替换为经过 Shell 转义的路径，不要自行拼接未转义的文件名。[fzf 预览窗口说明](https://github.com/junegunn/fzf#preview-window)
+
+**第三步：检查并实践。**
+
+```fish
+fish --no-execute ~/.config/fish/config.fish
+sh -n ~/.config/fzf/preview.sh
+```
+
+检查通过后新开一个 Fish 终端，在包含文本文件和子目录的项目里练习：
+
+1. 输入 `bat `，保留末尾空格，按 `Ctrl + T`。
+2. 输入文件名片段，移动候选，确认能看到内容和行号。
+3. 切换到目录候选，确认预览变成目录树。
+4. 按 `Ctrl + /` 隐藏、恢复预览；缩窄窗口，确认预览移到下方。
+5. 选中一个文本文件并回车。此时应只填入路径，例如 `bat ./README.md`；再按一次回车才运行 bat。也可以选中文或带空格的路径，检查转义是否正确。
+6. 重新打开选择器，再按 Esc，原输入应保留。
+
+### 为什么选中的路径会多出 `\n`
+
+如果命令变成 `bat README.md\n`，而文件实际叫 `README.md`，先检查上面 `--preview-window` 的引号，不要靠删字符掩盖配置问题。
+
+Fish 先生成 `FZF_CTRL_T_OPTS` 字符串，fzf 随后还会再解析它。正确写法 `'--preview-window="right,55%,border-left,<90(down,50%,border-top)"'` 保留了值内的双引号；仅有 Fish 外层单引号时，这些引号不会进入变量值。在本篇验证的 fzf 版本中，未被引用的 `<` 会使后续选项解析异常，连官方 Fish 集成使用的 `--print0` 都可能被忽略。
+
+结果是 fzf 输出以换行结尾，Fish 却按 NUL 分隔读取，换行被当成路径的一部分，再显示成 `\n`。因此文件名不是“自动加了两个字符”，而是携带了一个真实换行。修复配置并新开 Fish 后重新选择即可；已经填入旧命令行的多余换行需要先删除。
+
+这里采用的完整选项保留了预览命令和自适应窗口值的内层引号。维护时先看变量实际值，再验证 Ctrl + T 的选中结果，单独通过 `fish --no-execute` 只能证明 Fish 语法正确，无法发现 fzf 的第二次解析问题。
 
 ## 8. zi 与 fzf 的使用场景
 
@@ -433,7 +530,7 @@ echo $status
 | `Ctrl + R` 选中历史命令 | 完整命令回到输入行，没有自动执行 |
 | 空输入行按左 Option + C 选择子目录 | 进入该子目录 |
 
-本篇实践使用独立测试数据库验证了自动记录、关键词跳转、多关键词匹配、返回上一目录、中文和空格路径，以及查询失败时不改变工作目录；同时确认初始化未替换原有 `cd`。fzf 集成进一步在独立测试数据库和私密 Fish 会话中验证了 `zi` 的选择与取消、中文及空格路径、`Ctrl + T` 路径插入、`Ctrl + R` 恢复历史但不执行，以及 Option + C 子目录跳转；新会话自动加载也已验证。
+本篇实践使用独立测试数据库验证了自动记录、关键词跳转、多关键词匹配、返回上一目录、中文和空格路径，以及查询失败时不改变工作目录；同时确认初始化未替换原有 `cd`。fzf 集成进一步在独立测试数据库和私密 Fish 会话中验证了 `zi` 的选择与取消、中文及空格路径、`Ctrl + T` 路径插入、`Ctrl + R` 恢复历史但不执行，以及 Option + C 子目录跳转；新会话自动加载也已验证。可选预览另外通过真实终端交互验证了文件与目录预览切换、Ctrl + / 开关、窄窗口布局，以及中文和空格路径选中后不多出换行、不自动执行。
 
 有三条使用边界需要保留：
 

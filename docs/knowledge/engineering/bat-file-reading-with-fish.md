@@ -178,7 +178,7 @@ printf '%s\n' ~/.config/fish/config.fish ~/.config/starship.toml |
 | `--line-range=:200` | 限制预览范围为前 200 行 |
 | `-- {}` | `--` 结束 bat 选项；fzf 将 `{}` 替换为转义后的所选路径 |
 
-这是一条临时命令，没有修改 `FZF_DEFAULT_OPTS`，也没有给 `Ctrl + T`、历史搜索或 `zi` 增加永久预览。不同候选类型需要不同预览逻辑，先用文件候选练习即可。
+这条临时命令只对本次选择生效。希望每次按 `Ctrl + T` 都能预览时，可按[文件与目录预览配置](./zoxide-directory-navigation-with-fish.md#ctrl-t-preview)添加独立脚本：文件交给 bat，目录交给 eza，再通过 `FZF_CTRL_T_OPTS` 接入。历史搜索和 `zi` 沿用各自的交互。
 
 ## 8. 实践五：阅读管道输出
 

@@ -14,7 +14,7 @@ description: 文档工程、构建、测试、持续集成与项目维护
 推荐顺序是：**搭建环境 → 目录导航 → 文件浏览 → 内容阅读 → 搜索定位 → 配置同步与恢复**。基础安装使用 Homebrew，命令示例使用 Fish；后面的组合练习会复用前面配置的 fzf、eza 和 bat。
 
 - [01 · 终端基础：Ghostty、Fish 与 Starship](./ghostty-fish-starship-terminal-workflow.md) — 建立终端、Shell 与提示符，统一基础交互和视觉。
-- [02 · 导航与选择：zoxide 与 fzf](./zoxide-directory-navigation-with-fish.md) — 快速进入常用目录，交互选择路径和历史命令。
+- [02 · 导航与选择：zoxide 与 fzf](./zoxide-directory-navigation-with-fish.md) — 快速进入常用目录，交互选择路径和历史命令，按需启用文件与目录预览。
 - [03 · 文件浏览：eza](./eza-file-browsing-with-fish.md) — 查看文件属性、项目结构和 Git 状态。
 - [04 · 文件阅读：bat](./bat-file-reading-with-fish.md) — 使用高亮、行号与分页阅读文件，并预览候选内容。
 - [05 · 搜索定位：fd 与 rg](./fd-ripgrep-search-with-fish.md) — 按名称查文件、按内容找代码，再组合筛选与预览。

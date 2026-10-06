@@ -28,7 +28,7 @@ next: false
 
 | 内容 | 放在哪里 | 如何处理 |
 | --- | --- | --- |
-| Ghostty、Fish、Starship、bat 配置 | dotfiles Git 仓库 | 审查后提交、推送与拉取 |
+| Ghostty、Fish、Starship、bat 配置与 fzf 预览脚本 | dotfiles Git 仓库 | 审查后提交、推送与拉取 |
 | 软件安装清单 | 仓库中的 Brewfile | 换机时由 Homebrew 安装 |
 | 链接建立与冲突处理逻辑 | 仓库中的恢复脚本 | 在每台电脑上单独运行 |
 | 接入前的配置原文件 | 本机备份目录 | 用于撤销链接接入，不提交 Git |
@@ -37,7 +37,7 @@ next: false
 
 私有仓库用于控制访问范围，但提交前仍需检查内容。不要将整个 `~/.config` 或主目录直接加入 Git。
 
-当前范围只覆盖四份配置。fzf、zoxide、eza 的初始化和交互设置集中在 Fish 配置里；fd、rg 使用默认行为。mise 的开发工具版本、编辑器配置和历史数据属于后续独立管理的范围。
+当前范围覆盖四份配置和一个 fzf 预览脚本。fzf、zoxide、eza 的初始化和交互设置集中在 Fish 配置里；文件与目录预览逻辑保存在 `fzf/preview.sh`，fd、rg 使用默认行为。mise 的开发工具版本、编辑器配置和历史数据属于后续独立管理的范围。
 
 ## 2. 理解符号链接与 Git 的分工
 
@@ -76,6 +76,7 @@ Git 则只有在执行相应命令时才工作：
 | `fish/config.fish` | `~/.config/fish/config.fish` |
 | `starship/starship.toml` | `~/.config/starship.toml` |
 | `bat/config` | `~/.config/bat/config` |
+| `fzf/preview.sh` | `~/.config/fzf/preview.sh` |
 
 ### Ghostty 为什么统一到 ~/.config
 
@@ -100,6 +101,7 @@ dotfiles/
 ├── fish/config.fish
 ├── starship/starship.toml
 ├── bat/config
+├── fzf/preview.sh
 ├── scripts/
 │   ├── check.sh
 │   ├── restore.sh
@@ -110,17 +112,18 @@ dotfiles/
 
 先确认 `~/dotfiles` 尚不存在，或已确定它就是本次要管理的仓库。如果已有旧仓库，先完成第 9 节的备份与地址分离。
 
-以下命令用于创建一个全新的目录。需要四份来源配置已经存在；任何命令失败都应停下来检查，不继续进行链接替换。
+以下命令用于创建一个全新的目录。需要表格中的五个来源文件已经存在；预览脚本按[Ctrl + T 预览配置](./zoxide-directory-navigation-with-fish.md#ctrl-t-preview)创建；任何命令失败都应停下来检查，不继续进行链接替换。
 
 ```fish
 mkdir ~/dotfiles
 cd ~/dotfiles
 git init -b main
-mkdir ghostty fish starship bat
+mkdir ghostty fish starship bat fzf
 cp ~/.config/ghostty/config.ghostty ghostty/config.ghostty
 cp ~/.config/fish/config.fish fish/config.fish
 cp ~/.config/starship.toml starship/starship.toml
 cp ~/.config/bat/config bat/config
+cp ~/.config/fzf/preview.sh fzf/preview.sh
 ```
 
 先复制、检查、提交，再处理应用入口。仓库中跟踪的是普通配置文件；符号链接建立在应用原来的配置位置。
@@ -184,7 +187,7 @@ mv "$demo_dir/backup/config" "$demo_dir/app/config"
 cat "$demo_dir/app/config"
 ```
 
-实际接入四份配置时，需要把这种单文件操作扩展为带检查、清单和回滚能力的脚本，避免用 `ln -sf` 直接覆盖来源不明的文件。
+实际接入这五个文件时，需要把这种单文件操作扩展为带检查、清单和回滚能力的脚本，避免用 `ln -sf` 直接覆盖来源不明的文件。
 
 ### 恢复脚本的职责
 
@@ -193,7 +196,7 @@ cat "$demo_dir/app/config"
 | 调用 | 行为 |
 | --- | --- |
 | `./scripts/restore.sh` | 只显示将建立的链接和需要备份的旧入口 |
-| `./scripts/restore.sh --apply` | 备份冲突文件，建立四个链接 |
+| `./scripts/restore.sh --apply` | 备份冲突文件，建立五个链接 |
 | `./scripts/restore.sh --status` | 检查链接是否正确，发现缺失或冲突时返回失败状态 |
 | `./scripts/restore.sh --rollback /path/to/backup/manifest.json` | 根据指定批次恢复接入前的文件 |
 | `./scripts/restore.sh --target-home /path/to/test-home --apply` | 在预先创建的隔离目录演练 |
@@ -244,7 +247,7 @@ if test -f $__fish_config_dir/machine.fish
 end
 ```
 
-这个文件不进入四份配置的同步映射。通用 PATH 使用 `$HOME` 等变量；对于 `/opt/homebrew/bin/fish` 这种与架构有关的路径，要明确当前方案面向 Apple Silicon，迁移 Intel Mac 前单独调整。
+这个文件不进入上述五个文件的同步映射。通用 PATH 使用 `$HOME` 等变量；对于 `/opt/homebrew/bin/fish` 这种与架构有关的路径，要明确当前方案面向 Apple Silicon，迁移 Intel Mac 前单独调整。
 
 ## 7. 日常同步：先拉取，再修改，再推送
 
@@ -252,7 +255,7 @@ end
 
 ```fish
 cd ~/dotfiles
-git add .gitignore README.md Brewfile ghostty/config.ghostty fish/config.fish starship/starship.toml bat/config scripts tests
+git add .gitignore README.md Brewfile ghostty/config.ghostty fish/config.fish starship/starship.toml bat/config fzf/preview.sh scripts tests
 git diff --cached
 git diff --cached --check
 git commit -m "feat: manage terminal configuration"
@@ -280,6 +283,14 @@ git push
 执行 pull 前应先处理未提交变更。`--ff-only` 在本地与远端提交发生分叉时停止，不替你决定合并策略。[Git pull 文档](https://git-scm.com/docs/git-pull)
 
 另一台机器拉取后，链接仍然指向更新后的仓库文件。新开 Fish 会加载配置；Ghostty 则重载或新建窗口。新增配置文件时，还要更新恢复脚本的映射，并在每台机器重新执行接入。
+
+以增加 Ctrl + T 预览为例，只提交 Fish 参数是不完整的，还需要一起保存 `fzf/preview.sh`，并在恢复脚本映射中增加：
+
+```python
+'fzf/preview.sh': '.config/fzf/preview.sh',
+```
+
+这里是一条映射条目，应放进现有的配置映射字典。同步更新 README，并在检查脚本中加入 `sh -n fzf/preview.sh`。另一台机器拉取后，先运行恢复脚本预览，再 `--apply`、`--status`；只有新增脚本的链接缺失时，已有正确链接会跳过。新开 Fish 后，用 `bat ` 加 Ctrl + T 验证文件预览和路径插入。这使配置、依赖脚本和恢复流程一起随 Git 同步。
 
 遇到冲突先查看 `git status` 和 `git log --oneline --graph --all`，确认两端分别改了什么，再决定合并或变基。不要为“同步成功”直接强推，也不要用硬重置丢掉未确认的修改。
 
@@ -362,8 +373,8 @@ git remote -v
 
 | 验证 | 通过标准 |
 | --- | --- |
-| Fish 语法 | `fish --no-execute fish/config.fish` 无错误 |
-| 首次接入与重复接入 | 原文件已备份，四个链接正确，第二次执行不产生额外备份 |
+| Fish 与预览脚本语法 | `fish --no-execute fish/config.fish` 和 `sh -n fzf/preview.sh` 无错误 |
+| 首次接入与重复接入 | 原文件已备份，五个链接正确，第二次执行不产生额外备份 |
 | 文件和原有链接回滚 | 恢复接入前的目标状态，原先不存在的入口被移除 |
 | 冲突拒绝 | 目标为目录时在写入前停止，回滚时不覆盖后续创建的文件 |
 | 安装异常 | 模拟中途建立链接失败，已处理项目能恢复 |
@@ -371,7 +382,7 @@ git remote -v
 | 交互初始化 | 新 Fish 能找到工具并加载函数，命令配色保持预期 |
 | Git 远端 | 远端为私有，提交与本地一致，工作区干净 |
 
-五项隔离恢复测试、Fish 语法与本机接入验证已经通过。这些验证针对配置接入流程，不代表已经在全新 macOS 上执行过完整安装，也不包含灾难恢复保证。
+五项隔离恢复测试、Fish 与预览脚本语法检查、本机接入验证已经通过；恢复测试覆盖了原有预览脚本的备份和回滚。这些验证针对配置接入流程，不代表已经在全新 macOS 上执行过完整安装，也不包含灾难恢复保证。
 
 后续每次只增加有明确用途的配置：修改文件、检查差异、验证交互、提交同步。命令历史、目录数据库、凭据以及整机恢复继续由各自的数据备份方案负责。
 
