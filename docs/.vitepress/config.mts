@@ -338,6 +338,10 @@ export default defineConfig({
                     {
                       text: '06 · 配置同步与恢复',
                       link: '/knowledge/engineering/terminal-dotfiles-sync-and-restore'
+                    },
+                    {
+                      text: '补充 · SSH 退格异常与 terminfo',
+                      link: '/knowledge/engineering/ghostty-ssh-backspace-terminfo'
                     }
                   ]
                 },
