@@ -279,6 +279,10 @@ export default defineConfig({
                   collapsed: false,
                   items: [
                     {
+                      text: 'Codex SSH 图片粘贴与输入链路',
+                      link: '/knowledge/ai-engineering/codex-ssh-image-clipboard-and-app-server'
+                    },
+                    {
                       text: 'MoneyPrinterTurbo 架构与智能剪辑',
                       link: '/knowledge/ai-engineering/moneyprinterturbo-architecture-and-intelligent-video-editing'
                     }

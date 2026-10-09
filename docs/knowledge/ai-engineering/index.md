@@ -90,4 +90,5 @@ description: Agent、Skills、控制面与自动化协作
 
 ## AI 视频与多模态工作流
 
+- [Codex SSH 图片粘贴：X11 剪贴板与 App Server 输入链路](./codex-ssh-image-clipboard-and-app-server.md)
 - [MoneyPrinterTurbo 架构拆解：从自动视频拼装到智能剪辑 Agent](./moneyprinterturbo-architecture-and-intelligent-video-editing.md)
