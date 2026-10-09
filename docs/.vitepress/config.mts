@@ -330,6 +330,10 @@ export default defineConfig({
               collapsed: false,
               items: [
                 {
+                  text: 'MacBook 远程开发机配置',
+                  link: '/knowledge/engineering/macbook-remote-development-setup'
+                },
+                {
                   text: '现代终端工作流',
                   link: '/knowledge/engineering/#terminal-workflow',
                   collapsed: false,

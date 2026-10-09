@@ -25,6 +25,7 @@ features:
 
 ## 最近更新
 
+- [将 MacBook 配置为远程开发机](/knowledge/engineering/macbook-remote-development-setup)
 - [Codex SSH 图片粘贴：X11 剪贴板与 App Server 输入链路](/knowledge/ai-engineering/codex-ssh-image-clipboard-and-app-server)
 - [Ghostty SSH 退格异常：理解 TERM 与 terminfo](/knowledge/engineering/ghostty-ssh-backspace-terminfo)
 - [终端配置同步：Git、符号链接与换机恢复](/knowledge/engineering/terminal-dotfiles-sync-and-restore)
