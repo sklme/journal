@@ -304,8 +304,23 @@ export default defineConfig({
                   ]
                 },
                 {
-                  text: 'Multica：Agent 管理层与控制面',
-                  link: '/knowledge/ai-engineering/multica-agent-control-plane'
+                  text: 'Agent 平台与控制面',
+                  link: '/knowledge/ai-engineering/#agent-平台与控制面',
+                  collapsed: false,
+                  items: [
+                    {
+                      text: 'dot 定位与能力边界',
+                      link: '/knowledge/ai-engineering/dot-positioning-and-capability-boundaries'
+                    },
+                    {
+                      text: 'dot 对话记录',
+                      link: '/knowledge/ai-engineering/dot-conversation-record'
+                    },
+                    {
+                      text: 'Multica：Agent 管理层与控制面',
+                      link: '/knowledge/ai-engineering/multica-agent-control-plane'
+                    }
+                  ]
                 }
               ]
             },

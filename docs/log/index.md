@@ -9,6 +9,8 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-10
 
+- `2026-10-09` · AI 工程 · [dot 对话记录](/knowledge/ai-engineering/dot-conversation-record) — 记录围绕 dot 定位、记忆和任务边界的 28 条对话，保留顺序与公共来源。
+- `2026-10-09` · AI 工程 · [dot 定位与能力边界](/knowledge/ai-engineering/dot-positioning-and-capability-boundaries) — 从一次关于替代性、记忆和跨设备任务的讨论，理解 dot 的组织价值、执行环境与会话保存边界。
 - `2026-10-09` · AI 工程 · [Codex SSH 图片粘贴：X11 剪贴板与 App Server 输入链路](/knowledge/ai-engineering/codex-ssh-image-clipboard-and-app-server) — 区分远程 CLI、本地客户端和 App Server 的图片输入链路，定位 X11 剪贴板超时并选择可验证的处理方式。
 - `2026-10-09` · 工程实践 · [Ghostty SSH 退格异常：理解 TERM 与 terminfo](/knowledge/engineering/ghostty-ssh-backspace-terminfo) — 理解 xterm、TERM 与 terminfo 的关系，定位并修复 SSH 后的退格和光标显示异常。
 - `2026-10-07` · 工程实践 · [终端配置同步：Git、符号链接与换机恢复](/knowledge/engineering/terminal-dotfiles-sync-and-restore) — 用私有 Git 仓库集中管理终端配置，通过符号链接、本机备份和 Brewfile 实现日常同步、换机恢复与回滚。

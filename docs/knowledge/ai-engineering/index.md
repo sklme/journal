@@ -86,6 +86,9 @@ description: Agent、Skills、控制面与自动化协作
 
 ## Agent 平台与控制面
 
+- [dot 定位与能力边界](./dot-positioning-and-capability-boundaries.md)
+- [dot 对话记录](./dot-conversation-record.md)
+
 - [Multica：Agent 管理层、控制面与适用边界](./multica-agent-control-plane.md)
 
 ## AI 视频与多模态工作流
