@@ -334,6 +334,10 @@ export default defineConfig({
                   link: '/knowledge/engineering/macbook-remote-development-setup'
                 },
                 {
+                  text: 'Tailscale 与 Clash TUN 共存',
+                  link: '/knowledge/engineering/macos-tailscale-clash-tun-coexistence'
+                },
+                {
                   text: '现代终端工作流',
                   link: '/knowledge/engineering/#terminal-workflow',
                   collapsed: false,

@@ -23,6 +23,7 @@ description: 文档工程、构建、测试、持续集成与项目维护
 
 ## 工程专题
 
+- [macOS 上让 Tailscale 与 Clash TUN 共存：配置实践与原理](./macos-tailscale-clash-tun-coexistence.md) — 通过关闭 Tailscale DNS 接管与排除组网网段解决实际共存冲突，记录截图、机制分析与人工验证边界。
 - [将 MacBook 配置为远程开发机](./macbook-remote-development-setup.md) — 配置开盖接电、30 分钟熄屏与密码锁屏、SSH 和 tmux，并区分系统在线与 Codex 手机旧会话恢复故障。
 - [AKSK、STS 与 CAM 角色：三种临时凭证获取方式](./aksk-sts-cam-oidc-saml.md)
 - [COS：对象存储的设计、权限与工程实践](./cos-object-storage-design-and-practices.md)

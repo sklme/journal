@@ -9,6 +9,7 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-10
 
+- `2026-10-10` · 工程实践 · [macOS 上让 Tailscale 与 Clash TUN 共存：配置实践与原理](/knowledge/engineering/macos-tailscale-clash-tun-coexistence) — 通过关闭 Tailscale DNS 接管与排除组网网段解决实际共存冲突，记录截图、机制分析与人工验证边界。
 - `2026-10-09` · 工程实践 · [将 MacBook 配置为远程开发机](/knowledge/engineering/macbook-remote-development-setup) — 配置开盖接电、30 分钟熄屏与密码锁屏、SSH 和 tmux，并区分系统在线与 Codex 手机旧会话恢复故障。
 - `2026-10-09` · AI 工程 · [dot 对话记录](/knowledge/ai-engineering/dot-conversation-record) — 记录围绕 dot 定位、记忆和任务边界的 28 条对话，保留顺序与公共来源。
 - `2026-10-09` · AI 工程 · [dot 定位与能力边界](/knowledge/ai-engineering/dot-positioning-and-capability-boundaries) — 从一次关于替代性、记忆和跨设备任务的讨论，理解 dot 的组织价值、执行环境与会话保存边界。
