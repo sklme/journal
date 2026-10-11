@@ -20,6 +20,7 @@ description: 文档工程、构建、测试、持续集成与项目维护
 - [05 · 搜索定位：fd 与 rg](./fd-ripgrep-search-with-fish.md) — 按名称查文件、按内容找代码，再组合筛选与预览。
 - [06 · 配置同步与恢复](./terminal-dotfiles-sync-and-restore.md) — 用 Git 管理配置，通过符号链接、备份与安装清单完成同步和换机。
 - [补充 · Ghostty SSH 退格异常：理解 TERM 与 terminfo](./ghostty-ssh-backspace-terminfo.md) — 区分终端类型声明与能力数据库，定位并修复远端退格和光标显示异常。
+- [补充 · tmux 实用指南：常用命令、会话管理与远程开发](./tmux-practical-guide.md) — 用速查表和典型场景练习会话、窗口、分屏、历史复制与跨设备接续。
 
 ## 工程专题
 

@@ -9,6 +9,7 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-10
 
+- `2026-10-11` · 工程实践 · [tmux 实用指南：常用命令、会话管理与远程开发](/knowledge/engineering/tmux-practical-guide) — 从日常速查到典型场景，掌握 tmux 会话、窗口、分屏、历史复制和跨设备接续，并理解离开与结束任务的区别。
 - `2026-10-11` · 工程实践 · [在文档中使用 Mermaid 图表](/knowledge/engineering/mermaid-diagrams-in-vitepress) — 使用 Mermaid 代码块绘制流程图、时序图和关系图，并理解主题切换与渲染边界。
 - `2026-10-10` · 工程实践 · [macOS 上让 Tailscale 与 Clash TUN 共存：配置实践与原理](/knowledge/engineering/macos-tailscale-clash-tun-coexistence) — 通过关闭 Tailscale DNS 接管与排除组网网段解决实际共存冲突，记录截图、机制分析与人工验证边界。
 - `2026-10-09` · 工程实践 · [将 MacBook 配置为远程开发机](/knowledge/engineering/macbook-remote-development-setup) — 配置开盖接电、30 分钟熄屏与密码锁屏、SSH 和 tmux，并区分系统在线与 Codex 手机旧会话恢复故障。

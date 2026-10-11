@@ -25,6 +25,7 @@ features:
 
 ## 最近更新
 
+- [tmux 实用指南：常用命令、会话管理与远程开发](/knowledge/engineering/tmux-practical-guide)
 - [macOS 上让 Tailscale 与 Clash TUN 共存：配置实践与原理](/knowledge/engineering/macos-tailscale-clash-tun-coexistence)
 - [将 MacBook 配置为远程开发机](/knowledge/engineering/macbook-remote-development-setup)
 - [Codex SSH 图片粘贴：X11 剪贴板与 App Server 输入链路](/knowledge/ai-engineering/codex-ssh-image-clipboard-and-app-server)
@@ -32,4 +33,3 @@ features:
 - [终端配置同步：Git、符号链接与换机恢复](/knowledge/engineering/terminal-dotfiles-sync-and-restore)
 - [fd 与 ripgrep：Fish 文件查找与内容搜索实践](/knowledge/engineering/fd-ripgrep-search-with-fish)
 - [bat：终端文件阅读与 fzf 预览实践](/knowledge/engineering/bat-file-reading-with-fish)
-- [eza：Fish 文件浏览与目录树实践](/knowledge/engineering/eza-file-browsing-with-fish)

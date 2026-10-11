@@ -371,6 +371,10 @@ export default defineConfig({
                     {
                       text: '补充 · SSH 退格异常与 terminfo',
                       link: '/knowledge/engineering/ghostty-ssh-backspace-terminfo'
+                    },
+                    {
+                      text: '补充 · tmux 会话与远程开发',
+                      link: '/knowledge/engineering/tmux-practical-guide'
                     }
                   ]
                 },
