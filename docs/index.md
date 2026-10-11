@@ -25,11 +25,10 @@ features:
 
 ## 最近更新
 
-- [tmux 实用指南：常用命令、会话管理与远程开发](/knowledge/engineering/tmux-practical-guide)
-- [macOS 上让 Tailscale 与 Clash TUN 共存：配置实践与原理](/knowledge/engineering/macos-tailscale-clash-tun-coexistence)
-- [将 MacBook 配置为远程开发机](/knowledge/engineering/macbook-remote-development-setup)
+- [MacBook 远程开发机系列：总览与配置路线](/knowledge/engineering/macbook-remote-development-setup)
+- [屏幕共享与 iPhone 接入](/knowledge/engineering/macbook-remote-development-screen-sharing)
+- [Codex 手机旧会话恢复排障](/knowledge/ai-engineering/codex-mobile-session-reconnect-troubleshooting)
+- [tmux 实用指南：常用命令与跨设备接续](/knowledge/engineering/tmux-practical-guide)
+- [在文档中使用 Mermaid 图表](/knowledge/engineering/mermaid-diagrams-in-vitepress)
 - [Codex SSH 图片粘贴：X11 剪贴板与 App Server 输入链路](/knowledge/ai-engineering/codex-ssh-image-clipboard-and-app-server)
-- [Ghostty SSH 退格异常：理解 TERM 与 terminfo](/knowledge/engineering/ghostty-ssh-backspace-terminfo)
 - [终端配置同步：Git、符号链接与换机恢复](/knowledge/engineering/terminal-dotfiles-sync-and-restore)
-- [fd 与 ripgrep：Fish 文件查找与内容搜索实践](/knowledge/engineering/fd-ripgrep-search-with-fish)
-- [bat：终端文件阅读与 fzf 预览实践](/knowledge/engineering/bat-file-reading-with-fish)

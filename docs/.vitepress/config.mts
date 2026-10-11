@@ -306,6 +306,17 @@ export default defineConfig({
                   ]
                 },
                 {
+                  text: 'Codex 远程使用与排障',
+                  link: '/knowledge/ai-engineering/#codex-远程使用与排障',
+                  collapsed: false,
+                  items: [
+                    {
+                      text: '手机旧会话恢复排障',
+                      link: '/knowledge/ai-engineering/codex-mobile-session-reconnect-troubleshooting'
+                    }
+                  ]
+                },
+                {
                   text: 'Agent 平台与控制面',
                   link: '/knowledge/ai-engineering/#agent-平台与控制面',
                   collapsed: false,
@@ -332,12 +343,19 @@ export default defineConfig({
               collapsed: false,
               items: [
                 {
-                  text: 'MacBook 远程开发机配置',
-                  link: '/knowledge/engineering/macbook-remote-development-setup'
-                },
-                {
-                  text: 'Tailscale 与 Clash TUN 共存',
-                  link: '/knowledge/engineering/macos-tailscale-clash-tun-coexistence'
+                  text: 'MacBook 远程开发机系列',
+                  link: '/knowledge/engineering/#macbook-remote-development',
+                  collapsed: false,
+                  items: [
+                    { text: '总览 · 配置路线', link: '/knowledge/engineering/macbook-remote-development-setup' },
+                    { text: '01 · 供电、熄屏与锁屏', link: '/knowledge/engineering/macbook-remote-development-power-and-sleep' },
+                    { text: '02 · Tailscale 与 SSH', link: '/knowledge/engineering/macbook-remote-development-network-and-ssh' },
+                    { text: '03 · 屏幕共享与 iPhone', link: '/knowledge/engineering/macbook-remote-development-screen-sharing' },
+                    { text: '04 · tmux 与跨设备接续', link: '/knowledge/engineering/tmux-practical-guide' },
+                    { text: '05 · 工具、IDE 与容器', link: '/knowledge/engineering/macbook-remote-development-tools-and-services' },
+                    { text: '06 · 验收、恢复与维护', link: '/knowledge/engineering/macbook-remote-development-recovery-and-checks' },
+                    { text: '排障 · Tailscale 与 Clash', link: '/knowledge/engineering/macos-tailscale-clash-tun-coexistence' }
+                  ]
                 },
                 {
                   text: '现代终端工作流',
@@ -371,10 +389,6 @@ export default defineConfig({
                     {
                       text: '补充 · SSH 退格异常与 terminfo',
                       link: '/knowledge/engineering/ghostty-ssh-backspace-terminfo'
-                    },
-                    {
-                      text: '补充 · tmux 会话与远程开发',
-                      link: '/knowledge/engineering/tmux-practical-guide'
                     }
                   ]
                 },

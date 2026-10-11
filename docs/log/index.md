@@ -9,10 +9,17 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-10
 
+- `2026-10-11` · 工程实践 · [MacBook 远程开发机：供电、熄屏与锁屏](/knowledge/engineering/macbook-remote-development-power-and-sleep) — 通过 GUI 配置开盖接电、防止闲置睡眠、30 分钟熄屏与立即要求密码，并用系统字段和远程新连接验收。
+- `2026-10-11` · 工程实践 · [MacBook 远程开发机：Tailscale 与 SSH](/knowledge/engineering/macbook-remote-development-network-and-ssh) — 明确服务端与客户端的分工，通过 Tailscale 连接指定 Mac 账户，并从客户端安装公钥、验证密钥认证。
+- `2026-10-11` · 工程实践 · [MacBook 远程开发机：屏幕共享与 iPhone 接入](/knowledge/engineering/macbook-remote-development-screen-sharing) — 通过 GUI 限定屏幕共享账户，使用另一台 Mac 或 iPhone 的 Screens 客户端经 Tailscale 操作桌面，并分别验收认证与外网连接。
+- `2026-10-11` · 工程实践 · [MacBook 远程开发机：开发工具、远程 IDE 与容器](/knowledge/engineering/macbook-remote-development-tools-and-services) — 按项目版本建立远端开发环境，通过 Remote SSH 和端口转发编辑与访问项目，并按需选择容器后端。
+- `2026-10-11` · 工程实践 · [MacBook 远程开发机：验收、重启恢复与维护](/knowledge/engineering/macbook-remote-development-recovery-and-checks) — 分层验证配置、外网、熄屏和任务接续，按阶段检查重启恢复，并正确判断 APFS 可用空间与后续维护需求。
+- `2026-10-11` · AI 工程 · [Codex 手机旧会话无法恢复：分层排查与绕行](/knowledge/ai-engineering/codex-mobile-session-reconnect-troubleshooting) — 以同条件的新旧任务对照区分主机在线、任务执行和历史加载，保留已验证现象、未确认原因及安全接续路径。
+
 - `2026-10-11` · 工程实践 · [tmux 实用指南：常用命令、会话管理与远程开发](/knowledge/engineering/tmux-practical-guide) — 从日常速查到典型场景，掌握 tmux 会话、窗口、分屏、历史复制和跨设备接续，并理解离开与结束任务的区别。
 - `2026-10-11` · 工程实践 · [在文档中使用 Mermaid 图表](/knowledge/engineering/mermaid-diagrams-in-vitepress) — 使用 Mermaid 代码块绘制流程图、时序图和关系图，并理解主题切换与渲染边界。
 - `2026-10-10` · 工程实践 · [macOS 上让 Tailscale 与 Clash TUN 共存：配置实践与原理](/knowledge/engineering/macos-tailscale-clash-tun-coexistence) — 通过关闭 Tailscale DNS 接管与排除组网网段解决实际共存冲突，记录截图、机制分析与人工验证边界。
-- `2026-10-09` · 工程实践 · [将 MacBook 配置为远程开发机](/knowledge/engineering/macbook-remote-development-setup) — 配置开盖接电、30 分钟熄屏与密码锁屏、SSH 和 tmux，并区分系统在线与 Codex 手机旧会话恢复故障。
+- `2026-10-09` · 工程实践 · [将 MacBook 配置为远程开发机：系列总览](/knowledge/engineering/macbook-remote-development-setup) — 按供电、网络与 SSH、屏幕共享、tmux、开发工具和恢复验收的顺序搭建远程开发机，并按症状查阅独立排障文章。
 - `2026-10-09` · AI 工程 · [dot 对话记录](/knowledge/ai-engineering/dot-conversation-record) — 记录围绕 dot 定位、记忆和任务边界的 28 条对话，保留顺序与公共来源。
 - `2026-10-09` · AI 工程 · [dot 定位与能力边界](/knowledge/ai-engineering/dot-positioning-and-capability-boundaries) — 从一次关于替代性、记忆和跨设备任务的讨论，理解 dot 的组织价值、执行环境与会话保存边界。
 - `2026-10-09` · AI 工程 · [Codex SSH 图片粘贴：X11 剪贴板与 App Server 输入链路](/knowledge/ai-engineering/codex-ssh-image-clipboard-and-app-server) — 区分远程 CLI、本地客户端和 App Server 的图片输入链路，定位 X11 剪贴板超时并选择可验证的处理方式。

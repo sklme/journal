@@ -12,6 +12,8 @@ description: 从一次实际冲突出发，通过关闭 Tailscale DNS 接管与�
 
 # macOS 上让 Tailscale 与 Clash TUN 共存：配置实践与原理
 
+本文是 [MacBook 远程开发机系列](./macbook-remote-development-setup.md)的网络排障篇。基础网络与 SSH 配置见 [第二篇](./macbook-remote-development-network-and-ssh.md)。
+
 这次实践的目标是在同一台 MacBook 上同时使用两套网络工具：**Clash Verge Rev 保持 TUN 模式，处理日常联网与代理分流；Tailscale 提供设备间的私有网络连接。**
 
 初始状态下，Clash 单独运行正常；一连接 Tailscale，需要代理的网站就打不开，断开 Tailscale 又恢复。最终关闭本机的 **Use Tailscale DNS settings**，并在 Clash TUN 中排除 `100.64.0.0/10` 与 `fd7a:115c:a1e0::/48`。2026 年 10 月 10 日，操作者手动测试后确认两者可以同时使用。

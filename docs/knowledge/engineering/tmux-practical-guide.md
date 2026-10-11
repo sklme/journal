@@ -15,6 +15,8 @@ tmux 适合把终端工作留在一台机器上持续运行：电脑关闭终端
 
 命令示例以 macOS 为主，基础操作同样适用于 Linux。会话名 `dev`、`work` 和 SSH 别名 `devmac` 都是通用示例。基础命令可在 Zsh 或 Fish 中使用；练习中的循环明确交给 `sh` 执行。
 
+本文同时是 [MacBook 远程开发机系列](./macbook-remote-development-setup.md)的第四篇。先完成 [网络与 SSH](./macbook-remote-development-network-and-ssh.md)；需要图形界面时阅读 [屏幕共享篇](./macbook-remote-development-screen-sharing.md)。
+
 ## 日常速查：先记住这些
 
 本文把默认前缀 **Ctrl + B** 写成 **前缀**。每次先同时按 Ctrl 和 B，松开两个键，再按表中的后续键。例如“前缀 → D”就是 **Ctrl + B，松开，再按 D**，输入的是小写 `d`。
@@ -362,3 +364,7 @@ man tmux
 - [OpenBSD tmux 手册](https://man.openbsd.org/tmux.1)：可浏览的命令参考。
 
 具体行为以本机 `tmux -V` 对应的 `man tmux`、当前配置和实际按键绑定为准。
+
+## 系列阅读
+
+[返回远程开发机系列](./macbook-remote-development-setup.md) · [上一篇：屏幕共享](./macbook-remote-development-screen-sharing.md) · [下一篇：开发工具与容器](./macbook-remote-development-tools-and-services.md)

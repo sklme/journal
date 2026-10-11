@@ -22,10 +22,28 @@ description: 文档工程、构建、测试、持续集成与项目维护
 - [补充 · Ghostty SSH 退格异常：理解 TERM 与 terminfo](./ghostty-ssh-backspace-terminfo.md) — 区分终端类型声明与能力数据库，定位并修复远端退格和光标显示异常。
 - [补充 · tmux 实用指南：常用命令、会话管理与远程开发](./tmux-practical-guide.md) — 用速查表和典型场景练习会话、窗口、分屏、历史复制与跨设备接续。
 
+## MacBook 远程开发机系列 {#macbook-remote-development}
+
+从保持在线到实际开发，按执行位置、操作步骤、预期结果与验收建立远程环境。已有配置先核对，再补充缺少的部分。
+
+- [系列总览与配置路线](./macbook-remote-development-setup.md)
+- [01 · 供电、熄屏与锁屏](./macbook-remote-development-power-and-sleep.md)
+- [02 · Tailscale 与 SSH](./macbook-remote-development-network-and-ssh.md)
+- [03 · 屏幕共享与 iPhone 接入](./macbook-remote-development-screen-sharing.md)
+- [04 · tmux 会话与跨设备接续](./tmux-practical-guide.md)
+- [05 · 开发工具、远程 IDE 与容器](./macbook-remote-development-tools-and-services.md)
+- [06 · 验收、重启恢复与维护](./macbook-remote-development-recovery-and-checks.md)
+
+排障按症状查阅：
+
+- [Tailscale 与 Clash TUN 共存](./macos-tailscale-clash-tun-coexistence.md)
+- [SSH 退格与光标异常](./ghostty-ssh-backspace-terminfo.md)
+- [Codex 手机旧会话恢复](../ai-engineering/codex-mobile-session-reconnect-troubleshooting.md)
+
+容器替代方案见 [Docker CLI 与 Podman](./docker-cli-with-podman-on-macos.md)。
+
 ## 工程专题
 
-- [macOS 上让 Tailscale 与 Clash TUN 共存：配置实践与原理](./macos-tailscale-clash-tun-coexistence.md) — 通过关闭 Tailscale DNS 接管与排除组网网段解决实际共存冲突，记录截图、机制分析与人工验证边界。
-- [将 MacBook 配置为远程开发机](./macbook-remote-development-setup.md) — 配置开盖接电、30 分钟熄屏与密码锁屏、SSH 和 tmux，并区分系统在线与 Codex 手机旧会话恢复故障。
 - [AKSK、STS 与 CAM 角色：三种临时凭证获取方式](./aksk-sts-cam-oidc-saml.md)
 - [COS：对象存储的设计、权限与工程实践](./cos-object-storage-design-and-practices.md)
 - [CDN 与 COS：CNAME、TLS、回源路径和权限](./cdn-cos-cname-tls-origin-pull.md)

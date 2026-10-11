@@ -51,6 +51,10 @@ description: Agent、Skills、控制面与自动化协作
 - [Agent 型 MCP 网关：作为第二 Agent 代理规划与执行](./mcp-gateway-agent-proxy.md)
 - [MCP 管理、Tool Broker 与领域 Agent 的业界实践](./mcp-management-broker-and-agent-industry-practices.md)
 
+## Codex 远程使用与排障
+
+- [Codex 手机旧会话无法恢复：分层排查与绕行](./codex-mobile-session-reconnect-troubleshooting.md) — 使用同条件的新旧任务对照区分主机可达、任务执行和历史加载。
+
 ## Codex 插件扩展
 
 - [Codex 插件开发：从 MCP Server 到对话内 UI](./codex-plugin-development-and-ui-boundaries.md)
