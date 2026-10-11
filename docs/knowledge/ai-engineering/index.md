@@ -1,101 +1,60 @@
 ---
 title: AI 工程
-description: Agent、Skills、控制面与自动化协作
+description: 按 Agent 与 LLM、评测、工具扩展和 AI 研发四条路线浏览
 ---
 
 # AI 工程
 
-这里记录 Agent 系统、Skills、控制面和自动化协作中的概念、架构与实践。
+按当前问题选择一条路线。每个主题都有独立的首页、阅读顺序和侧栏，可以从总览进入，也可以直接查阅文章。
+
+## 主题导航
+
+<TopicCards area="ai" />
 
 ## LLM 缓存与 Agent 推理
 
-从 Transformer 内部 KV Cache 出发，理解跨请求前缀缓存、不同模型提供商的产品方案，以及 Agent Harness 如何影响实际命中率：
-
-- [LLM 缓存机制：原理、流派与工程实践](./llm-caching-mechanisms-and-practices.md)
-- [主流 LLM 的 Prompt Cache 方案与机制对比](./llm-provider-prompt-caching-comparison.md)
-- [DeepSeek Agent Harness 与前缀缓存优化](./deepseek-agent-harness-prefix-cache-optimization.md)
+进入 [Agent 与 LLM · 模型缓存](/knowledge/topics/agent-llm/#llm-cache)。
 
 ## 结构化 AI 决策
 
-理解 Jev/System One 如何把自然语言判断拆成可组合的类型化决策，并建立置信度、bad case 和工作流迭代闭环：
-
-- [Jev：把 AI 判断拆成可组合的结构化决策原语](./jev-structured-ai-decision-primitives.md)
+进入 [Agent 与 LLM · 结构化决策](/knowledge/topics/agent-llm/#structured-decisions)。
 
 ## Agent 评测工程
 
-围绕质量定义、Trace、任务集、Grader、受控实验和生产反馈，建立从“感觉变好”到可验证优化的完整知识路线：
-
-- [Agent 评测工程知识体系：从可观测性到质量基础设施](./agent-evaluation-engineering-knowledge-roadmap.md)
-- [为什么 Agent 评测比搭建 Agent 更难](./why-agent-evaluation-is-hard.md)
-- [Agent 评测对象的四层边界：模型、Harness、系统与产品](./agent-evaluation-target-boundaries.md)
-- [没有标准答案，如何用 Evaluation Contract 定义 Agent 成功](./agent-evaluation-contract.md)
-- [Trace、Eval、Experiment 与 Monitoring：Agent 质量系统的四个层次](./agent-trace-eval-experiment-monitoring-boundaries.md)
-- [如何设计 Agent Trace Tree：从模型调用到最终状态](./agent-trace-tree-design.md)
-- [如何让 Agent 评测实验可复现](./reproducible-agent-evaluation-experiments.md)
-- [为什么个人和团队需要自己的 Agent Eval Dataset](./why-build-your-own-agent-eval-dataset.md)
-- [如何把真实工作转化成 Agent Eval Case](./turn-real-work-into-agent-eval-cases.md)
-- [一个健康的 Agent 评测集如何分层](./healthy-agent-eval-dataset-layers.md)
-- [能用代码判断的，就不要交给 LLM](./deterministic-graders-for-agent-evaluation.md)
-- [LLM-as-Judge 如何避免成为另一种玄学](./reliable-llm-as-judge-for-agent-evaluation.md)
-- [Agent Trajectory 应该评什么](./what-to-evaluate-in-agent-trajectories.md)
+进入 [Agent 评测](/knowledge/topics/agent-evaluation/)，按评测对象、可观测性、任务集和评测器顺序阅读。
 
 ## MCP 工程化
 
-围绕 MCP 的配置生命周期、运行时工具发现、代理执行和领域 Agent 封装，建议按以下顺序阅读：
-
-- [MCP 配置管理与同步：不引入运行时网关的控制面方案](./mcp-configuration-management-and-sync.md)
-- [个人开发者如何管理 Codex MCP：何时需要 ToolHive](./codex-mcp-management-for-individual-developers.md)
-- [Obsidian 原生 MCP 接入 Codex](./obsidian-native-mcp-codex.md)
-- [MCP 工具网关：基础架构与核心契约](./mcp-gateway-foundation.md)
-- [Broker 型 MCP 网关：检索、校验与转发](./mcp-gateway-tool-broker.md)
-- [Agent 型 MCP 网关：作为第二 Agent 代理规划与执行](./mcp-gateway-agent-proxy.md)
-- [MCP 管理、Tool Broker 与领域 Agent 的业界实践](./mcp-management-broker-and-agent-industry-practices.md)
+进入 [MCP 与 Skills · MCP 工程化](/knowledge/topics/mcp-skills/#mcp)。
 
 ## Codex 远程使用与排障
 
-- [Codex 手机旧会话无法恢复：分层排查与绕行](./codex-mobile-session-reconnect-troubleshooting.md) — 使用同条件的新旧任务对照区分主机可达、任务执行和历史加载。
+进入 [开发环境 · Codex 远程排障](/knowledge/topics/development-environment/#codex-remote)。
 
 ## Codex 插件扩展
 
-- [Codex 插件开发：从 MCP Server 到对话内 UI](./codex-plugin-development-and-ui-boundaries.md)
+进入 [MCP 与 Skills · 插件扩展](/knowledge/topics/mcp-skills/#plugins)。
 
 ## Agent 原生 API 管理
 
-从传统请求编辑器的价值重构出发，依次建立探索到回归的工作流、事实与执行架构、安全 Tool 契约，以及面向人的审查控制面：
-
-- [Agent 时代的 API 管理工具：从请求编辑器到能力基础设施](./agent-native-api-management-from-client-to-infrastructure.md)
-- [Agent 原生 API 测试：从临时探索到稳定回归](./agent-native-api-testing-exploration-to-regression.md)
-- [Agent 原生 API 测试架构：事实来源、Runner 与多入口](./agent-native-api-source-of-truth-and-execution-architecture.md)
-- [Agent 原生 API Tool 设计：从任意 HTTP 到安全插件](./agent-native-api-tools-and-plugin-design.md)
-- [Agent 原生 API 工具的 Human UI：从操作台到审查控制面](./agent-native-api-human-control-surface.md)
+进入 [AI 研发工具 · API 管理](/knowledge/topics/ai-development/#api-tools)。
 
 ## 多 Agent 工程协作
 
-- [跨机器 Agent 上下文交接：任务状态、长期记忆与 Multica 实践](./cross-machine-agent-context-handoff.md)
-- [多 Agent 工程协作：角色之外的认知独立性](./multi-agent-cognitive-independence.md)
-- [从多角色协作到 Agent Runtime：工程化设计指南](./agent-runtime-engineering-guide.md)
+进入 [Agent 与 LLM · 工程协作](/knowledge/topics/agent-llm/#collaboration)。
 
 ## AI 辅助代码理解
 
-- [AI 代码知识图谱的价值边界：从 Agent 加速层到人类代码地图](./ai-code-knowledge-graph-and-human-first-code-map.md)
-- [Agent 代码审查的哲学：从黑盒验证到渐进式保证](./agent-code-review-progressive-assurance.md)
-- [Spec、ChangeGraph 与 EvidenceGraph：Agent 开发的意图—实现—证据闭环](./spec-changegraph-evidence-reconciliation.md)
-- [ChangeGraph 的社区实践与竞品分析：从代码地图到变更保证系统](./changegraph-community-practices-and-competitive-landscape.md)
-- [ChangeGraph 设计哲学：面向人类的 Agent 变更审查系统](./changegraph-human-centered-review-design-philosophy.md)
+进入 [AI 研发工具 · 代码理解与审查](/knowledge/topics/ai-development/#code-review)。
 
 ## Agent Skills 管理
 
-- [npx skills 的安装与更新原理：远端解析、目录替换与软链接](./npx-skills-installation-and-update-model.md)
-- [Agent Skills 分发与生命周期管理](./agent-skills-distribution-and-lifecycle-management.md)
+进入 [MCP 与 Skills · Skills 管理](/knowledge/topics/mcp-skills/#skills)。
 
 ## Agent 平台与控制面
 
-- [dot 定位与能力边界](./dot-positioning-and-capability-boundaries.md)
-- [dot 对话记录](./dot-conversation-record.md)
-
-- [Multica：Agent 管理层、控制面与适用边界](./multica-agent-control-plane.md)
+进入 [Agent 与 LLM · 平台与控制面](/knowledge/topics/agent-llm/#platforms)。
 
 ## AI 视频与多模态工作流
 
-- [Codex SSH 图片粘贴：X11 剪贴板与 App Server 输入链路](./codex-ssh-image-clipboard-and-app-server.md)
-- [MoneyPrinterTurbo 架构拆解：从自动视频拼装到智能剪辑 Agent](./moneyprinterturbo-architecture-and-intelligent-video-editing.md)
+视频应用进入 [AI 研发工具 · 多模态应用](/knowledge/topics/ai-development/#multimodal)；远程图片输入进入 [开发环境 · Codex 远程排障](/knowledge/topics/development-environment/#codex-remote)。
