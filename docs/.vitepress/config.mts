@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { configureMermaid } from './mermaid-markdown.js'
 
 const repositoryUrl = 'https://github.com/sklme/journal'
 
@@ -18,7 +19,8 @@ export default defineConfig({
   ],
 
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
+    config: configureMermaid
   },
 
   themeConfig: {
@@ -418,6 +420,10 @@ export default defineConfig({
                 {
                   text: '使用 VitePress 搭建个人知识站',
                   link: '/knowledge/engineering/building-a-vitepress-knowledge-site'
+                },
+                {
+                  text: '在文档中使用 Mermaid 图表',
+                  link: '/knowledge/engineering/mermaid-diagrams-in-vitepress'
                 },
                 {
                   text: 'Docker CLI 连接 Podman',

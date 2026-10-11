@@ -29,6 +29,7 @@ description: 文档工程、构建、测试、持续集成与项目维护
 - [COS：对象存储的设计、权限与工程实践](./cos-object-storage-design-and-practices.md)
 - [CDN 与 COS：CNAME、TLS、回源路径和权限](./cdn-cos-cname-tls-origin-pull.md)
 - [使用 VitePress 搭建个人知识站](./building-a-vitepress-knowledge-site.md)
+- [在文档中使用 Mermaid 图表](./mermaid-diagrams-in-vitepress.md) — 用代码块绘制流程图、时序图和关系图，自动适配深浅色主题。
 - [macOS 上使用 Docker CLI 连接 Podman](./docker-cli-with-podman-on-macos.md)
 - [Node.js 原生交互全景：内置绑定、Node-API 与 FFI](./nodejs-native-interop-node-api-ffi.md)
 

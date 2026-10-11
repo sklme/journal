@@ -25,3 +25,26 @@
 .vp-doc h2 {
   border-top: 0;
 }
+
+.mermaid-diagram {
+  margin: 24px 0;
+  padding: 16px;
+  overflow-x: auto;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+}
+
+.mermaid-diagram-svg svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.mermaid-diagram pre {
+  margin: 0;
+  white-space: pre;
+}
+
+.mermaid-diagram-error {
+  color: var(--vp-c-danger-1);
+}
