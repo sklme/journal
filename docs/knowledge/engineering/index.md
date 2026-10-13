@@ -19,6 +19,8 @@ description: 从开发环境与工程基础两条路线浏览工程知识
 
 进入 [开发环境 · 远程开发机](/knowledge/topics/development-environment/#remote-development)，按供电、网络、会话、工具和恢复验收建立远程环境。
 
+网络架构研究见 [无公网 IP 的远程组网：原理、移动端整合与云端混合架构](/knowledge/engineering/remote-networking-without-public-ip)，从 NAT 穿透、移动端 VPN 整合与加密边界理解云端和家庭设备的分工。
+
 远程 Codex 的图片输入和旧会话恢复，见 [Codex 远程使用与排障](/knowledge/topics/development-environment/#codex-remote)；容器后端见 [容器环境](/knowledge/topics/development-environment/#containers)。
 
 ## 工程专题

@@ -29,6 +29,7 @@ features:
 
 ## 最近更新
 
+- [无公网 IP 的远程组网：原理、移动端整合与云端混合架构](/knowledge/engineering/remote-networking-without-public-ip)
 - [pnpm 原生发布管理：定位、Changesets 差异与选型建议](/knowledge/engineering/pnpm-native-release-management-and-changesets)
 - [MacBook 远程开发机系列：总览与配置路线](/knowledge/engineering/macbook-remote-development-setup)
 - [屏幕共享与 iPhone 接入](/knowledge/engineering/macbook-remote-development-screen-sharing)

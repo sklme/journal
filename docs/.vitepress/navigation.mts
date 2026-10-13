@@ -539,6 +539,12 @@ export const knowledgeTopics: KnowledgeTopic[] = [
             "link": "/knowledge/engineering/macbook-remote-development-recovery-and-checks"
           },
           {
+            "text": "原理 · 无公网 IP 混合组网",
+            "title": "无公网 IP 的远程组网：原理、移动端整合与云端混合架构",
+            "description": "从 NAT 穿透与加密边界出发，设计云端 HTTPS、家庭 Mac AI 服务和手机 P2P 访问的混合架构，并分析移动端代理整合与验收方法。",
+            "link": "/knowledge/engineering/remote-networking-without-public-ip"
+          },
+          {
             "text": "排障 · Tailscale 与 Clash",
             "title": "macOS 上让 Tailscale 与 Clash TUN 共存：配置实践与原理",
             "description": "从一次实际冲突出发，通过关闭 Tailscale DNS 接管与排除私有网络网段，让远程组网和 Clash TUN 共存，并解释验证结果与适用边界。",
