@@ -29,10 +29,10 @@ features:
 
 ## 最近更新
 
+- [pnpm 原生发布管理：定位、Changesets 差异与选型建议](/knowledge/engineering/pnpm-native-release-management-and-changesets)
 - [MacBook 远程开发机系列：总览与配置路线](/knowledge/engineering/macbook-remote-development-setup)
 - [屏幕共享与 iPhone 接入](/knowledge/engineering/macbook-remote-development-screen-sharing)
 - [Codex 手机旧会话恢复排障](/knowledge/ai-engineering/codex-mobile-session-reconnect-troubleshooting)
 - [tmux 实用指南：常用命令与跨设备接续](/knowledge/engineering/tmux-practical-guide)
 - [在文档中使用 Mermaid 图表](/knowledge/engineering/mermaid-diagrams-in-vitepress)
 - [Codex SSH 图片粘贴：X11 剪贴板与 App Server 输入链路](/knowledge/ai-engineering/codex-ssh-image-clipboard-and-app-server)
-- [终端配置同步：Git、符号链接与换机恢复](/knowledge/engineering/terminal-dotfiles-sync-and-restore)

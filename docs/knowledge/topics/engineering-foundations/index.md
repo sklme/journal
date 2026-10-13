@@ -1,15 +1,21 @@
 ---
 title: 工程基础
-description: 查阅 Node.js、RPC 并发、云身份、对象存储、CDN 与文档工程。
+description: 查阅包版本与发布、Node.js、RPC 并发、云服务与文档工程。
 ---
 
 # 工程基础
 
-查阅 Node.js、RPC 并发、云身份、对象存储、CDN 与文档工程。
+查阅包版本与发布、Node.js、RPC 并发、云服务与文档工程。
 
 ## 推荐阅读路线
 
-请求上下文系列从 HTTP 到 RPC 顺序阅读；云服务部分先理解身份与权限，再阅读存储和 CDN；文档工程部分用于建设和维护知识站。
+包发布部分用于工具选型与迁移；请求上下文系列从 HTTP 到 RPC 顺序阅读；云服务先理解身份与权限；文档工程用于建设和维护知识站。
+
+## 包版本与发布 {#package-releases}
+
+理解变更记录、版本计算与分发的职责，选择可评审、可验证的发布流程。
+
+<TopicArticles topic="engineering-foundations" section="package-releases" />
 
 ## Node.js 异步上下文与 RPC 并发 {#async-context-rpc}
 

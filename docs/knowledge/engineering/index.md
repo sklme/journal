@@ -23,6 +23,7 @@ description: 从开发环境与工程基础两条路线浏览工程知识
 
 ## 工程专题
 
+- [包版本与发布](/knowledge/topics/engineering-foundations/#package-releases)
 - [云身份、存储与 CDN](/knowledge/topics/engineering-foundations/#cloud-services)
 - [Node.js 原生交互](/knowledge/topics/engineering-foundations/#native-interop)
 - [文档工程](/knowledge/topics/engineering-foundations/#documentation)

@@ -584,9 +584,22 @@ export const knowledgeTopics: KnowledgeTopic[] = [
     "id": "engineering-foundations",
     "title": "工程基础",
     "area": "engineering",
-    "description": "查阅 Node.js、RPC 并发、云身份、对象存储、CDN 与文档工程。",
-    "route": "请求上下文系列从 HTTP 到 RPC 顺序阅读；云服务部分先理解身份与权限，再阅读存储和 CDN；文档工程部分用于建设和维护知识站。",
+    "description": "查阅包版本与发布、Node.js、RPC 并发、云服务与文档工程。",
+    "route": "包发布部分用于工具选型与迁移；请求上下文系列从 HTTP 到 RPC 顺序阅读；云服务先理解身份与权限；文档工程用于建设和维护知识站。",
     "sections": [
+      {
+        "id": "package-releases",
+        "title": "包版本与发布",
+        "description": "理解变更记录、版本计算与分发的职责，选择可评审、可验证的发布流程。",
+        "articles": [
+          {
+            "text": "pnpm 原生发布与 Changesets",
+            "title": "pnpm 原生发布管理：定位、Changesets 差异与选型建议",
+            "description": "比较 pnpm 原生发布管理与 Changesets 的配置、预发布和自动化边界，给出接入、迁移与验证建议。",
+            "link": "/knowledge/engineering/pnpm-native-release-management-and-changesets"
+          }
+        ]
+      },
       {
         "id": "async-context-rpc",
         "title": "Node.js 异步上下文与 RPC 并发",

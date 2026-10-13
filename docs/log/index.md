@@ -9,6 +9,7 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-10
 
+- `2026-10-13` · 工程实践 · [pnpm 原生发布管理：定位、Changesets 差异与选型建议](/knowledge/engineering/pnpm-native-release-management-and-changesets) — 比较原生版本管理与 Changesets 的配置、预发布和自动化边界，给出接入、迁移与验证建议。
 - `2026-10-11` · 工程实践 · [MacBook 远程开发机：供电、熄屏与锁屏](/knowledge/engineering/macbook-remote-development-power-and-sleep) — 通过 GUI 配置开盖接电、防止闲置睡眠、30 分钟熄屏与立即要求密码，并用系统字段和远程新连接验收。
 - `2026-10-11` · 工程实践 · [MacBook 远程开发机：Tailscale 与 SSH](/knowledge/engineering/macbook-remote-development-network-and-ssh) — 明确服务端与客户端的分工，通过 Tailscale 连接指定 Mac 账户，并从客户端安装公钥、验证密钥认证。
 - `2026-10-11` · 工程实践 · [MacBook 远程开发机：屏幕共享与 iPhone 接入](/knowledge/engineering/macbook-remote-development-screen-sharing) — 通过 GUI 限定屏幕共享账户，使用另一台 Mac 或 iPhone 的 Screens 客户端经 Tailscale 操作桌面，并分别验收认证与外网连接。
