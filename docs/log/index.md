@@ -9,6 +9,12 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-10
 
+- `2026-10-13` · AI 工程 · [Agent 是随机的：一次成功说明不了什么](/knowledge/ai-engineering/agent-evaluation-with-repeated-trials) — 用重复 Trial、pass@k、pass^k、置信区间和完整运行对账，把一次偶然结果变成可解释的 Agent 可靠性证据。
+- `2026-10-13` · AI 工程 · [如何公平比较两个 Agent](/knowledge/ai-engineering/fair-comparison-of-agent-variants) — 用配对 Case、受控变量、随机化执行和预声明分析，判断两个 Agent 的差异是否来自修改本身。
+- `2026-10-13` · AI 工程 · [不要把所有维度压成一个总分](/knowledge/ai-engineering/multi-dimensional-agent-scorecards-and-release-gates) — 用多维 Scorecard、风险硬门槛、回归预算和分阶段 Release Gate，把 Agent 评测结果转化为可审计的发布决策。
+- `2026-10-13` · AI 工程 · [如何把生产失败转化成 Regression Case](/knowledge/ai-engineering/production-failure-to-regression-case) — 从生产证据、人工归因、稳定复现到脱敏 Case Family，建立能够长期阻止 Agent 失败复发的闭环。
+- `2026-10-13` · AI 工程 · [Agent Trace 的安全、隐私与数据治理](/knowledge/ai-engineering/agent-telemetry-safety-privacy-and-data-governance) — 用数据最小化、字段分级、分层存储、访问审计和删除血缘，让 Agent Trace 可用于评测而不成为新的安全风险。
+- `2026-10-13` · AI 工程 · [什么时候才值得建设 Agent Eval 平台](/knowledge/ai-engineering/when-to-build-an-agent-eval-platform) — 从脚本、共享 Runner 到完整质量平台，判断 Agent Eval 何时应该平台化，以及哪些契约必须先于 UI 和基础设施。
 - `2026-10-13` · 工程实践 · [pnpm 原生发布管理：定位、Changesets 差异与选型建议](/knowledge/engineering/pnpm-native-release-management-and-changesets) — 比较原生版本管理与 Changesets 的配置、预发布和自动化边界，给出接入、迁移与验证建议。
 - `2026-10-11` · 工程实践 · [MacBook 远程开发机：供电、熄屏与锁屏](/knowledge/engineering/macbook-remote-development-power-and-sleep) — 通过 GUI 配置开盖接电、防止闲置睡眠、30 分钟熄屏与立即要求密码，并用系统字段和远程新连接验收。
 - `2026-10-11` · 工程实践 · [MacBook 远程开发机：Tailscale 与 SSH](/knowledge/engineering/macbook-remote-development-network-and-ssh) — 明确服务端与客户端的分工，通过 Tailscale 连接指定 Mac 账户，并从客户端安装公钥、验证密钥认证。

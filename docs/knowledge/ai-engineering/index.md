@@ -21,7 +21,7 @@ description: 按 Agent 与 LLM、评测、工具扩展和 AI 研发四条路线�
 
 ## Agent 评测工程
 
-进入 [Agent 评测](/knowledge/topics/agent-evaluation/)，按评测对象、可观测性、任务集和评测器顺序阅读。
+进入 [Agent 评测](/knowledge/topics/agent-evaluation/)，按评测对象、可观测性、任务集、评测器、受控实验和生产质量闭环顺序阅读。
 
 ## MCP 工程化
 

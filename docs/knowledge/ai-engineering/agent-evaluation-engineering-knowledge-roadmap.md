@@ -272,17 +272,17 @@ Trajectory 主要用于发现：
 
 ## 第五部分：证明一次修改真的有效
 
-### 13. Agent 是随机的，一次成功说明不了什么
+### 13. [Agent 是随机的：一次成功说明不了什么](./agent-evaluation-with-repeated-trials.md)
 
 同一个 Case 需要多个 Trial，并根据产品目标选择指标：
 
-- pass@1：第一次执行的成功率；
+- pass@1：一次随机 one-shot Trial 的成功率；若顺序具有产品含义，应另报 first-attempt 指标；
 - pass@k：多次尝试中至少成功一次；
-- pass^k：连续多次都成功；
+- pass^k：预先声明的 k 次 Trial 全部成功；
 - 置信区间：结果的不确定范围；
 - 严重度加权失败：区分轻微瑕疵和不可接受事故。
 
-### 14. 如何公平比较两个 Agent
+### 14. [如何公平比较两个 Agent](./fair-comparison-of-agent-variants.md)
 
 实验应在同一批任务和相同环境中进行配对比较，并记录实际改变的变量：
 
@@ -297,7 +297,7 @@ Budget
 
 能一次只改变一个主要变量时，应避免同时更换模型、Prompt 和工具集后再把提升归因给其中之一。
 
-### 15. 不要把所有维度压成一个总分
+### 15. [不要把所有维度压成一个总分](./multi-dimensional-agent-scorecards-and-release-gates.md)
 
 建议保留多维 Scorecard：
 
@@ -318,7 +318,7 @@ Human Intervention
 
 ## 第六部分：从个人评测走向质量基础设施
 
-### 16. 如何把生产失败转化成 Regression Case
+### 16. [如何把生产失败转化成 Regression Case](./production-failure-to-regression-case.md)
 
 建立可持续反馈闭环：
 
@@ -338,7 +338,7 @@ Regression
 
 失败不能只被加入题库，还需要记录根因、影响范围、严重级别和能够防止再次发生的 Grader。
 
-### 17. 安全、隐私和数据治理
+### 17. [Agent Trace 的安全、隐私与数据治理](./agent-telemetry-safety-privacy-and-data-governance.md)
 
 Trace 可能包含用户内容、代码、工具参数、文件和外部系统返回值。默认全量记录输入输出会把可观测性变成新的数据风险。
 
@@ -350,7 +350,7 @@ Trace 可能包含用户内容、代码、工具参数、文件和外部系统�
 - 高风险操作的审批和可恢复性；
 - Telemetry Schema 的版本固定与迁移策略。
 
-### 18. 什么时候才值得建设 Agent Eval 平台
+### 18. [什么时候才值得建设 Agent Eval 平台](./when-to-build-an-agent-eval-platform.md)
 
 第一阶段不需要自建大型平台。简单的 Dataset、脚本、结构化 Trace 和实验结果已经能够形成有效反馈。
 

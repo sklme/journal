@@ -127,8 +127,8 @@ export const knowledgeTopics: KnowledgeTopic[] = [
     "id": "agent-evaluation",
     "title": "Agent 评测",
     "area": "ai",
-    "description": "从成功契约、Trace 和任务集，到可信评测器与可复现实验。",
-    "route": "先读知识体系总览，再按“定义评测对象 → 建立可观测性 → 构建任务集 → 设计可信评测器”的顺序阅读。",
+    "description": "从成功契约、Trace 和任务集，到可信评测器、受控实验与生产质量闭环。",
+    "route": "先读知识体系总览，再按“定义对象 → 建立证据 → 构建任务集 → 设计评测器 → 证明修改有效 → 建立生产闭环”的顺序阅读。",
     "sections": [
       {
         "id": "overview",
@@ -240,6 +240,56 @@ export const knowledgeTopics: KnowledgeTopic[] = [
             "title": "Agent Trajectory 应该评什么",
             "description": "区分结果判定与过程评测，用事件、Span 和状态证据检查 Agent 的安全边界、工具行为、错误恢复、Handoff 与终止策略",
             "link": "/knowledge/ai-engineering/what-to-evaluate-in-agent-trajectories"
+          }
+        ]
+      },
+      {
+        "id": "experiments",
+        "title": "第五部分 · 证明修改有效",
+        "description": "用重复 Trial、配对实验和多维门槛，把分数变化转化为可解释的发布证据。",
+        "articles": [
+          {
+            "text": "重复 Trial 与统计证据",
+            "title": "Agent 是随机的：一次成功说明不了什么",
+            "description": "用重复 Trial、pass@k、pass^k、置信区间和完整运行对账，把一次偶然结果变成可解释的 Agent 可靠性证据",
+            "link": "/knowledge/ai-engineering/agent-evaluation-with-repeated-trials"
+          },
+          {
+            "text": "公平比较两个 Agent",
+            "title": "如何公平比较两个 Agent",
+            "description": "用配对 Case、受控变量、随机化执行和预声明分析，判断两个 Agent 的差异是否来自修改本身",
+            "link": "/knowledge/ai-engineering/fair-comparison-of-agent-variants"
+          },
+          {
+            "text": "Scorecard 与发布门槛",
+            "title": "不要把所有维度压成一个总分",
+            "description": "用多维 Scorecard、风险硬门槛、回归预算和分阶段 Release Gate，把 Agent 评测结果转化为可审计的发布决策",
+            "link": "/knowledge/ai-engineering/multi-dimensional-agent-scorecards-and-release-gates"
+          }
+        ]
+      },
+      {
+        "id": "quality-infrastructure",
+        "title": "第六部分 · 建立质量基础设施",
+        "description": "把生产失败、安全治理和重复评测流程连接成可持续的质量闭环。",
+        "articles": [
+          {
+            "text": "生产失败转化为 Regression Case",
+            "title": "如何把生产失败转化成 Regression Case",
+            "description": "从生产证据、人工归因、稳定复现到脱敏 Case Family，建立能够长期阻止 Agent 失败复发的闭环",
+            "link": "/knowledge/ai-engineering/production-failure-to-regression-case"
+          },
+          {
+            "text": "Trace 安全、隐私与治理",
+            "title": "Agent Trace 的安全、隐私与数据治理",
+            "description": "用数据最小化、字段分级、分层存储、访问审计和删除血缘，让 Agent Trace 可用于评测而不成为新的安全风险",
+            "link": "/knowledge/ai-engineering/agent-telemetry-safety-privacy-and-data-governance"
+          },
+          {
+            "text": "何时建设 Eval 平台",
+            "title": "什么时候才值得建设 Agent Eval 平台",
+            "description": "从脚本、共享 Runner 到完整质量平台，判断 Agent Eval 何时应该平台化，以及哪些契约必须先于 UI 和基础设施",
+            "link": "/knowledge/ai-engineering/when-to-build-an-agent-eval-platform"
           }
         ]
       }
