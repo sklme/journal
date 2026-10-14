@@ -1,15 +1,15 @@
 ---
 title: 开发环境
-description: 搭建终端、远程开发机、跨设备会话与容器环境，并按症状排障。
+description: 搭建终端、远程开发机、跨设备会话、容器与虚拟机环境，并按症状排障。
 ---
 
 # 开发环境
 
-搭建终端、远程开发机、跨设备会话与容器环境，并按症状排障。
+搭建终端、远程开发机、跨设备会话、容器与虚拟机环境，并按症状排障。
 
 ## 推荐阅读路线
 
-本机从终端工作流开始，远程开发从 MacBook 配置路线开始；容器和 Codex 远程排障按实际需求查阅。
+本机从终端工作流开始，远程开发从 MacBook 配置路线开始；容器、虚拟机和 Codex 远程排障按实际需求查阅。
 
 ## MacBook 远程开发机系列 {#remote-development}
 
@@ -25,9 +25,9 @@ description: 搭建终端、远程开发机、跨设备会话与容器环境，�
 
 <TopicArticles topic="development-environment" section="terminal-workflow" />
 
-## 容器环境 {#containers}
+## 容器与虚拟机 {#containers}
 
-在 macOS 上选择容器后端，并理解 Docker CLI 与 Podman 的连接方式。
+在 macOS 上选择容器后端，理解 Docker CLI 与 Podman 的连接方式，以及 Tart 虚拟机在构建隔离中的用途。
 
 <TopicArticles topic="development-environment" section="containers" />
 

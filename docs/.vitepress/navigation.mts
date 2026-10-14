@@ -488,8 +488,8 @@ export const knowledgeTopics: KnowledgeTopic[] = [
     "id": "development-environment",
     "title": "开发环境",
     "area": "development",
-    "description": "搭建终端、远程开发机、跨设备会话与容器环境，并按症状排障。",
-    "route": "本机从终端工作流开始，远程开发从 MacBook 配置路线开始；容器和 Codex 远程排障按实际需求查阅。",
+    "description": "搭建终端、远程开发机、跨设备会话、容器与虚拟机环境，并按症状排障。",
+    "route": "本机从终端工作流开始，远程开发从 MacBook 配置路线开始；容器、虚拟机和 Codex 远程排障按实际需求查阅。",
     "sections": [
       {
         "id": "remote-development",
@@ -603,14 +603,20 @@ export const knowledgeTopics: KnowledgeTopic[] = [
       },
       {
         "id": "containers",
-        "title": "容器环境",
-        "description": "在 macOS 上选择容器后端，并理解 Docker CLI 与 Podman 的连接方式。",
+        "title": "容器与虚拟机",
+        "description": "在 macOS 上选择容器后端，理解 Docker CLI 与 Podman 的连接方式，以及 Tart 虚拟机在构建隔离中的用途。",
         "articles": [
           {
             "text": "Docker CLI 连接 Podman",
             "title": "macOS 上使用 Docker CLI 连接 Podman",
             "description": "理解 Docker CLI、context、Unix socket 与 Podman 兼容 API 的关系，并在 macOS 上安全切换容器后端",
             "link": "/knowledge/engineering/docker-cli-with-podman-on-macos"
+          },
+          {
+            "text": "Tart 与虚拟机构建",
+            "title": "Tart：为什么在虚拟机中构建与测试 macOS 应用",
+            "description": "理解 Tart 的职责、一次性构建环境的价值，以及 macOS 虚拟机在 CI、工具链隔离和故障复现中的适用边界。",
+            "link": "/knowledge/engineering/tart-virtual-machines-for-macos-ci"
           }
         ]
       },

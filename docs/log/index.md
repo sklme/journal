@@ -9,6 +9,7 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-10
 
+- `2026-10-14` · 工程实践 · [Tart：为什么在虚拟机中构建与测试 macOS 应用](/knowledge/engineering/tart-virtual-machines-for-macos-ci) — 理解 Tart 的职责、一次性构建环境的价值，以及 macOS 虚拟机在 CI、工具链隔离和故障复现中的适用边界。
 - `2026-10-14` · 工程实践 · [无公网 IP 的远程组网：原理、移动端整合与云端混合架构](/knowledge/engineering/remote-networking-without-public-ip) — 从 NAT 穿透与加密边界出发，设计云端 HTTPS、家庭 Mac AI 服务和手机 P2P 访问的混合架构，并分析移动端代理整合与验收方法。
 - `2026-10-13` · AI 工程 · [Agent 是随机的：一次成功说明不了什么](/knowledge/ai-engineering/agent-evaluation-with-repeated-trials) — 用重复 Trial、pass@k、pass^k、置信区间和完整运行对账，把一次偶然结果变成可解释的 Agent 可靠性证据。
 - `2026-10-13` · AI 工程 · [如何公平比较两个 Agent](/knowledge/ai-engineering/fair-comparison-of-agent-variants) — 用配对 Case、受控变量、随机化执行和预声明分析，判断两个 Agent 的差异是否来自修改本身。

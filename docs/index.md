@@ -29,6 +29,7 @@ features:
 
 ## 最近更新
 
+- [Tart：为什么在虚拟机中构建与测试 macOS 应用](/knowledge/engineering/tart-virtual-machines-for-macos-ci)
 - [无公网 IP 的远程组网：原理、移动端整合与云端混合架构](/knowledge/engineering/remote-networking-without-public-ip)
 - [pnpm 原生发布管理：定位、Changesets 差异与选型建议](/knowledge/engineering/pnpm-native-release-management-and-changesets)
 - [MacBook 远程开发机系列：总览与配置路线](/knowledge/engineering/macbook-remote-development-setup)
@@ -36,4 +37,3 @@ features:
 - [Codex 手机旧会话恢复排障](/knowledge/ai-engineering/codex-mobile-session-reconnect-troubleshooting)
 - [tmux 实用指南：常用命令与跨设备接续](/knowledge/engineering/tmux-practical-guide)
 - [在文档中使用 Mermaid 图表](/knowledge/engineering/mermaid-diagrams-in-vitepress)
-- [Codex SSH 图片粘贴：X11 剪贴板与 App Server 输入链路](/knowledge/ai-engineering/codex-ssh-image-clipboard-and-app-server)

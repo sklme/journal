@@ -21,7 +21,12 @@ description: 从开发环境与工程基础两条路线浏览工程知识
 
 网络架构研究见 [无公网 IP 的远程组网：原理、移动端整合与云端混合架构](/knowledge/engineering/remote-networking-without-public-ip)，从 NAT 穿透、移动端 VPN 整合与加密边界理解云端和家庭设备的分工。
 
-远程 Codex 的图片输入和旧会话恢复，见 [Codex 远程使用与排障](/knowledge/topics/development-environment/#codex-remote)；容器后端见 [容器环境](/knowledge/topics/development-environment/#containers)。
+远程 Codex 的图片输入和旧会话恢复，见 [Codex 远程使用与排障](/knowledge/topics/development-environment/#codex-remote)；容器后端与构建隔离见 [容器与虚拟机](/knowledge/topics/development-environment/#containers)。
+
+## 容器与虚拟机
+
+- [Tart：为什么在虚拟机中构建与测试 macOS 应用](/knowledge/engineering/tart-virtual-machines-for-macos-ci)：理解虚拟机打包的原因、CI 使用流程和适用边界。
+- [开发环境 · 容器与虚拟机](/knowledge/topics/development-environment/#containers)：查看容器后端与虚拟机构建环境的相关知识。
 
 ## 工程专题
 
