@@ -327,6 +327,12 @@ export const knowledgeTopics: KnowledgeTopic[] = [
             "link": "/knowledge/ai-engineering/obsidian-native-mcp-codex"
           },
           {
+            "text": "网页采集器：只读 MCP 设计",
+            "title": "面向 AI 的网页采集器：产品定位、只读架构与演进路线",
+            "description": "通过用户一键采集、可追溯的多格式快照和只读 MCP，把登录网页转化为 AI 能按需读取的材料，并明确 MVP、完整性边界与演进方向。",
+            "link": "/knowledge/ai-engineering/read-only-web-capture-for-ai"
+          },
+          {
             "text": "工具网关：基础架构",
             "title": "MCP 工具网关：基础架构与核心契约",
             "description": "用一个路由 Skill 和一个 MCP 工具网关实现工具按需发现、Schema 延迟加载与统一执行。",

@@ -9,6 +9,7 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-10
 
+- `2026-10-15` · AI 工程 · [面向 AI 的网页采集器：产品定位、只读架构与演进路线](/knowledge/ai-engineering/read-only-web-capture-for-ai) — 通过用户一键采集、可追溯的多格式快照和只读 MCP，把登录网页转化为 AI 能按需读取的材料，并明确 MVP、完整性边界与演进方向。
 - `2026-10-15` · AI 工程 · [Codex 浏览器站点安全检查：云端判定与本地权限边界](/knowledge/ai-engineering/codex-browser-site-safety-policy) — 区分网站登录态、本地授权、组织策略和 OpenAI 站点判定，理解浏览器工具为何会在访问页面前拒绝操作。
 - `2026-10-14` · 工程实践 · [Tart：为什么在虚拟机中构建与测试 macOS 应用](/knowledge/engineering/tart-virtual-machines-for-macos-ci) — 理解 Tart 的职责、一次性构建环境的价值，以及 macOS 虚拟机在 CI、工具链隔离和故障复现中的适用边界。
 - `2026-10-14` · 工程实践 · [无公网 IP 的远程组网：原理、移动端整合与云端混合架构](/knowledge/engineering/remote-networking-without-public-ip) — 从 NAT 穿透与加密边界出发，设计云端 HTTPS、家庭 Mac AI 服务和手机 P2P 访问的混合架构，并分析移动端代理整合与验收方法。
