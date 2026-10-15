@@ -374,13 +374,19 @@ export const knowledgeTopics: KnowledgeTopic[] = [
       {
         "id": "plugins",
         "title": "Codex 插件扩展",
-        "description": "了解插件、MCP Server 和对话内 UI 的分工与扩展边界。",
+        "description": "了解插件、MCP Server 和对话内 UI 的分工，以及浏览器工具的站点安全检查与权限边界。",
         "articles": [
           {
             "text": "插件开发与 UI 边界",
             "title": "Codex 插件开发：从 MCP Server 到对话内 UI",
             "description": "梳理 Codex 插件的组成、代码库检查插件的实现路径，以及 MCP UI 与原生 Tab 之间的能力边界。",
             "link": "/knowledge/ai-engineering/codex-plugin-development-and-ui-boundaries"
+          },
+          {
+            "text": "浏览器站点安全与权限边界",
+            "title": "Codex 浏览器站点安全检查：云端判定与本地权限边界",
+            "description": "区分网站登录态、本地授权、组织策略和 OpenAI 站点判定，理解浏览器工具为何会在访问页面前拒绝操作。",
+            "link": "/knowledge/ai-engineering/codex-browser-site-safety-policy"
           }
         ]
       }

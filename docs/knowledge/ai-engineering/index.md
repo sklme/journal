@@ -33,7 +33,7 @@ description: 按 Agent 与 LLM、评测、工具扩展和 AI 研发四条路线�
 
 ## Codex 插件扩展
 
-进入 [MCP 与 Skills · 插件扩展](/knowledge/topics/mcp-skills/#plugins)。
+进入 [MCP 与 Skills · 插件扩展](/knowledge/topics/mcp-skills/#plugins)。浏览器访问问题可参阅 [站点安全检查与权限边界](/knowledge/ai-engineering/codex-browser-site-safety-policy)。
 
 ## Agent 原生 API 管理
 

@@ -25,7 +25,7 @@ description: 管理工具配置、MCP 网关、Skills 生命周期与 Codex 插�
 
 ## Codex 插件扩展 {#plugins}
 
-了解插件、MCP Server 和对话内 UI 的分工与扩展边界。
+了解插件、MCP Server 和对话内 UI 的分工，以及浏览器工具的站点安全检查与权限边界。
 
 <TopicArticles topic="mcp-skills" section="plugins" />
 
