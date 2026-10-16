@@ -25,7 +25,7 @@ description: 按 Agent 与 LLM、评测、工具扩展和 AI 研发四条路线�
 
 ## MCP 工程化
 
-进入 [MCP 与 Skills · MCP 工程化](/knowledge/topics/mcp-skills/#mcp)。网页材料接入可参阅 [面向 AI 的网页采集器：产品定位、只读架构与演进路线](/knowledge/ai-engineering/read-only-web-capture-for-ai)。
+进入 [MCP 与 Skills · MCP 工程化](/knowledge/topics/mcp-skills/#mcp)。网页材料接入可参阅 [面向 AI 的网页采集器：从本地服务到文件目录与只读 MCP](/knowledge/ai-engineering/read-only-web-capture-for-ai)。
 
 ## Codex 远程使用与排障
 

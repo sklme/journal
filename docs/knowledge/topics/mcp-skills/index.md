@@ -15,7 +15,7 @@ description: 管理工具配置、MCP 网关、Skills 生命周期与 Codex 插�
 
 按配置生命周期、运行时工具发现、代理执行与业界实践逐步阅读。
 
-网页材料接入可从 [面向 AI 的网页采集器](/knowledge/ai-engineering/read-only-web-capture-for-ai) 开始，理解用户触发采集、快照存储与只读 MCP 的职责划分。
+网页材料接入可从 [面向 AI 的网页采集器](/knowledge/ai-engineering/read-only-web-capture-for-ai) 开始，了解从本地 HTTP 原型到扩展直写目录与 npx 只读 MCP 的实现、迭代和验证边界。
 
 <TopicArticles topic="mcp-skills" section="mcp" />
 
