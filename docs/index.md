@@ -29,6 +29,7 @@ features:
 
 ## 最近更新
 
+- [Codex 使用 Modern Web Guidance：Skills 与浏览器工具的分工](/knowledge/ai-engineering/codex-modern-web-guidance-and-devtools)
 - [面向 AI 的网页采集器：从本地服务到文件目录与只读 MCP](/knowledge/ai-engineering/read-only-web-capture-for-ai)
 - [Tart：为什么在虚拟机中构建与测试 macOS 应用](/knowledge/engineering/tart-virtual-machines-for-macos-ci)
 - [无公网 IP 的远程组网：原理、移动端整合与云端混合架构](/knowledge/engineering/remote-networking-without-public-ip)
@@ -37,4 +38,3 @@ features:
 - [屏幕共享与 iPhone 接入](/knowledge/engineering/macbook-remote-development-screen-sharing)
 - [Codex 手机旧会话恢复排障](/knowledge/ai-engineering/codex-mobile-session-reconnect-troubleshooting)
 - [tmux 实用指南：常用命令与跨设备接续](/knowledge/engineering/tmux-practical-guide)
-- [在文档中使用 Mermaid 图表](/knowledge/engineering/mermaid-diagrams-in-vitepress)

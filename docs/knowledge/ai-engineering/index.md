@@ -49,7 +49,7 @@ description: 按 Agent 与 LLM、评测、工具扩展和 AI 研发四条路线�
 
 ## Agent Skills 管理
 
-进入 [MCP 与 Skills · Skills 管理](/knowledge/topics/mcp-skills/#skills)。
+进入 [MCP 与 Skills · Skills 管理](/knowledge/topics/mcp-skills/#skills)。Web 与扩展开发可参阅 [Modern Web Guidance 与浏览器工具的分工](/knowledge/ai-engineering/codex-modern-web-guidance-and-devtools)，判断何时使用 Skills、已有浏览器能力或 DevTools MCP。
 
 ## Agent 平台与控制面
 

@@ -364,6 +364,12 @@ export const knowledgeTopics: KnowledgeTopic[] = [
         "description": "理解安装更新模型，再建立版本、分发、作用域与生命周期管理。",
         "articles": [
           {
+            "text": "Modern Web Guidance 与浏览器工具",
+            "title": "Codex 使用 Modern Web Guidance：Skills 与浏览器工具的分工",
+            "description": "掌握 Modern Web Guidance 的接入方法，区分 Codex 现有浏览器能力与 Chrome DevTools MCP，按实际需求补充工具。",
+            "link": "/knowledge/ai-engineering/codex-modern-web-guidance-and-devtools"
+          },
+          {
             "text": "npx skills 安装与更新原理",
             "title": "npx skills 的安装与更新原理：远端解析、目录替换与软链接",
             "description": "解释 Vercel Skills CLI 如何发现、安装和更新 Skill，以及 copy、symlink 与目录替换的实际语义",

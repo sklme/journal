@@ -9,6 +9,7 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-10
 
+- `2026-10-19` · AI 工程 · [Codex 使用 Modern Web Guidance：Skills 与浏览器工具的分工](/knowledge/ai-engineering/codex-modern-web-guidance-and-devtools) — 掌握 Modern Web Guidance 的接入方法，区分 Codex 现有浏览器能力与 Chrome DevTools MCP，按实际需求补充工具。
 - `2026-10-15` · AI 工程 · [面向 AI 的网页采集器：从本地服务到文件目录与只读 MCP](/knowledge/ai-engineering/read-only-web-capture-for-ai) — 复盘网页采集器从 HTTP 原型、滚动截图和采集库管理，到扩展直写文件与 npx 只读 MCP 的演进、实现原理和验证边界。
 - `2026-10-15` · AI 工程 · [Codex 浏览器站点安全检查：云端判定与本地权限边界](/knowledge/ai-engineering/codex-browser-site-safety-policy) — 区分网站登录态、本地授权、组织策略和 OpenAI 站点判定，理解浏览器工具为何会在访问页面前拒绝操作。
 - `2026-10-14` · 工程实践 · [Tart：为什么在虚拟机中构建与测试 macOS 应用](/knowledge/engineering/tart-virtual-machines-for-macos-ci) — 理解 Tart 的职责、一次性构建环境的价值，以及 macOS 虚拟机在 CI、工具链隔离和故障复现中的适用边界。
