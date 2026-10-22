@@ -28,6 +28,11 @@ description: 从开发环境与工程基础两条路线浏览工程知识
 - [Tart：为什么在虚拟机中构建与测试 macOS 应用](/knowledge/engineering/tart-virtual-machines-for-macos-ci)：理解虚拟机打包的原因、CI 使用流程和适用边界。
 - [开发环境 · 容器与虚拟机](/knowledge/topics/development-environment/#containers)：查看容器后端与虚拟机构建环境的相关知识。
 
+## HTTP 压缩与请求解析
+
+- [HTTP 代理：请求解压与响应压缩](./http-proxy-compression.md)：区分请求内容解码与响应压缩，解释编码头、代理和应用的职责，以及如何验证实际链路。
+- [Nest／Express 入站解压与 br 控制](./nest-express-request-decompression.md)：解释默认 body parser、Content-Encoding、版本差异与浏览器请求行为，并在解析之前限制入站压缩编码。
+
 ## 工程专题
 
 - [包版本与发布](/knowledge/topics/engineering-foundations/#package-releases)

@@ -29,6 +29,8 @@ features:
 
 ## 最近更新
 
+- [HTTP 代理：请求解压与响应压缩](/knowledge/engineering/http-proxy-compression)
+- [Nest／Express 入站解压与 br 控制](/knowledge/engineering/nest-express-request-decompression)
 - [Node.js 运行时安全：Brotli、TLS 与证书信任边界](/knowledge/engineering/nodejs-runtime-security-brotli-tls)
 - [Codex 使用 Modern Web Guidance：Skills 与浏览器工具的分工](/knowledge/ai-engineering/codex-modern-web-guidance-and-devtools)
 - [面向 AI 的网页采集器：从本地服务到文件目录与只读 MCP](/knowledge/ai-engineering/read-only-web-capture-for-ai)
@@ -36,5 +38,3 @@ features:
 - [无公网 IP 的远程组网：原理、移动端整合与云端混合架构](/knowledge/engineering/remote-networking-without-public-ip)
 - [pnpm 原生发布管理：定位、Changesets 差异与选型建议](/knowledge/engineering/pnpm-native-release-management-and-changesets)
 - [MacBook 远程开发机系列：总览与配置路线](/knowledge/engineering/macbook-remote-development-setup)
-- [屏幕共享与 iPhone 接入](/knowledge/engineering/macbook-remote-development-screen-sharing)
-- [Codex 手机旧会话恢复排障](/knowledge/ai-engineering/codex-mobile-session-reconnect-troubleshooting)

@@ -23,6 +23,12 @@ description: 查阅包版本与发布、Node.js、RPC 并发、云服务与文�
 
 <TopicArticles topic="engineering-foundations" section="async-context-rpc" />
 
+## HTTP 压缩与请求解析 {#http-compression}
+
+先区分代理两侧的编码职责，再检查 Node 请求解析器的默认行为与控制位置。
+
+<TopicArticles topic="engineering-foundations" section="http-compression" />
+
 ## Node.js 原生交互与运行时安全 {#native-interop}
 
 理解 Node-API、FFI 与原生调用的线程、内存和分发边界，再通过安全更新案例分析自动解压、TLS 身份校验和证书信任。

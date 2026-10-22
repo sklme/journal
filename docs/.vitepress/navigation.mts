@@ -718,6 +718,25 @@ export const knowledgeTopics: KnowledgeTopic[] = [
         ]
       },
       {
+        "id": "http-compression",
+        "title": "HTTP 压缩与请求解析",
+        "description": "区分代理与应用的编解码职责，检查请求解析器的版本、默认行为和入口限制。",
+        "articles": [
+          {
+            "text": "HTTP 代理：请求解压与响应压缩",
+            "title": "HTTP 代理：请求解压与响应压缩",
+            "description": "区分请求内容解码与响应压缩，解释编码头、代理和应用的职责，以及如何验证实际链路。",
+            "link": "/knowledge/engineering/http-proxy-compression"
+          },
+          {
+            "text": "Nest／Express 入站解压与 br 控制",
+            "title": "Nest／Express 入站解压与 br 控制",
+            "description": "解释默认 body parser、Content-Encoding、版本差异与浏览器请求行为，并在解析之前限制入站压缩编码。",
+            "link": "/knowledge/engineering/nest-express-request-decompression"
+          }
+        ]
+      },
+      {
         "id": "native-interop",
         "title": "Node.js 原生交互与运行时安全",
         "description": "理解原生调用的线程、内存与分发边界，以及压缩解析和证书验证的安全风险。",
