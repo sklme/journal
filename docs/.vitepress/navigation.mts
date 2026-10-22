@@ -719,14 +719,20 @@ export const knowledgeTopics: KnowledgeTopic[] = [
       },
       {
         "id": "native-interop",
-        "title": "Node.js 原生交互",
-        "description": "理解 Node-API、FFI 与原生调用的线程、内存和分发边界。",
+        "title": "Node.js 原生交互与运行时安全",
+        "description": "理解原生调用的线程、内存与分发边界，以及压缩解析和证书验证的安全风险。",
         "articles": [
           {
             "text": "Node.js 原生交互：Node-API 与 FFI",
             "title": "Node.js 原生交互全景：内置绑定、Node-API 与 FFI",
             "description": "理解 Node.js 调用原生代码的几条路径，以及线程、内存、性能和二进制分发的边界。",
             "link": "/knowledge/engineering/nodejs-native-interop-node-api-ffi"
+          },
+          {
+            "text": "运行时安全：Brotli、TLS 与证书信任",
+            "title": "Node.js 运行时安全：Brotli、TLS 与证书信任边界",
+            "description": "以安全更新为案例，解释外部数据解压、地址解析与证书信任的风险，梳理触发条件和升级边界。",
+            "link": "/knowledge/engineering/nodejs-runtime-security-brotli-tls"
           }
         ]
       },

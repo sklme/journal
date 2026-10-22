@@ -23,9 +23,9 @@ description: 查阅包版本与发布、Node.js、RPC 并发、云服务与文�
 
 <TopicArticles topic="engineering-foundations" section="async-context-rpc" />
 
-## Node.js 原生交互 {#native-interop}
+## Node.js 原生交互与运行时安全 {#native-interop}
 
-理解 Node-API、FFI 与原生调用的线程、内存和分发边界。
+理解 Node-API、FFI 与原生调用的线程、内存和分发边界，再通过安全更新案例分析自动解压、TLS 身份校验和证书信任。
 
 <TopicArticles topic="engineering-foundations" section="native-interop" />
 

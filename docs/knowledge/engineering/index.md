@@ -32,8 +32,10 @@ description: 从开发环境与工程基础两条路线浏览工程知识
 
 - [包版本与发布](/knowledge/topics/engineering-foundations/#package-releases)
 - [云身份、存储与 CDN](/knowledge/topics/engineering-foundations/#cloud-services)
-- [Node.js 原生交互](/knowledge/topics/engineering-foundations/#native-interop)
+- [Node.js 原生交互与运行时安全](/knowledge/topics/engineering-foundations/#native-interop)
 - [文档工程](/knowledge/topics/engineering-foundations/#documentation)
+
+安全案例见 [Node.js 运行时安全：Brotli、TLS 与证书信任边界](./nodejs-runtime-security-brotli-tls.md)，结合 2026 年 10 月更新理解触发条件、最小示例和升级检查。
 
 ## Node.js 异步上下文与 RPC 并发 {#async-context-rpc}
 

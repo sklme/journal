@@ -29,6 +29,7 @@ features:
 
 ## 最近更新
 
+- [Node.js 运行时安全：Brotli、TLS 与证书信任边界](/knowledge/engineering/nodejs-runtime-security-brotli-tls)
 - [Codex 使用 Modern Web Guidance：Skills 与浏览器工具的分工](/knowledge/ai-engineering/codex-modern-web-guidance-and-devtools)
 - [面向 AI 的网页采集器：从本地服务到文件目录与只读 MCP](/knowledge/ai-engineering/read-only-web-capture-for-ai)
 - [Tart：为什么在虚拟机中构建与测试 macOS 应用](/knowledge/engineering/tart-virtual-machines-for-macos-ci)
@@ -37,4 +38,3 @@ features:
 - [MacBook 远程开发机系列：总览与配置路线](/knowledge/engineering/macbook-remote-development-setup)
 - [屏幕共享与 iPhone 接入](/knowledge/engineering/macbook-remote-development-screen-sharing)
 - [Codex 手机旧会话恢复排障](/knowledge/ai-engineering/codex-mobile-session-reconnect-troubleshooting)
-- [tmux 实用指南：常用命令与跨设备接续](/knowledge/engineering/tmux-practical-guide)
