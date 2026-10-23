@@ -665,7 +665,7 @@ export const knowledgeTopics: KnowledgeTopic[] = [
     "title": "工程基础",
     "area": "engineering",
     "description": "查阅包版本与发布、Node.js、RPC 并发、云服务与文档工程。",
-    "route": "包发布部分用于工具选型与迁移；请求上下文系列从 HTTP 到 RPC 顺序阅读；云服务先理解身份与权限；文档工程用于建设和维护知识站。",
+    "route": "先沿 Node.js 到 NestJS 理解调用与对象组装；请求上下文系列从 HTTP 到 RPC 顺序阅读；包发布用于工具选型；云服务先理解身份与权限；文档工程用于维护知识站。",
     "sections": [
       {
         "id": "package-releases",
@@ -677,6 +677,19 @@ export const knowledgeTopics: KnowledgeTopic[] = [
             "title": "pnpm 原生发布管理：定位、Changesets 差异与选型建议",
             "description": "比较 pnpm 原生发布管理与 Changesets 的配置、预发布和自动化边界，给出接入、迁移与验证建议。",
             "link": "/knowledge/engineering/pnpm-native-release-management-and-changesets"
+          }
+        ]
+      },
+      {
+        "id": "node-frameworks",
+        "title": "Node.js 与框架原理",
+        "description": "沿着调用、参数和对象组装理解后端框架。",
+        "articles": [
+          {
+            "text": "从 Node.js 到 NestJS",
+            "title": "从 Node.js 到 NestJS：彻底理解控制反转、装饰器与依赖注入",
+            "description": "从 Express 回调的反问出发，沿着实参构造、装饰器编译和对象组装逐步理解 NestJS。",
+            "link": "/knowledge/engineering/nodejs-nestjs-ioc-decorators-di"
           }
         ]
       },

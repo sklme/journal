@@ -29,6 +29,8 @@ features:
 
 ## 最近更新
 
+- [从 Node.js 到 NestJS：彻底理解控制反转、装饰器与依赖注入](/knowledge/engineering/nodejs-nestjs-ioc-decorators-di)
+
 - [HTTP 代理：请求解压与响应压缩](/knowledge/engineering/http-proxy-compression)
 - [Nest／Express 入站解压与 br 控制](/knowledge/engineering/nest-express-request-decompression)
 - [Node.js 运行时安全：Brotli、TLS 与证书信任边界](/knowledge/engineering/nodejs-runtime-security-brotli-tls)
@@ -37,4 +39,3 @@ features:
 - [Tart：为什么在虚拟机中构建与测试 macOS 应用](/knowledge/engineering/tart-virtual-machines-for-macos-ci)
 - [无公网 IP 的远程组网：原理、移动端整合与云端混合架构](/knowledge/engineering/remote-networking-without-public-ip)
 - [pnpm 原生发布管理：定位、Changesets 差异与选型建议](/knowledge/engineering/pnpm-native-release-management-and-changesets)
-- [MacBook 远程开发机系列：总览与配置路线](/knowledge/engineering/macbook-remote-development-setup)

@@ -9,13 +9,19 @@ description: 查阅包版本与发布、Node.js、RPC 并发、云服务与文�
 
 ## 推荐阅读路线
 
-包发布部分用于工具选型与迁移；请求上下文系列从 HTTP 到 RPC 顺序阅读；云服务先理解身份与权限；文档工程用于建设和维护知识站。
+先沿 Node.js 到 NestJS 理解调用与对象组装；请求上下文系列从 HTTP 到 RPC 顺序阅读；包发布用于工具选型；云服务先理解身份与权限；文档工程用于维护知识站。
 
 ## 包版本与发布 {#package-releases}
 
 理解变更记录、版本计算与分发的职责，选择可评审、可验证的发布流程。
 
 <TopicArticles topic="engineering-foundations" section="package-releases" />
+
+## Node.js 与框架原理 {#node-frameworks}
+
+从“Express 不也在调用回调吗”开始，逐步拆解参数提取、装饰器与依赖注入。
+
+<TopicArticles topic="engineering-foundations" section="node-frameworks" />
 
 ## Node.js 异步上下文与 RPC 并发 {#async-context-rpc}
 

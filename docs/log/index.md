@@ -9,6 +9,8 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-10
 
+- `2026-10-23` · 工程实践 · [从 Node.js 到 NestJS：彻底理解控制反转、装饰器与依赖注入](/knowledge/engineering/nodejs-nestjs-ioc-decorators-di) — 从“Express 不也在调用回调吗”开始，沿着实参构造、装饰器编译和对象组装，逐步理解 NestJS 的运行机制。
+
 - `2026-10-22` · 工程实践 · [HTTP 代理：请求解压与响应压缩](/knowledge/engineering/http-proxy-compression) — 区分请求内容解码与响应压缩，解释编码头、代理和应用的职责，以及如何验证实际链路。
 - `2026-10-22` · 工程实践 · [Nest／Express 入站解压与 br 控制](/knowledge/engineering/nest-express-request-decompression) — 解释默认 body parser、Content-Encoding、版本差异与浏览器请求行为，并在解析之前限制入站压缩编码。
 

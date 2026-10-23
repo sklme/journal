@@ -28,6 +28,10 @@ description: 从开发环境与工程基础两条路线浏览工程知识
 - [Tart：为什么在虚拟机中构建与测试 macOS 应用](/knowledge/engineering/tart-virtual-machines-for-macos-ci)：理解虚拟机打包的原因、CI 使用流程和适用边界。
 - [开发环境 · 容器与虚拟机](/knowledge/topics/development-environment/#containers)：查看容器后端与虚拟机构建环境的相关知识。
 
+## Node.js 与框架原理
+
+- [从 Node.js 到 NestJS：彻底理解控制反转、装饰器与依赖注入](./nodejs-nestjs-ioc-decorators-di.md)：保留 Express 回调和业务调用的两个反问，用可运行的教学模型解释参数来源、装饰器编译与对象组装。
+
 ## HTTP 压缩与请求解析
 
 - [HTTP 代理：请求解压与响应压缩](./http-proxy-compression.md)：区分请求内容解码与响应压缩，解释编码头、代理和应用的职责，以及如何验证实际链路。
