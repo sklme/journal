@@ -421,9 +421,22 @@ export const knowledgeTopics: KnowledgeTopic[] = [
     "id": "ai-development",
     "title": "AI 研发工具",
     "area": "ai",
-    "description": "探索 Agent 原生 API 工具、代码理解、变更审查与多模态应用。",
+    "description": "探索 Agent 浏览器、原生 API 工具、代码理解、变更审查与多模态应用。",
     "route": "API 工具系列按产品定位、测试工作流、执行架构、Tool 契约和人工审查的顺序阅读；代码理解系列从价值边界进入变更保证体系。",
     "sections": [
+      {
+        "id": "browser-automation",
+        "title": "Agent 浏览器与自动化",
+        "description": "区分浏览器、登录态与 Agent 接入方式，用实际任务评估增量价值。",
+        "articles": [
+          {
+            "text": "ego(lite) 定位与选型边界",
+            "title": "ego(lite)：Agent 浏览器定位与 Codex、Chrome 的选型边界",
+            "description": "区分 ego(lite) 的产品定位、登录态复用、Space 与性能宣称，判断相对 Codex 和 Chrome 的实际增量价值。",
+            "link": "/knowledge/ai-engineering/ego-lite-agent-browser"
+          }
+        ]
+      },
       {
         "id": "api-tools",
         "title": "Agent 原生 API 管理",

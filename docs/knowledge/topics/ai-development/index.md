@@ -1,15 +1,21 @@
 ---
 title: AI 研发工具
-description: 探索 Agent 原生 API 工具、代码理解、变更审查与多模态应用。
+description: 探索 Agent 浏览器、原生 API 工具、代码理解、变更审查与多模态应用。
 ---
 
 # AI 研发工具
 
-探索 Agent 原生 API 工具、代码理解、变更审查与多模态应用。
+探索 Agent 浏览器、原生 API 工具、代码理解、变更审查与多模态应用。
 
 ## 推荐阅读路线
 
 API 工具系列按产品定位、测试工作流、执行架构、Tool 契约和人工审查的顺序阅读；代码理解系列从价值边界进入变更保证体系。
+
+## Agent 浏览器与自动化 {#browser-automation}
+
+区分浏览器、登录态与 Agent 接入方式，用实际任务评估增量价值。
+
+<TopicArticles topic="ai-development" section="browser-automation" />
 
 ## Agent 原生 API 管理 {#api-tools}
 
