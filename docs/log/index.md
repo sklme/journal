@@ -11,7 +11,7 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 - `2026-10-26` · AI 工程 · [ego(lite)：Agent 浏览器定位与 Codex、Chrome 的选型边界](/knowledge/ai-engineering/ego-lite-agent-browser) — 区分 ego(lite) 的产品定位、登录态复用、Space 与性能宣称，判断相对 Codex 和 Chrome 的实际增量价值。
 
-- `2026-10-26` · AI 工程 · [macOS 控制 Android 测试机：ADB、scrcpy 与 Mobile MCP 方案](/knowledge/ai-engineering/macos-android-testing-adb-scrcpy-mobile-mcp) — 理解 ADB、scrcpy 与 Mobile MCP 的分工，设计两台 Mac 各自运行的可复用真机测试环境，并区分已验证结果与待实践步骤。
+- `2026-10-26` · AI 工程 · [macOS 控制 Android 测试机：ADB、scrcpy 与 Mobile MCP 实践](/knowledge/ai-engineering/macos-android-testing-adb-scrcpy-mobile-mcp) — 从工具分工到 USB 实机操作，记录电脑与手机的安装配置、scrcpy 版本冲突排查，以及项目级 MCP 接入和双 Mac 复用的验收边界。
 - `2026-10-26` · AI 工程 · [Orca Agent 管理平台：社区场景与 Codex 用户的选型边界](/knowledge/ai-engineering/orca-agent-platform-use-cases) — 从五个功能追问和社区实际工作流出发，判断 Orca 相对 Codex、插件与并行子 Agent 的增量价值。
 - `2026-10-23` · 工程实践 · [从 Node.js 到 NestJS：彻底理解控制反转、装饰器与依赖注入](/knowledge/engineering/nodejs-nestjs-ioc-decorators-di) — 从“Express 不也在调用回调吗”开始，沿着实参构造、装饰器编译和对象组装，逐步理解 NestJS 的运行机制。
 

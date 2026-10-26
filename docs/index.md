@@ -30,7 +30,7 @@ features:
 ## 最近更新
 
 - [ego(lite)：Agent 浏览器定位与 Codex、Chrome 的选型边界](/knowledge/ai-engineering/ego-lite-agent-browser)
-- [macOS 控制 Android 测试机：ADB、scrcpy 与 Mobile MCP 方案](/knowledge/ai-engineering/macos-android-testing-adb-scrcpy-mobile-mcp)
+- [macOS 控制 Android 测试机：ADB、scrcpy 与 Mobile MCP 实践](/knowledge/ai-engineering/macos-android-testing-adb-scrcpy-mobile-mcp)
 - [Orca Agent 管理平台：社区场景与 Codex 用户的选型边界](/knowledge/ai-engineering/orca-agent-platform-use-cases)
 - [从 Node.js 到 NestJS：彻底理解控制反转、装饰器与依赖注入](/knowledge/engineering/nodejs-nestjs-ioc-decorators-di)
 
