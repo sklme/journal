@@ -339,6 +339,12 @@ export const knowledgeTopics: KnowledgeTopic[] = [
             "link": "/knowledge/ai-engineering/read-only-web-capture-for-ai"
           },
           {
+            "text": "Android 真机：ADB、scrcpy 与 MCP",
+            "title": "macOS 控制 Android 测试机：ADB、scrcpy 与 Mobile MCP 方案",
+            "description": "理解 ADB、scrcpy 与 Mobile MCP 的分工，设计两台 Mac 各自运行的可复用真机测试环境，并区分已验证结果与待实践步骤。",
+            "link": "/knowledge/ai-engineering/macos-android-testing-adb-scrcpy-mobile-mcp"
+          },
+          {
             "text": "工具网关：基础架构",
             "title": "MCP 工具网关：基础架构与核心契约",
             "description": "用一个路由 Skill 和一个 MCP 工具网关实现工具按需发现、Schema 延迟加载与统一执行。",
