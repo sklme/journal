@@ -9,6 +9,7 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-10
 
+- `2026-10-26` · AI 工程 · [Orca Agent 管理平台：社区场景与 Codex 用户的选型边界](/knowledge/ai-engineering/orca-agent-platform-use-cases) — 从五个功能追问和社区实际工作流出发，判断 Orca 相对 Codex、插件与并行子 Agent 的增量价值。
 - `2026-10-23` · 工程实践 · [从 Node.js 到 NestJS：彻底理解控制反转、装饰器与依赖注入](/knowledge/engineering/nodejs-nestjs-ioc-decorators-di) — 从“Express 不也在调用回调吗”开始，沿着实参构造、装饰器编译和对象组装，逐步理解 NestJS 的运行机制。
 
 - `2026-10-22` · 工程实践 · [HTTP 代理：请求解压与响应压缩](/knowledge/engineering/http-proxy-compression) — 区分请求内容解码与响应压缩，解释编码头、代理和应用的职责，以及如何验证实际链路。

@@ -101,6 +101,12 @@ export const knowledgeTopics: KnowledgeTopic[] = [
         "description": "理解 Agent 管理层、长期记忆、任务边界与控制面的适用范围。",
         "articles": [
           {
+            "text": "Orca：社区场景与选型边界",
+            "title": "Orca Agent 管理平台：社区场景与 Codex 用户的选型边界",
+            "description": "从五个功能追问和社区实际工作流出发，判断 Orca 相对 Codex、插件与并行子 Agent 的增量价值。",
+            "link": "/knowledge/ai-engineering/orca-agent-platform-use-cases"
+          },
+          {
             "text": "dot 定位与能力边界",
             "title": "dot 定位与能力边界",
             "description": "从一次关于替代性、记忆和跨设备任务的讨论，理解 dot 的组织价值、执行环境与会话保存边界。",

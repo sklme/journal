@@ -29,6 +29,7 @@ features:
 
 ## 最近更新
 
+- [Orca Agent 管理平台：社区场景与 Codex 用户的选型边界](/knowledge/ai-engineering/orca-agent-platform-use-cases)
 - [从 Node.js 到 NestJS：彻底理解控制反转、装饰器与依赖注入](/knowledge/engineering/nodejs-nestjs-ioc-decorators-di)
 
 - [HTTP 代理：请求解压与响应压缩](/knowledge/engineering/http-proxy-compression)
@@ -38,4 +39,3 @@ features:
 - [面向 AI 的网页采集器：从本地服务到文件目录与只读 MCP](/knowledge/ai-engineering/read-only-web-capture-for-ai)
 - [Tart：为什么在虚拟机中构建与测试 macOS 应用](/knowledge/engineering/tart-virtual-machines-for-macos-ci)
 - [无公网 IP 的远程组网：原理、移动端整合与云端混合架构](/knowledge/engineering/remote-networking-without-public-ip)
-- [pnpm 原生发布管理：定位、Changesets 差异与选型建议](/knowledge/engineering/pnpm-native-release-management-and-changesets)

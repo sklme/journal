@@ -53,7 +53,7 @@ description: 按 Agent 与 LLM、评测、工具扩展和 AI 研发四条路线�
 
 ## Agent 平台与控制面
 
-进入 [Agent 与 LLM · 平台与控制面](/knowledge/topics/agent-llm/#platforms)。
+进入 [Agent 与 LLM · 平台与控制面](/knowledge/topics/agent-llm/#platforms)。可参阅 [Orca：社区场景与 Codex 用户的选型边界](/knowledge/ai-engineering/orca-agent-platform-use-cases)，区分功能覆盖与相对现有工作流的增量价值。
 
 ## AI 视频与多模态工作流
 
