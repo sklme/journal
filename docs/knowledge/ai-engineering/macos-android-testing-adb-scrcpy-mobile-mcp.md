@@ -371,6 +371,38 @@ PIN 在这里指手机的数字锁屏密码，例如四位或六位数字，不�
 
 因此当前目标是先覆盖日常应用操作并建立可观察的测试过程，而非承诺任意界面全自动控制。
 
+## App 能否感知 ADB 操作，是否知道背后是 Agent
+
+**可能观察到调试环境或输入特征，但这不等于知道某次操作来自 AI。** “可以操作 App”和“App 无法发现自动化”是两个不同目标；本方案只验证了前者，没有提供不可检测的保证。
+
+| 观察层次 | App 可能获得的信息 | 不能直接得出的结论 |
+| --- | --- | --- |
+| 调试环境 | USB 调试是否启用 | 当前一定有人通过 ADB 操作 |
+| 输入事件 | 来源类别、设备 ID、时间，以及触摸轨迹等 | 操作者一定是 AI，或使用了某个特定 Agent |
+| 行为分析 | 操作频率、重复路径、请求节奏等 | 单个特征足以可靠判定自动化 |
+
+Android 提供 `Settings.Global.ADB_ENABLED` 表示 USB ADB 是否启用。它描述的是调试设置，不是一次输入操作的来源证明，也不能据此确认当前存在活跃的远程控制会话。[Android Settings.Global](https://developer.android.com/reference/android/provider/Settings.Global#ADB_ENABLED)
+
+### “输入来源”指设备和事件属性，不是 Agent 身份
+
+这里容易产生一个误解：既然 App 能知道输入来源，是不是就能看到“这个点击来自 Agent”？实际上，Android 输入事件中的来源通常指触摸屏、鼠标、键盘等类别，以及输入设备 ID 等属性。事件还带时间信息，触摸事件可带坐标、压力和历史采样等。具体有哪些值、是否有效，取决于设备与输入方式。[InputEvent](https://developer.android.com/reference/android/view/InputEvent) · [MotionEvent](https://developer.android.com/reference/android/view/MotionEvent)
+
+可以用这条简化链路理解：
+
+```text
+Agent → Mobile MCP／设备工具 → Android 输入事件 → App
+```
+
+App 通常接收最后的输入事件。普通输入事件接口不会自动附带上游模型或 Agent 的名称。因此，仅凭这些事件，一般无法确定是哪个 Agent 发起的操作；如果工具另行暴露身份或 App 还有其他信号，需要另行分析，不能把这个结论扩展成绝对不可识别。
+
+### 事件特征可能不同，但不能把特征直接当作身份
+
+scrcpy 的 SDK 键盘模式在 Android API 层注入事件，UHID 模式则模拟物理 HID 键盘。两种方式产生的输入路径不同，“模拟物理键盘”也不意味着隐身或与手指触屏完全等价。[scrcpy 键盘模式](https://github.com/Genymobile/scrcpy/blob/master/doc/keyboard.md)
+
+依据可观察的事件属性，可以推断应用有条件设计自动化检测；但检测准确性及某个 App 是否实际采用这些信号，需要具体证据。一个人用 Mac 鼠标控制 scrcpy，也可能产生远程输入特征。因此应区分：**观察输入特征、推测自动化、确认具体 Agent 身份**，这三者不是同一件事。
+
+截至 2026-10-27，本实践没有验证目标 App 是否检测、记录或上报自动化。即使没有出现提示、验证码或拦截，也不能证明它们没有感知到。对于自己开发的 App，后续可以记录接收到的事件，分别对比手指、scrcpy 和 Mobile MCP 操作；这能验证输入差异，但不能代表第三方 App 的检测策略。
+
 ## 当前验收状态与后续补充
 
 截至 2026-10-27，结果如下。这里区分工具安装、真实调用、用户确认与尚未执行的验证。
