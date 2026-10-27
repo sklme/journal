@@ -341,7 +341,7 @@ export const knowledgeTopics: KnowledgeTopic[] = [
           {
             "text": "Android 真机：ADB、scrcpy 与 MCP",
             "title": "macOS 控制 Android 测试机：ADB、scrcpy 与 Mobile MCP 实践",
-            "description": "从 USB 实机操作到电商狗粮比价，记录 ADB、scrcpy 与 Mobile MCP 的分工、中文输入排障、价格和商家核验，以及项目级接入与双 Mac 复用的验收边界。",
+            "description": "记录 ADB、scrcpy 与 Mobile MCP 的实机和电商操作经验、双 Mac 复用，以及远程托管时黑屏保持唤醒、PIN 按需解锁的方案与验证边界。",
             "link": "/knowledge/ai-engineering/macos-android-testing-adb-scrcpy-mobile-mcp"
           },
           {
