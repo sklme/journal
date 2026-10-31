@@ -25,6 +25,7 @@ description: 按供电、网络与 SSH、屏幕共享、tmux、开发工具和�
 | 04 | [tmux 会话与跨设备接续](./tmux-practical-guide.md) | 断开终端后保留任务，再从其他设备接入 |
 | 05 | [开发工具、远程 IDE 与容器](./macbook-remote-development-tools-and-services.md) | 在远端构建项目、编辑代码并访问开发页面 |
 | 06 | [验收、重启恢复与维护](./macbook-remote-development-recovery-and-checks.md) | 检查外网、熄屏和重启后的恢复路径 |
+| 补充 | [Codex 唤屏后直接操作桌面](./macbook-remote-development-codex-desktop-access.md) | 复核屏保与密码要求，让已有登录会话中的桌面操作减少人工介入 |
 
 ## 配置前明确三个执行位置
 
@@ -63,6 +64,7 @@ SSH 密钥在客户端生成，公钥可以通过首次密码登录写入远端�
 | 执行命令、构建和测试 | SSH；需要断线后接续时使用 tmux |
 | 在日常电脑编辑远端代码 | 远程 IDE；开发进程在 MacBook 上运行 |
 | 操作系统设置、桌面 App 和图形界面 | 屏幕共享 |
+| 让 Codex 读取画面、点击和输入 | 已授权的 Computer Use；复核桌面登录状态和熄屏后的密码策略 |
 | 用手机临时查看进度或处理任务 | 手机 SSH 客户端或屏幕共享客户端 |
 
 Tailscale 提供网络连通性，SSH 和屏幕共享各自提供认证与操作入口。锁屏、系统睡眠、网络在线和应用会话加载是不同状态，遇到问题时分别判断。
@@ -75,6 +77,10 @@ Tailscale 提供网络连通性，SSH 和屏幕共享各自提供认证与操作
 - [Docker 命令连接到错误后端：Docker CLI 与 Podman context](./docker-cli-with-podman-on-macos.md)。
 
 ## 当前验证范围
+
+2026-11-01 补充桌面自动化实践：实机 GUI 确认屏保启动和熄屏或屏保后密码要求均为“永不”，当前接电防闲置睡眠开启，接电显示器计时为 3 小时。Codex 已能获取访达、Chrome 画面并点击系统设置，过程中无需人先通过远程桌面解锁。截图与完整验收边界见 [补充实践](./macbook-remote-development-codex-desktop-access.md)；本轮没有受控验证长时间熄屏到唤醒的完整循环，也没有进行重启恢复。
+
+以下保留 2026-10-11 的历史验证范围，相关计时与密码策略以各自日期为准。
 
 截至 2026-10-11，实机已核对接电防休眠、30 分钟熄屏、立即要求密码、Tailscale 在线、SSH 与屏幕共享的服务响应、指定账户权限，以及运行中的 tmux 会话。桌面远程访问的配置完成也得到操作者反馈。
 

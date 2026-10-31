@@ -12,6 +12,8 @@ description: 通过 GUI 配置开盖接电、防止闲置睡眠、30 分钟熄�
 
 本篇是 [MacBook 远程开发机系列](./macbook-remote-development-setup.md)的第一篇。目标是让屏幕在闲置时关闭，同时保持机器运行并保留密码锁屏。
 
+需要 Codex 在远程唤屏后直接操作桌面、减少人工解锁步骤时，阅读 [Codex 唤屏后直接操作桌面](./macbook-remote-development-codex-desktop-access.md)。该补充实践采用屏保“永不”和熄屏或屏保后密码要求“永不”，适用于专用机器的桌面自动化；本篇继续保留日常远程开发的密码保护方案。
+
 ## 前提与执行位置
 
 - 全部设置在**服务端 MacBook**执行，截图来自 macOS 27；其他版本按相同选项含义定位。
@@ -47,7 +49,7 @@ description: 通过 GUI 配置开盖接电、防止闲置睡眠、30 分钟熄�
 
 这两个计时的起点不同：显示器计时从最后一次本机活动开始，密码延迟从熄屏或屏保启动开始。本例是“闲置约 30 分钟熄屏，并立即要求密码”，不是熄屏后再等 30 分钟。如果屏保更早启动或手动锁屏，认证状态可能更早出现。图中的电池熄屏计时为 1 小时，本篇不要求沿用该值。
 
-保持密码锁屏。手机应用会话加载异常应独立排查，不能用取消密码要求代替定位；相关案例见 [Codex 手机旧会话恢复排障](../ai-engineering/codex-mobile-session-reconnect-troubleshooting.md)。
+本篇的日常远程开发方案保持密码锁屏；桌面自动化按前述补充实践选择策略。手机应用会话加载异常应独立排查，不能用取消密码要求代替定位；相关案例见 [Codex 手机旧会话恢复排障](../ai-engineering/codex-mobile-session-reconnect-troubleshooting.md)。
 
 ### 3. 读取系统配置，确认保存结果
 

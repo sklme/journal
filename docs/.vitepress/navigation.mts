@@ -582,6 +582,12 @@ export const knowledgeTopics: KnowledgeTopic[] = [
             "link": "/knowledge/engineering/macbook-remote-development-recovery-and-checks"
           },
           {
+            "text": "补充 · Codex 唤屏与桌面操作",
+            "title": "MacBook 远程开发机：Codex 唤屏后直接操作桌面",
+            "description": "通过屏保永不、熄屏后不要求密码与接电防睡眠，让 Codex 在已有登录会话中直接操作桌面，并记录实机截图与验收边界。",
+            "link": "/knowledge/engineering/macbook-remote-development-codex-desktop-access"
+          },
+          {
             "text": "原理 · 无公网 IP 混合组网",
             "title": "无公网 IP 的远程组网：原理、移动端整合与云端混合架构",
             "description": "从 NAT 穿透与加密边界出发，设计云端 HTTPS、家庭 Mac AI 服务和手机 P2P 访问的混合架构，并分析移动端代理整合与验收方法。",

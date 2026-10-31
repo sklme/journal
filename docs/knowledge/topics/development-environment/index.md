@@ -15,6 +15,8 @@ description: 搭建终端、远程开发机、跨设备会话、容器与虚拟�
 
 从供电和网络，到 SSH、屏幕共享、会话接续和重启恢复。
 
+需要 Codex 远程唤屏后直接操作桌面时，阅读 [屏保、密码要求与 Computer Use 实践](/knowledge/engineering/macbook-remote-development-codex-desktop-access)，按桌面自动化用途复核设置与验收边界。
+
 需要同时提供公网服务、调用家庭 AI 并让手机优先直连时，阅读 [无公网 IP 的远程组网：原理、移动端整合与云端混合架构](/knowledge/engineering/remote-networking-without-public-ip)。
 
 <TopicArticles topic="development-environment" section="remote-development" />

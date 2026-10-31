@@ -7,6 +7,10 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 这里是面向人和 AI 的内容总索引。每篇知识文章或指南只保留一条记录，按首次收录月份倒序排列；普通内容修改不会重复增加记录。
 
+## 2026-11
+
+- `2026-11-01` · 工程实践 · [MacBook 远程开发机：Codex 唤屏后直接操作桌面](/knowledge/engineering/macbook-remote-development-codex-desktop-access) — 通过屏保永不、熄屏后不要求密码与接电防睡眠，让 Codex 在已有登录会话中直接操作桌面，并记录实机截图与验收边界。
+
 ## 2026-10
 
 - `2026-10-26` · AI 工程 · [ego(lite)：Agent 浏览器定位与 Codex、Chrome 的选型边界](/knowledge/ai-engineering/ego-lite-agent-browser) — 区分 ego(lite) 的产品定位、登录态复用、Space 与性能宣称，判断相对 Codex 和 Chrome 的实际增量价值。
