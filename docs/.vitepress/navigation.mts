@@ -535,6 +535,19 @@ export const knowledgeTopics: KnowledgeTopic[] = [
     "route": "本机从终端工作流开始，远程开发从 MacBook 配置路线开始；容器、虚拟机和 Codex 远程排障按实际需求查阅。",
     "sections": [
       {
+        "id": "photo-archiving",
+        "title": "照片与个人数据归档",
+        "description": "将大视频原片可靠归档到 NAS，保留照片时间线并分别验证文件、图库和云端结果。",
+        "articles": [
+          {
+            "text": "iCloud 大视频瘦身与 NAS 归档",
+            "title": "iCloud 照片瘦身：原片归档 NAS，小版本保留图库",
+            "description": "按需下载原片、保留日期位置与音轨、验证小版本回库，并将知识、工具与私人数据分开保存。",
+            "link": "/knowledge/engineering/icloud-photos-nas-slimming"
+          }
+        ]
+      },
+      {
         "id": "remote-development",
         "title": "MacBook 远程开发机系列",
         "description": "从供电和网络，到 SSH、屏幕共享、会话接续和重启恢复。",

@@ -51,3 +51,7 @@ description: 从开发环境与工程基础两条路线浏览工程知识
 ## Node.js 异步上下文与 RPC 并发 {#async-context-rpc}
 
 进入 [工程基础 · 请求上下文与 RPC](/knowledge/topics/engineering-foundations/#async-context-rpc)，从状态传播机制开始，理解锁、子上下文和业务路由的隔离边界。
+
+## 照片与个人数据归档
+
+- [iCloud 照片瘦身：原片归档 NAS，小版本保留图库](./icloud-photos-nas-slimming.md)：按需下载大视频、保留元信息并验证回库与云端结果，配套独立工具仓库。

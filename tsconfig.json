@@ -23,5 +23,9 @@
     "docs/.vitepress/**/*.ts",
     "docs/.vitepress/**/*.mts",
     "scripts/**/*.ts"
+  ],
+  "exclude": [
+    "docs/.vitepress/dist/**",
+    "docs/.vitepress/cache/**"
   ]
 }

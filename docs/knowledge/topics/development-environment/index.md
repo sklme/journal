@@ -11,6 +11,12 @@ description: 搭建终端、远程开发机、跨设备会话、容器与虚拟�
 
 本机从终端工作流开始，远程开发从 MacBook 配置路线开始；容器、虚拟机和 Codex 远程排障按实际需求查阅。
 
+## 照片与个人数据归档 {#photo-archiving}
+
+按需取回大视频原片、归档 NAS 并制作保留元信息的观看版本，分别验证文件、照片图库和云端结果。
+
+<TopicArticles topic="development-environment" section="photo-archiving" />
+
 ## MacBook 远程开发机系列 {#remote-development}
 
 从供电和网络，到 SSH、屏幕共享、会话接续和重启恢复。
