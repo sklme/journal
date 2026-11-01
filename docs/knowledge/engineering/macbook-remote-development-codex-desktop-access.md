@@ -153,6 +153,16 @@ Touch ID 也存在必须重新输入密码的条件，但那是生物识别认�
 
 这次按 skill 的边界停止控制尝试，并请求手动解锁；用户当时无法解锁，因此桌面恢复仍未完成。未绑定应用或发送键鼠，没有更改认证、Locked use、电源或权限配置。后续应在手动解锁后验证真实输入和点击，再继续定位 Chrome 的上游触发原因；重复关闭屏保或密码要求并不能解释这份直接锁屏证据。
 
+### 发送请求的进程不一定是最初触发方
+
+进一步核对同一秒日志，Chrome 先出现 AppKit 的 `performKeyEquivalent:` 与 `sendAction:`，约 7 毫秒后发送锁屏 Apple Event。[Apple 对快捷键处理的说明](https://developer.apple.com/documentation/appkit/nsmenu/performkeyequivalent(with:))与[动作分发机制](https://developer.apple.com/documentation/appkit/nsapplication/sendaction(_:to:from:))支持快捷键/菜单动作这条解释路径。但记录没有具体按键、动作 selector 和原始输入来源，不能仅据此认定是用户按键、某个扩展或特定自动化组件。
+
+公开的一手问题报告 [openai/codex #36776](https://github.com/openai/codex/issues/36776) 描述了高度相似的情形：免密自然关屏后，Computer Use 的 Guardian 触发额外锁屏；后续诊断报告了 Guardian 发出 Control–Command–Q、Chrome 转发锁屏，以及自然唤醒被误算成自动解锁成功的路径。截至 2026-11-01，该 issue 仍 open。本机没有捕获到 Guardian 发出对应按键的归属证据，因此它是后续重点排查线索，不能写成本机已确认根因，也不能据此宣称修复已发布。
+
+由此需要区分三层：最初的输入或动作来源、发送系统请求的 Chrome 进程，以及执行锁屏的 loginwindow。框架代码运行在应用进程内，日志里的进程名本身不能证明该应用的业务逻辑决定了锁屏。
+
+这也不是 Chrome 专属能力。原生程序可以处理系统锁屏动作或实现锁屏请求，但具体调用受沙箱和系统权限约束。按 [Apple 的自动化安全说明](https://developer.apple.com/videos/play/wwdc2019/701/)，模拟输入需要辅助功能授权，跨应用 Apple Events 通常需用户同意，也存在事件例外；不能把某一条已成功的请求概括为所有应用都能无条件控制系统。[Chrome 的 idle API](https://developer.chrome.com/docs/extensions/reference/api/idle) 则是观察闲置与锁定状态，没有 macOS 锁屏方法。普通网页脚本、原生应用与获授权的输入自动化需要分别判断。
+
 ### 以后监控时保存什么
 
 - 记录显示器是否睡眠、会话锁定标志、HID 闲置秒数和 `pmset -g assertions`；分别检查阻止主机睡眠与阻止显示器睡眠的请求。
