@@ -1,0 +1,3 @@
+interface:
+  display_name: "Mac 闲置唤醒与继续操作"
+  short_description: "在 Mac 长时间闲置后复核唤醒状态，验证桌面输入并继续原任务"

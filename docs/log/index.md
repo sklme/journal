@@ -11,7 +11,7 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 - `2026-11-01` · 工程实践 · [iCloud 照片瘦身：原片归档 NAS，小版本保留图库](/knowledge/engineering/icloud-photos-nas-slimming) — 按需取回完整原片、归档 NAS 并制作保留元信息的观看版本，分别核对文件、图库和云端状态。
 
-- `2026-11-01` · 工程实践 · [MacBook 远程开发机：Codex 唤屏后直接操作桌面](/knowledge/engineering/macbook-remote-development-codex-desktop-access) — 复核屏保与密码策略，通过长时间闲置实测区分自然关屏、显式锁屏和 Computer Use 恢复，记录真实输入验收与排障步骤。
+- `2026-11-01` · 工程实践 · [MacBook 远程开发机：Codex 唤屏后直接操作桌面](/knowledge/engineering/macbook-remote-development-codex-desktop-access) — 复核屏保与密码策略，记录自然关屏后的 Computer Use 恢复实测，并提供唤醒 skill、输入验收和排障步骤。
 
 ## 2026-10
 

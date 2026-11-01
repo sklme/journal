@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>Mac 唤醒操作验证</title>
+<style>
+  body { font: 20px/1.6 system-ui, sans-serif; background: #f3f6fa; padding: 32px; }
+  main { max-width: 640px; margin: 40px auto; padding: 32px; background: white; border-radius: 16px; }
+  input, button { box-sizing: border-box; font: inherit; padding: 12px; margin: 12px 0; }
+  input { width: 100%; } button { cursor: pointer; } #result { overflow-wrap: anywhere; }
+</style>
+<main>
+  <h1>Mac 唤醒操作验证</h1>
+  <p>只验证原生输入和点击。内容留在本页，不联网、不保存。</p>
+  <label for="marker">本次验证文字</label>
+  <input id="marker" autocomplete="off" placeholder="输入本次唯一英文标记">
+  <button id="verify" type="button">验证输入并点击</button>
+  <p id="result" role="status" aria-live="polite">尚未验证</p>
+</main>
+<script>
+  document.getElementById('verify').addEventListener('click', () => {
+    const marker = document.getElementById('marker').value.trim();
+    document.getElementById('result').textContent = marker ? `验证成功：${marker}` : '请先输入本次唯一标记';
+  });
+</script>
+</html>
