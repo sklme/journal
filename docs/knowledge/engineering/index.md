@@ -19,7 +19,7 @@ description: 从开发环境与工程基础两条路线浏览工程知识
 
 进入 [开发环境 · 远程开发机](/knowledge/topics/development-environment/#remote-development)，按供电、网络、会话、工具和恢复验收建立远程环境。
 
-桌面自动化补充见 [Codex 唤屏后直接操作桌面](./macbook-remote-development-codex-desktop-access.md)，包含屏保与密码策略、实机截图和复测步骤。
+桌面自动化补充见 [Codex 唤屏后直接操作桌面](./macbook-remote-development-codex-desktop-access.md)，包含配置复核、自然关屏实测与首次锁定报错后的恢复步骤。
 
 网络架构研究见 [无公网 IP 的远程组网：原理、移动端整合与云端混合架构](/knowledge/engineering/remote-networking-without-public-ip)，从 NAT 穿透、移动端 VPN 整合与加密边界理解云端和家庭设备的分工。
 
