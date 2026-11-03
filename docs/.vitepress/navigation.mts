@@ -601,6 +601,12 @@ export const knowledgeTopics: KnowledgeTopic[] = [
             "link": "/knowledge/engineering/macbook-remote-development-codex-desktop-access"
           },
           {
+            "text": "原理 · 反向隧道里的两层 SSH",
+            "title": "反向隧道里的两层 SSH：连接方向、转发通道与命令执行",
+            "description": "从开发机经反向隧道登录 Mac 的例子，理解两层 SSH 的角色、三段 TCP 与 channel 字节转发。",
+            "link": "/knowledge/engineering/ssh-over-reverse-tunnel"
+          },
+          {
             "text": "原理 · 无公网 IP 混合组网",
             "title": "无公网 IP 的远程组网：原理、移动端整合与云端混合架构",
             "description": "从 NAT 穿透与加密边界出发，设计云端 HTTPS、家庭 Mac AI 服务和手机 P2P 访问的混合架构，并分析移动端代理整合与验收方法。",

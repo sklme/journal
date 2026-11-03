@@ -9,6 +9,8 @@ description: 按月份倒序整理知识库和指南中已经收录的内容
 
 ## 2026-11
 
+- `2026-11-03` · 工程实践 · [反向隧道里的两层 SSH：连接方向、转发通道与命令执行](/knowledge/engineering/ssh-over-reverse-tunnel) — 从开发机经反向隧道登录 Mac 的例子，理解两层 SSH 的角色、三段 TCP 与 channel 字节转发。
+
 - `2026-11-01` · 工程实践 · [iCloud 照片瘦身：原片归档 NAS，小版本保留图库](/knowledge/engineering/icloud-photos-nas-slimming) — 按需取回完整原片、归档 NAS 并制作保留元信息的观看版本，分别核对文件、图库和云端状态。
 
 - `2026-11-01` · 工程实践 · [MacBook 远程开发机：Codex 唤屏后直接操作桌面](/knowledge/engineering/macbook-remote-development-codex-desktop-access) — 复核屏保与密码策略，记录自然关屏后的 Computer Use 恢复实测，并提供唤醒 skill、输入验收和排障步骤。
